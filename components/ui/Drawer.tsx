@@ -1,15 +1,15 @@
-import { type ComponentChildren } from "preact";
-import { clx } from "../../sdk/clx.ts";
-import { useId } from "../../sdk/useId.ts";
-import Icon from "./Icon.tsx";
 import { useScript } from "@deco/deco/hooks";
+import { type ComponentChildren, JSX } from "preact";
+import { clx } from "../../sdk/clx.ts";
+
 export interface Props {
   open?: boolean;
   class?: string;
   children?: ComponentChildren;
   aside: ComponentChildren;
-  id?: string;
+  id: string;
 }
+
 const script = (id: string) => {
   const handler = (e: KeyboardEvent) => {
     if (e.key !== "Escape" && e.keyCode !== 27) {
@@ -23,9 +23,14 @@ const script = (id: string) => {
   };
   addEventListener("keydown", handler);
 };
-function Drawer(
-  { children, aside, open, class: _class = "", id = useId() }: Props,
-) {
+
+function Drawer({
+  children,
+  aside,
+  open,
+  class: _class = "",
+  id,
+}: Props) {
   return (
     <>
       <div class={clx("drawer", _class)}>
@@ -60,28 +65,47 @@ function Drawer(
     </>
   );
 }
-function Aside({ title, drawer, children }: {
-  title: string;
-  drawer: string;
-  children: ComponentChildren;
-}) {
+
+function Aside({
+  class: _class,
+  className,
+  ...props
+}: JSX.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
+      {...props}
       data-aside
-      class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y"
-      style={{ maxWidth: "100vw" }}
+      class={clx(
+        "grid grid-rows-[auto_1fr] h-full max-w-[100vw]",
+        _class,
+        className,
+      )}
+    />
+  );
+}
+
+function Button({
+  class: _class,
+  className,
+  ...props
+}: JSX.HTMLAttributes<HTMLLabelElement>) {
+  return <label class={clx("btn btn-ghost", _class, className)} {...props} />;
+}
+
+function Loading({ id }: { id: string }) {
+  return (
+    <div
+      id={id}
+      class="h-full flex items-center justify-center"
+      style={{ minWidth: "100vw" }}
     >
-      <div class="flex justify-between items-center">
-        <h1 class="px-4 py-3">
-          <span class="font-medium text-2xl">{title}</span>
-        </h1>
-        <label for={drawer} aria-label="X" class="btn btn-ghost">
-          <Icon id="close" />
-        </label>
-      </div>
-      {children}
+      <span class="loading loading-spinner" />
     </div>
   );
 }
+
+Drawer.Button = Button;
 Drawer.Aside = Aside;
+Drawer.Loading = Loading;
+
 export default Drawer;
