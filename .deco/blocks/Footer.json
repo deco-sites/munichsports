@@ -54,7 +54,24 @@
       }
     }
   ],
-  "policies": [],
+  "policies": [
+    {
+      "label": "Aviso Legal",
+      "href": "#"
+    },
+    {
+      "label": "Politica de privacidad y cookies",
+      "href": "#"
+    },
+    {
+      "label": "Condiciones de compra",
+      "href": "#"
+    },
+    {
+      "label": "Configurar",
+      "href": "#"
+    }
+  ],
   "apps": [
     {
       "image": {

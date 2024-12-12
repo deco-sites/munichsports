@@ -1,5 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
-import Icon from "../../components/ui/Icon.tsx";
+import BackToTop from "../../components/footer/BackToTop.tsx";
+import LanguageSelector from "../../components/footer/LanguageSelector.tsx";
 import { extractLanguagesProps } from "../../sdk/i18n.ts";
 import type { ImageProps } from "../../sdk/widgets.ts";
 
@@ -38,20 +39,13 @@ export default function Footer(props: Props) {
     copyright,
   } = props;
 
-  const { translations } = extractLanguagesProps(
+  const { translations, language } = extractLanguagesProps(
     props,
   );
+
   return (
     <>
-      <button
-        hx-on:click="window.scrollTo({ top: 0, behavior: 'smooth' })"
-        class="w-full h-10 flex justify-between items-center bg-[#a5a5a5] text-white px-3 hover:bg-black transition-colors"
-      >
-        <span class="uppercase text-[13px] font-bold font-montserrat tracking-[0.0625rem]">
-          {translations?.backToTop}
-        </span>
-        <Icon id="to-top-arrow" size={20} />
-      </button>
+      <BackToTop label={translations?.backToTop || ""} />
       <footer
         class="px-5 flex flex-col py-6"
         style={{ backgroundColor: "#ffffff" }}
@@ -96,17 +90,20 @@ export default function Footer(props: Props) {
             </li>
           ))}
         </ul>
-        <hr class="w-full text-base-400" />
-        <ul class="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center">
-          {policies.map(({ label, href }) => (
-            <li>
-              <a class="text-xs font-medium" href={href}>
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
       </footer>
+      <LanguageSelector language={language} />
+      <div class="h-11 bg-[#ececec] text-[#9a9a9a] text-[13px] px-3 flex items-center font-bold">
+        {copyright}
+      </div>
+      <ul class="flex flex-col gap-1 items-center py-2">
+        {policies.map(({ label, href }) => (
+          <li>
+            <a class="text-xs font-semibold h-[26px] inline-block" href={href}>
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
     </>
   );
 }

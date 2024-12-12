@@ -24,6 +24,7 @@ export default {
         // TODO: move everything to the theme component
         // #f4f4f4
         // #ececec
+        // #dddddd
         // #a5a5a5
         // #9a9a9a
         // #888888
