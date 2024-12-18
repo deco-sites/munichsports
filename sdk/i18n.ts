@@ -8,6 +8,7 @@ interface Translations {
   };
   spain: string;
   backToTop: string;
+  login: string;
 }
 
 const languages = {
@@ -23,24 +24,28 @@ const translations: Record<string, Translations> = {
     languages,
     spain: "Spain",
     backToTop: "Back to top",
+    login: "Login",
   },
   es: {
     myAccount: "Mi cuenta",
     languages,
     spain: "España",
     backToTop: "Volver arriba",
+    login: "Iniciar sesión",
   },
   ca: {
     myAccount: "La meva compte",
     languages,
     spain: "Espanya",
     backToTop: "Arriba",
+    login: "Identifica't",
   },
   it: {
     myAccount: "Il mio account",
     languages,
     spain: "Spagna",
     backToTop: "Torna su",
+    login: "Identificati",
   },
 };
 
@@ -51,10 +56,11 @@ export function $t(language = "es") {
 export function extractLanguagesProps(
   props: unknown,
 ): {
-  language?: string;
+  language?: keyof typeof languages;
   supportedLanguages?: string[];
   translations?: Translations;
   currentUrl: (language: string) => string | undefined;
+  goTo: (href: string, language?: string) => string | undefined;
 } {
   if (
     typeof props === "object" &&
@@ -77,7 +83,7 @@ export function extractLanguagesProps(
       : undefined;
 
     return {
-      language,
+      language: language as keyof typeof languages,
       supportedLanguages,
       translations: $t(language),
       currentUrl: (language: string) => {
@@ -95,6 +101,19 @@ export function extractLanguagesProps(
         _url.pathname = `/${language}/${_url.pathname}`;
         return _url.pathname + _url.search;
       },
+      goTo: (href: string, lang?: string) => {
+        const _language = lang || language;
+        const _url = new URL(href, "http://localhost");
+        const [_, _lang] = _url.pathname.split("/");
+
+        if (supportedLanguages?.includes(_lang)) {
+          _url.pathname = _url.pathname.replace(`/${_lang}`, `/${_language}`);
+          return _url.pathname + _url.search;
+        }
+
+        _url.pathname = `/${_language}${_url.pathname}`;
+        return _url.pathname + _url.search;
+      },
     };
   }
 
@@ -103,5 +122,6 @@ export function extractLanguagesProps(
     supportedLanguages: undefined,
     translations: undefined,
     currentUrl: () => undefined,
+    goTo: () => undefined,
   };
 }

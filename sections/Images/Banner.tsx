@@ -18,7 +18,7 @@ export default function Banners({
   preload,
 }: Props) {
   return (
-    <div class="w-screen py-6 flex flex-col gap-y-6 gap-x-3">
+    <div class="w-screen py-6 flex flex-col md:flex-row md:gap-x-6 gap-y-6 gap-x-3">
       {images.map((image, index) => (
         <Item image={image} lcp={index === 0 && preload} />
       ))}

@@ -735,6 +735,10 @@
                 "label": "COMUNICHTY",
                 "url": "/comunichty",
                 "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/418886da-d3e7-4e40-acb2-cd169de98f02/instagram-(1).svg"
+              },
+              "help": {
+                "label": "Ayuda",
+                "url": "/contactar"
               }
             }
           },

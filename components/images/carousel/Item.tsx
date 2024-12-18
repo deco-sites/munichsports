@@ -50,7 +50,7 @@ export default function BannerItem({
       {...selectPromotionEvent}
       href={action?.href ?? "#"}
       aria-label={action?.label}
-      class="flex flex-col"
+      class="flex flex-col relative"
     >
       <Picture preload={lcp} {...viewPromotionEvent}>
         <Source
@@ -80,13 +80,14 @@ export default function BannerItem({
             "w-full px-3 py-6",
             "font-bold font-montserrat",
             "flex flex-col gap-2 justify-center items-center",
+            "md:absolute md:bottom-2 md:left-1/2 md:-translate-x-1/2",
           )}
         >
-          <span class="text-xl text-black">
+          <span class="text-xl text-black md:text-[40px]/[36px] md:text-white">
             {action.title}
           </span>
           <button
-            class="bg-[#333333] rounded text-white px-3 py-2.5 text-[13px] min-w-[200px] tracking-[0.0625rem]"
+            class="bg-[#333333] rounded text-white px-3 py-2.5 text-[13px] md:text-[16px] min-w-[200px] tracking-[0.0625rem]"
             aria-label={action.label}
           >
             {action.label}

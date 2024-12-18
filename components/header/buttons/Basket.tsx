@@ -19,18 +19,22 @@ export default function BasketButton() {
   const id = useId();
   return (
     <>
-      <Button for={MINICART_DRAWER_ID} aria-label="open cart">
+      <Button
+        for={MINICART_DRAWER_ID}
+        aria-label="open cart"
+        class="md:!w-[auto] md:!p-2"
+      >
         <span class="relative">
           <span
             id={id}
             class={clx(
-              "absolute top-[-9px] right-[-9px] size-5 rounded-full",
+              "absolute top-[-9px] right-[-9px] md:-right-4 size-5 rounded-full",
               "flex items-center justify-center",
               "text-xs font-thin",
               "bg-black text-white",
             )}
           />
-          <Icon id="basket" size={24} />
+          <Icon id="basket" class="size-6 md:size-4" />
         </span>
       </Button>
       <script
