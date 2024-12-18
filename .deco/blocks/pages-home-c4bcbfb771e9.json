@@ -739,10 +739,7 @@
             }
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Header"
-            }
+            "__resolveType": "Header"
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -764,14 +761,14 @@
             "images": [
               {
                 "desktop": {
-                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MANV2.jpg",
-                  "width": 1920,
-                  "height": 1080
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MANV3.jpg",
+                  "width": 928,
+                  "height": 341
                 },
                 "mobile": {
-                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MANV2.jpg",
-                  "width": 390,
-                  "height": 143
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MANV3-MOBILE.jpg",
+                  "width": 374,
+                  "height": 467
                 },
                 "alt": "MUNICH HOMBRE",
                 "action": {
@@ -782,14 +779,14 @@
               },
               {
                 "desktop": {
-                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMAN-1.jpg",
-                  "width": 1920,
-                  "height": 1080
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMANV2.jpg",
+                  "width": 928,
+                  "height": 341
                 },
                 "mobile": {
-                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMAN-1.jpg",
-                  "width": 390,
-                  "height": 143
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMANV2-MOBILE.jpg",
+                  "width": 374,
+                  "height": 467
                 },
                 "alt": "MUNICH MUJER",
                 "action": {

@@ -23,8 +23,7 @@ import {
   SIDEMENU_LANGUAGE_ID,
 } from "../../constants.ts";
 import { getIdFromObject } from "../../sdk/hash.ts";
-import { extractLanguagesProps } from "../../sdk/i18n.ts";
-import { useId } from "../../sdk/useId.ts";
+import { $t, extractLanguagesProps } from "../../sdk/i18n.ts";
 import { ImageProps } from "../../sdk/widgets.ts";
 
 export interface SectionProps {
@@ -44,10 +43,7 @@ export interface SectionProps {
   loading?: "eager" | "lazy";
 }
 
-type Props = SectionProps & {
-  language?: string;
-  supportedLanguages?: string[];
-};
+type Props = SectionProps;
 
 const Desktop = (
   { logo, searchbar, loading }: Props,
@@ -110,13 +106,15 @@ const Desktop = (
     </div>
   </>
 );
-const Mobile = ({
-  logo,
-  menu,
-  loading,
-  language,
-  supportedLanguages,
-}: Props) => {
+const Mobile = (props: Props) => {
+  const {
+    logo,
+    menu,
+    loading,
+  } = props;
+  const { language, supportedLanguages, currentUrl } = extractLanguagesProps(
+    props,
+  );
   return (
     <>
       <Drawer
@@ -213,7 +211,7 @@ const Mobile = ({
       })}
       {loading !== "lazy" && (
         <Drawer
-          class="[body:has([data-drawer-input='1']:checked)_&]:-translate-x-[50%]"
+          side="right"
           id={SIDEMENU_LANGUAGE_ID}
           input={
             <input
@@ -222,16 +220,21 @@ const Mobile = ({
               type="checkbox"
               class="hidden peer"
               aria-label="toggle drawer"
-              data-drawer-input="0"
+              data-drawer-input="1"
             />
           }
           aside={
             <Drawer.Aside class="bg-white">
               <Menu
-                items={menu?.items || []}
+                level={2}
+                items={supportedLanguages?.map((lang) => {
+                  const languages = $t(lang).languages;
+                  return {
+                    label: languages[lang as keyof typeof languages],
+                    url: currentUrl(lang),
+                  };
+                }) || []}
                 header={<MenuHeader backButtonCloses={SIDEMENU_LANGUAGE_ID} />}
-                language={language}
-                supportedLanguages={supportedLanguages}
               />
             </Drawer.Aside>
           }
@@ -272,37 +275,11 @@ const Mobile = ({
   );
 };
 
-function Header({
-  logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
-    width: 100,
-    height: 16,
-    alt: "Logo",
-  },
-  ...props
-}: SectionProps) {
-  const { language, supportedLanguages } = extractLanguagesProps(props);
+function Header(props: SectionProps) {
   const device = useDevice();
   return (
     <header class="bg-white w-full h-[60px] border-b border-[#ececec] sticky top-0 z-40">
-      {device === "desktop"
-        ? (
-          <Desktop
-            logo={logo}
-            {...props}
-            language={language}
-            supportedLanguages={supportedLanguages}
-          />
-        )
-        : (
-          <Mobile
-            logo={logo}
-            {...props}
-            language={language}
-            supportedLanguages={supportedLanguages}
-          />
-        )}
+      {device === "desktop" ? <Desktop {...props} /> : <Mobile {...props} />}
     </header>
   );
 }

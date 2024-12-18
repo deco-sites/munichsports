@@ -69,9 +69,10 @@
     "framework": "htmx"
   },
   "supportedLanguages": [
-    "en",
     "es",
-    "fr"
+    "en",
+    "ca",
+    "it"
   ],
   "defaultLanguage": "es"
 }

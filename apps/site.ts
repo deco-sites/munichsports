@@ -142,10 +142,9 @@ export default function Site({ ...state }: Props): A<Manifest, Props, [
         Object.assign(_props, {
           _language: language,
           _supportedLanguages: supportedLanguages,
+          url: req.url,
         });
       }
-
-      // console.log("Next");
 
       return ctx.next!();
     },
