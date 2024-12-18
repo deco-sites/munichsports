@@ -1,5 +1,6 @@
 import { ComponentChildren } from "preact";
-import { useId } from "../../../sdk/useId.ts";
+import { clx } from "../../../sdk/clx.ts";
+import { getIdFromObject } from "../../../sdk/hash.ts";
 import Icon from "../../ui/Icon.tsx";
 
 // TODO: improve this because i'm too tired to think a proper way to do this
@@ -29,9 +30,20 @@ export interface FirstLevelItem {
   children?: SecondLevelItem[];
 }
 
-function Li({ children }: { children: ComponentChildren }) {
+function Li({
+  children,
+  class: _class = "",
+}: {
+  children: ComponentChildren;
+  class?: string;
+}) {
   return (
-    <li class="h-[50px] w-full px-5 font-montserrat text-[13px]/[22px] font-bold text-[#333333] hover:text-[#9a9a9a]">
+    <li
+      class={clx(
+        "h-[50px] w-full px-5 font-montserrat text-[13px]/[22px] text-[#333333] hover:text-[#9a9a9a]",
+        _class,
+      )}
+    >
       {children}
     </li>
   );
@@ -39,12 +51,12 @@ function Li({ children }: { children: ComponentChildren }) {
 
 export default function MenuItem({
   item,
-}: { item: FirstLevelItem | SecondLevelItem | ThirdLevelItem }) {
+  level,
+}: { item: FirstLevelItem | SecondLevelItem | ThirdLevelItem; level: number }) {
   if ("children" in item && !!item.children?.length) {
-    const id = useId();
+    const id = getIdFromObject(item);
     return (
-      <Li>
-        <input type="checkbox" id={id} class="hidden peer" />
+      <Li class={clx(level === 0 && "font-bold")}>
         <label
           for={id}
           class="flex items-center justify-between h-full font-montserrat"
@@ -57,10 +69,10 @@ export default function MenuItem({
   }
 
   return (
-    <Li>
+    <Li class={clx(level === 0 && "font-bold")}>
       <a
         href={item.url}
-        class="collapse collapse-plus font-montserrat h-full flex justify-start items-center"
+        class="font-montserrat h-full flex justify-start items-center"
       >
         {item.label}
       </a>

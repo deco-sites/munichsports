@@ -1,17 +1,19 @@
-import { ImageProps } from "../../../sdk/widgets.ts";
-import MenuHeader from "./Header.tsx";
+import type { ComponentChildren } from "preact";
 import MenuItem, { FirstLevelItem } from "./Item.tsx";
 import LanguageSelector from "./LanguageSelector.tsx";
 import Link, { type Props as LinkProps } from "./Link.tsx";
 
 export interface Props {
   items: FirstLevelItem[];
-  links: LinkProps[];
+  links?: LinkProps[];
   /**
-   * This prop is already defined in the parent component
    * @ignore
    */
-  logo?: ImageProps;
+  level?: number;
+  /**
+   * @ignore
+   */
+  header?: ComponentChildren;
   /**
    * @ignore
    */
@@ -25,18 +27,19 @@ export interface Props {
 function Menu({
   items = [],
   links = [],
-  logo,
+  level = 0,
+  header,
   language,
   supportedLanguages,
 }: Props) {
   return (
     <div
-      class="flex flex-col h-full overflow-y-auto"
+      class="flex flex-col h-full overflow-y-auto bg-white"
       style={{ minWidth: "100vw" }}
     >
-      <MenuHeader logo={logo} />
+      {header}
       <ul class="bg-[#f4f4f4] flex flex-col divide-y divide-black/15 overflow-y-auto border-b border-black/15">
-        {items.map((item) => <MenuItem item={item} />)}
+        {items.map((item) => <MenuItem item={item} level={level} />)}
       </ul>
 
       {links.length > 0 && (
@@ -44,10 +47,12 @@ function Menu({
           {links.map((link) => <Link {...link} />)}
         </ul>
       )}
-      <LanguageSelector
-        language={language}
-        supportedLanguages={supportedLanguages}
-      />
+      {language && supportedLanguages?.length && (
+        <LanguageSelector
+          language={language}
+          supportedLanguages={supportedLanguages}
+        />
+      )}
     </div>
   );
 }

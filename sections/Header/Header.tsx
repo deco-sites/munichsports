@@ -5,6 +5,7 @@ import BasketButton from "../../components/header/buttons/Basket.tsx";
 import MenuButton from "../../components/header/buttons/Menu.tsx";
 import SearchButton from "../../components/header/buttons/Search.tsx";
 import UserButton from "../../components/header/buttons/User.tsx";
+import MenuHeader from "../../components/header/menu/Header.tsx";
 import Menu, {
   type Props as MenuProps,
 } from "../../components/header/menu/Menu.tsx";
@@ -17,11 +18,13 @@ import Modal from "../../components/ui/Modal.tsx";
 import {
   HEADER_HEIGHT_MOBILE,
   NAVBAR_HEIGHT_MOBILE,
-  SEARCHBAR_DRAWER_ID,
   SEARCHBAR_POPUP_ID,
   SIDEMENU_DRAWER_ID,
+  SIDEMENU_LANGUAGE_ID,
 } from "../../constants.ts";
+import { getIdFromObject } from "../../sdk/hash.ts";
 import { extractLanguagesProps } from "../../sdk/i18n.ts";
+import { useId } from "../../sdk/useId.ts";
 import { ImageProps } from "../../sdk/widgets.ts";
 
 export interface SectionProps {
@@ -109,81 +112,165 @@ const Desktop = (
 );
 const Mobile = ({
   logo,
-  searchbar,
   menu,
   loading,
   language,
   supportedLanguages,
-}: Props) => (
-  <>
-    <Drawer
-      id={SEARCHBAR_DRAWER_ID}
-      aside={
-        <Drawer.Aside title="Search">
-          <div class="w-screen overflow-y-auto">
+}: Props) => {
+  return (
+    <>
+      <Drawer
+        class="[body:has([data-drawer-input='1']:checked)_&]:-translate-x-[50%]"
+        id={SIDEMENU_DRAWER_ID}
+        input={
+          <input
+            id={SIDEMENU_DRAWER_ID}
+            name={SIDEMENU_DRAWER_ID}
+            type="checkbox"
+            class="hidden peer"
+            aria-label="toggle drawer"
+            data-drawer-input="0"
+          />
+        }
+        aside={
+          <Drawer.Aside class="bg-white">
             {loading === "lazy"
+              ? <Drawer.Loading id={SIDEMENU_DRAWER_ID} />
+              : menu
               ? (
-                <div class="h-full w-full flex items-center justify-center">
-                  <span class="loading loading-spinner" />
-                </div>
+                <>
+                  <Menu
+                    {...menu}
+                    header={<MenuHeader logo={logo} />}
+                    language={language}
+                    supportedLanguages={supportedLanguages}
+                  />
+                </>
               )
-              : <Searchbar {...searchbar} />}
-          </div>
-        </Drawer.Aside>
-      }
-    />
-    <Drawer
-      id={SIDEMENU_DRAWER_ID}
-      aside={
-        <Drawer.Aside class="bg-white">
-          {loading === "lazy"
-            ? <Drawer.Loading id={SIDEMENU_DRAWER_ID} />
-            : menu
-            ? (
+              : null}
+          </Drawer.Aside>
+        }
+      />
+      {loading !== "lazy" && menu?.items?.map((item) => {
+        const id = getIdFromObject(item);
+        return (
+          <>
+            <Drawer
+              class="[body:has([data-drawer-input='2']:checked)_&]:-translate-x-[50%] z-[41]"
+              side="right"
+              id={id}
+              input={
+                <input
+                  id={id}
+                  name={id}
+                  type="checkbox"
+                  class="hidden peer"
+                  aria-label="toggle drawer"
+                  data-drawer-input="1"
+                />
+              }
+              aside={
+                <Menu
+                  level={1}
+                  items={item.children || []}
+                  header={
+                    <MenuHeader title={item.label} backButtonCloses={id} />
+                  }
+                />
+              }
+            />
+            {item.children?.map((child) => {
+              const id = getIdFromObject(child);
+              return (
+                <Drawer
+                  class="z-[42]"
+                  side="right"
+                  id={id}
+                  input={
+                    <input
+                      id={id}
+                      name={id}
+                      type="checkbox"
+                      class="hidden peer"
+                      aria-label="toggle drawer"
+                      data-drawer-input="2"
+                    />
+                  }
+                  aside={
+                    <Menu
+                      level={2}
+                      items={child.children || []}
+                      header={
+                        <MenuHeader title={child.label} backButtonCloses={id} />
+                      }
+                    />
+                  }
+                />
+              );
+            })}
+          </>
+        );
+      })}
+      {loading !== "lazy" && (
+        <Drawer
+          class="[body:has([data-drawer-input='1']:checked)_&]:-translate-x-[50%]"
+          id={SIDEMENU_LANGUAGE_ID}
+          input={
+            <input
+              id={SIDEMENU_LANGUAGE_ID}
+              name={SIDEMENU_LANGUAGE_ID}
+              type="checkbox"
+              class="hidden peer"
+              aria-label="toggle drawer"
+              data-drawer-input="0"
+            />
+          }
+          aside={
+            <Drawer.Aside class="bg-white">
               <Menu
-                {...menu}
-                logo={logo}
+                items={menu?.items || []}
+                header={<MenuHeader backButtonCloses={SIDEMENU_LANGUAGE_ID} />}
                 language={language}
                 supportedLanguages={supportedLanguages}
               />
-            )
-            : null}
-        </Drawer.Aside>
-      }
-    />
-
-    <div
-      class="grid place-items-center w-screen h-full px-3 text-[#888888]"
-      style={{
-        height: NAVBAR_HEIGHT_MOBILE,
-        gridTemplateColumns:
-          "min-content min-content auto min-content min-content",
-      }}
-    >
-      <MenuButton />
-      <SearchButton />
-
-      {logo && (
-        <a
-          href="/"
-          class="flex-grow inline-flex items-center justify-center"
-          style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
-          aria-label="Store logo"
-        >
-          <Image
-            src={logo.src}
-            alt={logo.alt}
-            width={logo.width || 100}
-            height={logo.height || 13}
-          />
-        </a>
+            </Drawer.Aside>
+          }
+        />
       )}
 
-      <UserButton />
-      <BasketButton />
-    </div>
-  </>
-);
+      <div
+        class="grid place-items-center w-screen h-full px-3 text-[#888888]"
+        style={{
+          height: NAVBAR_HEIGHT_MOBILE,
+          gridTemplateColumns:
+            "min-content min-content auto min-content min-content",
+        }}
+      >
+        <MenuButton />
+        <SearchButton />
+
+        {logo && (
+          <a
+            href="/"
+            class="flex-grow inline-flex items-center justify-center"
+            style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
+            aria-label="Store logo"
+          >
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={logo.width || 100}
+              height={logo.height || 13}
+            />
+          </a>
+        )}
+
+        <UserButton />
+        <BasketButton />
+      </div>
+    </>
+  );
+};
 
 function Header({
   logo = {

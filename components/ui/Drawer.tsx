@@ -6,6 +6,8 @@ export interface Props {
   open?: boolean;
   class?: string;
   children?: ComponentChildren;
+  input?: ComponentChildren;
+  side?: "left" | "right";
   aside: ComponentChildren;
   id: string;
 }
@@ -28,29 +30,55 @@ function Drawer({
   children,
   aside,
   open,
+  input,
+  side = "left",
   class: _class = "",
   id,
 }: Props) {
   return (
-    <>
-      <div class={clx("drawer", _class)}>
+    <div class="contents">
+      {/* <div class={clx("drawer", _class, side === "right" && "drawer-end")}> */}
+      {input || (
         <input
           id={id}
           name={id}
           checked={open}
           type="checkbox"
-          class="drawer-toggle"
+          class="peer hidden"
           aria-label={open ? "open drawer" : "closed drawer"}
         />
+      )}
+      <div
+        class={clx(
+          "fixed top-0 bottom-0 w-screen max-w-[500px] z-40 h-dvh transition-all duration-300 ease-in-out",
+          side === "right" &&
+            "right-0 translate-x-full peer-checked:translate-x-0",
+          side === "left" &&
+            "left-0 -translate-x-full peer-checked:translate-x-0",
+          _class,
+        )}
+      >
+        {
+          /* {input || (
+          <input
+            id={id}
+            name={id}
+            checked={open}
+            type="checkbox"
+            class="drawer-toggle"
+            aria-label={open ? "open drawer" : "closed drawer"}
+          />
+        )} */
+        }
 
-        <div class="drawer-content">
-          {children}
-        </div>
+        {/* <div class="drawer-content"> */}
+        {children}
+        {/* </div> */}
 
         <aside
           data-aside
           class={clx(
-            "drawer-side h-full z-40 overflow-hidden",
+            "h-full overflow-hidden",
             "[[data-aside]&_section]:contents",
           )}
         >
@@ -62,7 +90,7 @@ function Drawer({
         type="module"
         dangerouslySetInnerHTML={{ __html: useScript(script, id) }}
       />
-    </>
+    </div>
   );
 }
 

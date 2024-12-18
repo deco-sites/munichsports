@@ -1,4 +1,5 @@
 import { ComponentChildren } from "preact";
+import { SIDEMENU_LANGUAGE_ID } from "../../../constants.ts";
 import { $t } from "../../../sdk/i18n.ts";
 import Icon from "../../ui/Icon.tsx";
 
@@ -26,7 +27,10 @@ export default function LanguageSelector({
   return (
     <ul class="flex flex-col">
       <Li>
-        <label class="h-full w-full flex justify-between items-center">
+        <label
+          htmlFor={SIDEMENU_LANGUAGE_ID}
+          class="h-full w-full flex justify-between items-center"
+        >
           <span class="flex gap-3 items-center">
             <Icon id="language" size={19} />
             <span class="underline underline-offset-4">

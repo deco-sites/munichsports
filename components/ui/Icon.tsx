@@ -3,6 +3,7 @@ import type { JSX } from "preact";
 
 export type AvailableIcons =
   | "angle-right"
+  | "angle-left"
   | "country"
   | "language"
   | "search"
