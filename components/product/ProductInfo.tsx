@@ -5,10 +5,6 @@ import { formatPrice } from "../../sdk/format.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
-import ShippingSimulationForm from "../shipping/Form.tsx";
-import WishlistButton from "../wishlist/WishlistButton.tsx";
-import AddToCartButton from "./AddToCartButton.tsx";
-import OutOfStock from "./OutOfStock.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
 
 interface Props {
@@ -23,16 +19,10 @@ function ProductInfo({ page }: Props) {
   }
 
   const { breadcrumbList, product } = page;
-  const { productID, offers, isVariantOf } = product;
-  const description = product.description || isVariantOf?.description;
+  const { offers, isVariantOf } = product;
   const title = isVariantOf?.name ?? product.name;
 
-  const {
-    price = 0,
-    listPrice,
-    seller = "1",
-    availability,
-  } = useOffer(offers);
+  const { price = 0, listPrice } = useOffer(offers);
 
   const percent = listPrice && price
     ? Math.round(((listPrice - price) / listPrice) * 100)
@@ -84,9 +74,7 @@ function ProductInfo({ page }: Props) {
       </span>
 
       {/* Product Name */}
-      <span class={clx("text-3xl font-semibold", "pt-4")}>
-        {title}
-      </span>
+      <span class={clx("text-3xl font-semibold", "pt-4")}>{title}</span>
 
       {/* Prices */}
       <div class="flex gap-3 pt-1">
@@ -106,7 +94,8 @@ function ProductInfo({ page }: Props) {
       )}
 
       {/* Add to Cart and Favorites button */}
-      <div class="mt-4 sm:mt-10 flex flex-col gap-2">
+      {
+        /* <div class="mt-4 sm:mt-10 flex flex-col gap-2">
         {availability === "https://schema.org/InStock"
           ? (
             <>
@@ -121,17 +110,21 @@ function ProductInfo({ page }: Props) {
             </>
           )
           : <OutOfStock productID={productID} />}
-      </div>
+      </div> */
+      }
 
       {/* Shipping Simulation */}
-      <div class="mt-8">
+      {
+        /* <div class="mt-8">
         <ShippingSimulationForm
           items={[{ id: Number(product.sku), quantity: 1, seller: seller }]}
         />
-      </div>
+      </div> */
+      }
 
       {/* Description card */}
-      <div class="mt-4 sm:mt-6">
+      {
+        /* <div class="mt-4 sm:mt-6">
         <span class="text-sm">
           {description && (
             <details>
@@ -143,7 +136,8 @@ function ProductInfo({ page }: Props) {
             </details>
           )}
         </span>
-      </div>
+      </div> */
+      }
     </div>
   );
 }

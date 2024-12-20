@@ -24,33 +24,17 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductDetails.tsx",
-        "page": {
-          "__resolveType": "PDP Loader"
-        }
+      "__resolveType": "site/sections/Product/ProductDetails.tsx",
+      "page": {
+        "__resolveType": "PDP Loader"
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "You may also like",
-        "products": {
-          "__resolveType": "shopify/loaders/ProductList.ts",
-          "props": {
-            "sort": "",
-            "query": "a",
-            "count": 9
-          },
-          "filters": {
-            "tags": [],
-            "productTypes": [],
-            "productVendors": [],
-            "variantOptions": []
-          }
-        }
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
+      "title": "You may also like",
+      "products": {
+        "__resolveType": "logicommerce/loaders/productList.ts",
+        "sort": "id.asc"
       }
     },
     {

@@ -4,13 +4,11 @@ import Image from "apps/website/components/Image.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { relative } from "../../sdk/url.ts";
+import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
-import WishlistButton from "../wishlist/WishlistButton.tsx";
-import AddToCartButton from "./AddToCartButton.tsx";
 import { Ring } from "./ProductVariantSelector.tsx";
-import { useId } from "../../sdk/useId.ts";
 
 interface Props {
   product: Product;
@@ -44,7 +42,7 @@ function ProductCard({
   const title = isVariantOf?.name ?? product.name;
   const [front, back] = images ?? [];
 
-  const { listPrice, price, seller = "1", availability } = useOffer(offers);
+  const { listPrice, price, availability } = useOffer(offers);
   const inStock = availability === "https://schema.org/InStock";
   const possibilities = useVariantPossibilities(hasVariant, product);
   const firstSkuVariations = Object.entries(possibilities)?.[0];
@@ -133,14 +131,16 @@ function ProductCard({
         {/* Wishlist button */}
         <div class="absolute top-0 left-0 w-full flex items-center justify-between">
           {/* Notify Me */}
-          <span
+          {
+            /* <span
             class={clx(
               "text-sm/4 font-normal text-black bg-error bg-opacity-15 text-center rounded-badge px-2 py-1",
               inStock && "opacity-0",
             )}
           >
             Notify me
-          </span>
+          </span> */
+          }
 
           {/* Discounts */}
           <span
@@ -153,9 +153,11 @@ function ProductCard({
           </span>
         </div>
 
-        <div class="absolute bottom-0 right-0">
+        {
+          /* <div class="absolute bottom-0 right-0">
           <WishlistButton item={item} variant="icon" />
-        </div>
+        </div> */
+        }
       </figure>
 
       <a href={relativeUrl} class="pt-5">
@@ -197,7 +199,8 @@ function ProductCard({
 
       <div class="flex-grow" />
 
-      <div>
+      {
+        /* <div>
         {inStock
           ? (
             <AddToCartButton
@@ -227,7 +230,8 @@ function ProductCard({
               Sold out
             </a>
           )}
-      </div>
+      </div> */
+      }
     </div>
   );
 }
