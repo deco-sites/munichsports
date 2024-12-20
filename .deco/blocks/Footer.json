@@ -7,6 +7,107 @@
         "links": [
           {
             "href": "https://customer.dawa.io/munich",
+            "label": "Restituire un prodotto"
+          },
+          {
+            "href": "/negozi-munich",
+            "label": "Negozi"
+          },
+          {
+            "href": "/sostenibilita",
+            "label": "Sostenibilità"
+          },
+          {
+            "href": "/lavora-con-noi",
+            "label": "Lavora con Noi"
+          },
+          {
+            "label": "Pagamento Sicuro",
+            "href": "/sistemi-di-pagamento"
+          },
+          {
+            "label": "Spedizioni e resi",
+            "href": "/spedizioni-cambi"
+          },
+          {
+            "label": "Esportazione e B2B",
+            "href": "/export-b2b"
+          },
+          {
+            "label": "Contattare",
+            "href": "/contattare"
+          }
+        ],
+        "social": [
+          {
+            "alt": "Instagram",
+            "href": "https://instagram.com/munichsports",
+            "image": {
+              "src": "https://www.munichsports.com/cdnassets/newBanners/instagram_bn.png",
+              "width": 41,
+              "height": 37
+            }
+          },
+          {
+            "alt": "Facebook",
+            "href": "https://www.facebook.com/MUNICHSports",
+            "image": {
+              "src": "https://www.munichsports.com/cdnassets/newBanners/facebook_bn.png",
+              "width": 41,
+              "height": 37
+            }
+          }
+        ],
+        "policies": [
+          {
+            "label": "Avviso Legale",
+            "href": "#"
+          },
+          {
+            "label": "Politica sulla privacy e sui cookie",
+            "href": "#"
+          },
+          {
+            "label": "Condizioni di acquisto",
+            "href": "#"
+          },
+          {
+            "label": "Configura",
+            "href": "#"
+          }
+        ],
+        "apps": [
+          {
+            "image": {
+              "src": "https://www.munichsports.com/cdnassets/google-play-badge.png",
+              "alt": "Google Play",
+              "width": 200,
+              "height": 59
+            },
+            "label": "MUNICH Shop su Google Play",
+            "href": "https://play.google.com/store/apps/details?id=com.lluraferi.munichshop&hl=it&utm_source=munichshop&utm_campaign=home"
+          },
+          {
+            "image": {
+              "src": "https://www.munichsports.com/cdnassets/app-store-badge.png",
+              "alt": "App Store",
+              "width": 200,
+              "height": 59
+            },
+            "label": "MUNICH Shop su Apple App Store",
+            "href": "https://apps.apple.com/it/app/munich-shop/id1514352168?l=it&ls=1"
+          }
+        ],
+        "copyright": "© 2024 MUNICHShop.net"
+      },
+      "rule": null
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/Footer/Footer.tsx",
+        "links": [
+          {
+            "href": "https://customer.dawa.io/munich",
             "label": "Retornar un producte"
           },
           {
@@ -106,6 +207,10 @@
       }
     },
     {
+      "rule": {
+        "__resolveType": "site/matchers/language.ts",
+        "language": "en"
+      },
       "value": {
         "__resolveType": "site/sections/Footer/Footer.tsx",
         "links": [
@@ -203,10 +308,6 @@
           }
         ],
         "copyright": "© 2024 MUNICHShop.net"
-      },
-      "rule": {
-        "__resolveType": "site/matchers/language.ts",
-        "language": "en"
       }
     },
     {
@@ -218,35 +319,35 @@
         "links": [
           {
             "href": "https://customer.dawa.io/munich",
-            "label": "Retornar un producte"
+            "label": "Restituire un prodotto"
           },
           {
-            "href": "/botigues-munich",
-            "label": "Botigues"
+            "href": "/negozi-munich",
+            "label": "Negozi"
           },
           {
-            "href": "/sostenibilitat",
-            "label": "Sostenibilitat"
+            "href": "/sostenibilita",
+            "label": "Sostenibilità"
           },
           {
-            "href": "/treballa-amb-nosaltres",
-            "label": "Treballa amb Nosaltres"
+            "href": "/lavora-con-noi",
+            "label": "Lavora con Noi"
           },
           {
-            "label": "Pagament Segur",
-            "href": "/sistemes-de-pagament"
+            "label": "Pagamento Sicuro",
+            "href": "/sistemi-di-pagamento"
           },
           {
-            "label": "Enviaments i devolucions",
-            "href": "/enviaments-canvis"
+            "label": "Spedizioni e resi",
+            "href": "/spedizioni-cambi"
           },
           {
-            "label": "Exportació i B2B",
+            "label": "Esportazione e B2B",
             "href": "/export-b2b"
           },
           {
-            "label": "Contactar",
-            "href": "/contactar"
+            "label": "Contattare",
+            "href": "/contattare"
           }
         ],
         "social": [
@@ -271,19 +372,19 @@
         ],
         "policies": [
           {
-            "label": "Avís Legal",
+            "label": "Avviso Legale",
             "href": "#"
           },
           {
-            "label": "Política de privadesa i galetes",
+            "label": "Politica sulla privacy e sui cookie",
             "href": "#"
           },
           {
-            "label": "Condicions de compra",
+            "label": "Condizioni di acquisto",
             "href": "#"
           },
           {
-            "label": "Configurar",
+            "label": "Configura",
             "href": "#"
           }
         ],
@@ -295,8 +396,8 @@
               "width": 200,
               "height": 59
             },
-            "label": "MUNICH Shop a Google Play",
-            "href": "https://play.google.com/store/apps/details?id=com.lluraferi.munichshop&hl=ca&utm_source=munichshop&utm_campaign=home"
+            "label": "MUNICH Shop su Google Play",
+            "href": "https://play.google.com/store/apps/details?id=com.lluraferi.munichshop&hl=it&utm_source=munichshop&utm_campaign=home"
           },
           {
             "image": {
@@ -305,8 +406,8 @@
               "width": 200,
               "height": 59
             },
-            "label": "MUNICH Shop a l'Apple App Store",
-            "href": "https://apps.apple.com/es/app/munich-shop/id1514352168?l=ca&ls=1"
+            "label": "MUNICH Shop su Apple App Store",
+            "href": "https://apps.apple.com/it/app/munich-shop/id1514352168?l=it&ls=1"
           }
         ],
         "copyright": "© 2024 MUNICHShop.net"

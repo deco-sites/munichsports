@@ -5,6 +5,21 @@
       "value": {
         "__resolveType": "site/sections/Header/Alerts.tsx",
         "alerts": [
+          "SPEDIZIONI GRATUITE",
+          "IN SPAGNA E PORTOGALLO PENINSULARE",
+          "PER ORDINI SUPERIORI A 50€"
+        ],
+        "autoPlay": {
+          "active": true,
+          "interval": 3
+        }
+      },
+      "rule": null
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/Header/Alerts.tsx",
+        "alerts": [
           "ENVIAMENTS GRATUÏTS",
           "A ESPANYA I PORTUGAL PENINSULAR",
           "EN LES COMANDES SUPERIORS A 50€"
@@ -15,11 +30,15 @@
         }
       },
       "rule": {
-        "language": "ca",
-        "__resolveType": "site/matchers/language.ts"
+        "__resolveType": "site/matchers/language.ts",
+        "language": "ca"
       }
     },
     {
+      "rule": {
+        "__resolveType": "site/matchers/language.ts",
+        "language": "en"
+      },
       "value": {
         "__resolveType": "site/sections/Header/Alerts.tsx",
         "alerts": [
@@ -31,10 +50,6 @@
           "active": true,
           "interval": 3
         }
-      },
-      "rule": {
-        "__resolveType": "site/matchers/language.ts",
-        "language": "en"
       }
     },
     {
@@ -44,9 +59,9 @@
       "value": {
         "__resolveType": "site/sections/Header/Alerts.tsx",
         "alerts": [
-          "ENVIAMENTS GRATUÏTS",
-          "A ESPANYA I PORTUGAL PENINSULAR",
-          "EN LES COMANDES SUPERIORS A 50€"
+          "SPEDIZIONI GRATUITE",
+          "IN SPAGNA E PORTOGALLO PENINSULARE",
+          "PER ORDINI SUPERIORI A 50€"
         ],
         "autoPlay": {
           "active": true,
