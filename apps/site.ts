@@ -8,6 +8,7 @@ import { setCookie } from "@std/http/cookie";
 import commerce from "apps/commerce/mod.ts";
 import { color as linx } from "apps/linx/mod.ts";
 import { color as nuvemshop } from "apps/nuvemshop/mod.ts";
+import { color as logicommerce } from "apps/logicommerce/mod.ts";
 import { color as shopify } from "apps/shopify/mod.ts";
 import { color as vnda } from "apps/vnda/mod.ts";
 import { color as vtex } from "apps/vtex/mod.ts";
@@ -43,11 +44,13 @@ export type Platform =
   | "wake"
   | "linx"
   | "nuvemshop"
+  | "logicommerce"
   | "custom";
 
 export let _platform: Platform = "custom";
 
 export type App = ReturnType<typeof Site>;
+
 // @ts-ignore somehow deno task check breaks, I have no idea why
 export type AppContext = AC<App>;
 export type AppMiddlewareContext = AMC<App>;
@@ -66,6 +69,8 @@ const color = (platform: string) => {
       return linx;
     case "nuvemshop":
       return nuvemshop;
+    case "logicommerce":
+      return logicommerce;
     case "deco":
       return 0x02f77d;
     default:
@@ -81,9 +86,9 @@ let firstRun = true;
  * @category Tool
  * @logo https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1/0ac02239-61e6-4289-8a36-e78c0975bcc8
  */
-export default function Site({ ...state }: Props): A<Manifest, Props, [
-  ReturnType<typeof commerce>,
-]> {
+export default function Site(
+  { ...state }: Props,
+): A<Manifest, Props, [ReturnType<typeof commerce>]> {
   _platform = state.platform || "custom";
   // Prevent console.logging twice
   if (firstRun) {
