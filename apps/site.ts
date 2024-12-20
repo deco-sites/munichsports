@@ -1,3 +1,10 @@
+import {
+  type App as A,
+  type AppContext as AC,
+  type AppMiddlewareContext as AMC,
+} from "@deco/deco";
+import { type Section } from "@deco/deco/blocks";
+import { setCookie } from "@std/http/cookie";
 import commerce from "apps/commerce/mod.ts";
 import { color as linx } from "apps/linx/mod.ts";
 import { color as nuvemshop } from "apps/nuvemshop/mod.ts";
@@ -8,8 +15,7 @@ import { color as wake } from "apps/wake/mod.ts";
 import { Props as WebsiteProps } from "apps/website/mod.ts";
 import { rgb24 } from "std/fmt/colors.ts";
 import manifest, { Manifest } from "../manifest.gen.ts";
-import { type Section } from "@deco/deco/blocks";
-import { type App as A, type AppContext as AC } from "@deco/deco";
+
 export interface Props extends WebsiteProps {
   /**
    * @title Active Commerce Platform
@@ -18,7 +24,18 @@ export interface Props extends WebsiteProps {
    */
   platform: Platform;
   theme?: Section;
+  /**
+   * @title Supported Languages
+   * @description List of supported languages
+   */
+  supportedLanguages?: string[];
+  /**
+   * @title Default Language
+   * @default es
+   */
+  defaultLanguage?: string;
 }
+
 export type Platform =
   | "vtex"
   | "vnda"
@@ -27,10 +44,14 @@ export type Platform =
   | "linx"
   | "nuvemshop"
   | "custom";
+
 export let _platform: Platform = "custom";
+
 export type App = ReturnType<typeof Site>;
 // @ts-ignore somehow deno task check breaks, I have no idea why
 export type AppContext = AC<App>;
+export type AppMiddlewareContext = AMC<App>;
+
 const color = (platform: string) => {
   switch (platform) {
     case "vtex":
@@ -51,7 +72,9 @@ const color = (platform: string) => {
       return 0x212121;
   }
 };
+
 let firstRun = true;
+
 /**
  * @title Site
  * @description Start your site from a template or from scratch.
@@ -77,6 +100,54 @@ export default function Site({ ...state }: Props): A<Manifest, Props, [
     dependencies: [
       commerce(state),
     ],
+    middleware: (_props: unknown, req: Request, ctx: AppMiddlewareContext) => {
+      const supportedLanguages = ctx.supportedLanguages || [];
+      const defaultLanguage = ctx.defaultLanguage || "es";
+
+      const url = new URL(req.url);
+
+      const path = url.pathname;
+      const search = url.search;
+
+      const [_, language] = path.split("/");
+
+      const IGNORE_PATHS = ["/deco", "/api", "/live"];
+      const IS_FILE = /\.[^.]+$/;
+
+      if (
+        IGNORE_PATHS.some((p) => path.startsWith(p)) ||
+        path.startsWith("/_") ||
+        IS_FILE.test(path) ||
+        search.includes("__cb") // Admin preview uses __cb to override props and matchers
+      ) {
+        return ctx.next!();
+      }
+
+      if (language && supportedLanguages.includes(language)) {
+        setCookie(ctx.response.headers, {
+          name: "language",
+          value: language,
+          path: "/",
+          httpOnly: true,
+        });
+      } else {
+        ctx.response.status = 302;
+        ctx.response.headers.set(
+          "Location",
+          `/${defaultLanguage}${path}${search}`,
+        );
+      }
+
+      if (_props && typeof _props === "object") {
+        Object.assign(_props, {
+          _language: language,
+          _supportedLanguages: supportedLanguages,
+          url: req.url,
+        });
+      }
+
+      return ctx.next!();
+    },
   };
 }
 export { onBeforeResolveProps, Preview } from "apps/website/mod.ts";

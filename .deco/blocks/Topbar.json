@@ -1,0 +1,73 @@
+{
+  "__resolveType": "website/flags/multivariate/section.ts",
+  "variants": [
+    {
+      "value": {
+        "__resolveType": "site/sections/Header/Topbar.tsx",
+        "stores": {
+          "label": "Botigues",
+          "url": "/botigues-munich",
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/d1fe39d0-372a-4f87-ac40-f9ae4cc14c27/shops-header.svg"
+        },
+        "instagram": {
+          "label": "COMUNICHTY",
+          "url": "/comunichty",
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/418886da-d3e7-4e40-acb2-cd169de98f02/instagram-(1).svg"
+        },
+        "help": {
+          "label": "Ajuda",
+          "url": "/contactar-ca"
+        }
+      },
+      "rule": {
+        "__resolveType": "site/matchers/language.ts",
+        "language": "ca"
+      }
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/Header/Topbar.tsx",
+        "stores": {
+          "label": "Stores",
+          "url": "/munich-stores",
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/d1fe39d0-372a-4f87-ac40-f9ae4cc14c27/shops-header.svg"
+        },
+        "instagram": {
+          "label": "COMUNICHTY",
+          "url": "/comunichty",
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/418886da-d3e7-4e40-acb2-cd169de98f02/instagram-(1).svg"
+        },
+        "help": {
+          "label": "Help",
+          "url": "/contact"
+        }
+      },
+      "rule": {
+        "__resolveType": "site/matchers/language.ts",
+        "language": "en"
+      }
+    },
+    {
+      "rule": {
+        "__resolveType": "website/matchers/always.ts"
+      },
+      "value": {
+        "__resolveType": "site/sections/Header/Topbar.tsx",
+        "stores": {
+          "label": "Tiendas",
+          "url": "/tiendas-munich",
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/d1fe39d0-372a-4f87-ac40-f9ae4cc14c27/shops-header.svg"
+        },
+        "instagram": {
+          "label": "COMUNICHTY",
+          "url": "/comunichty",
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/418886da-d3e7-4e40-acb2-cd169de98f02/instagram-(1).svg"
+        },
+        "help": {
+          "label": "Ayuda",
+          "url": "/contactar"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "__resolveType": "website/flags/multivariate/section.ts",
+  "variants": [
+    {
+      "value": {
+        "__resolveType": "site/sections/Header/Alerts.tsx",
+        "alerts": [
+          "ENVIAMENTS GRATUÏTS",
+          "A ESPANYA I PORTUGAL PENINSULAR",
+          "EN LES COMANDES SUPERIORS A 50€"
+        ],
+        "autoPlay": {
+          "active": true,
+          "interval": 3
+        }
+      },
+      "rule": {
+        "language": "ca",
+        "__resolveType": "site/matchers/language.ts"
+      }
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/Header/Alerts.tsx",
+        "alerts": [
+          "FREE SHIPPING",
+          "TO PENINSULAR SPAIN AND PORTUGAL",
+          "FOR ORDERS OVER €50"
+        ],
+        "autoPlay": {
+          "active": true,
+          "interval": 3
+        }
+      },
+      "rule": {
+        "__resolveType": "site/matchers/language.ts",
+        "language": "en"
+      }
+    },
+    {
+      "rule": {
+        "__resolveType": "website/matchers/always.ts"
+      },
+      "value": {
+        "__resolveType": "site/sections/Header/Alerts.tsx",
+        "alerts": [
+          "ENVIAMENTS GRATUÏTS",
+          "A ESPANYA I PORTUGAL PENINSULAR",
+          "EN LES COMANDES SUPERIORS A 50€"
+        ],
+        "autoPlay": {
+          "active": true,
+          "interval": 3
+        }
+      }
+    }
+  ]
+}

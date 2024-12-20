@@ -41,7 +41,7 @@
       "excludePathsFromDecoSiteMap": []
     },
     {
-      "__resolveType": "website/loaders/pages.ts"
+      "__resolveType": "site/loaders/pages.ts"
     },
     {
       "__resolveType": "website/loaders/redirects.ts"
@@ -60,9 +60,19 @@
     "replaces": [],
     "includeScriptsToHead": {
       "includes": []
+    },
+    "includeScriptsToBody": {
+      "includes": []
     }
   },
   "flavor": {
     "framework": "htmx"
-  }
+  },
+  "supportedLanguages": [
+    "es",
+    "en",
+    "ca",
+    "it"
+  ],
+  "defaultLanguage": "es"
 }

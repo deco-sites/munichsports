@@ -29,7 +29,6 @@
     "@zaubrik/djwt": "jsr:@zaubrik/djwt@^3.0.2",
     "fast-json-patch": "npm:fast-json-patch@^3.1.1",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@1.107.0",
     "simple-git": "npm:simple-git@^3.25.0",
     "std/": "https://deno.land/std@0.190.0/",
     "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.107.2/",
@@ -37,7 +36,21 @@
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "daisyui": "npm:daisyui@4.6.0",
-    "@deco/dev": "jsr:@deco/dev@1.107.0"
+    "@deco/dev": "jsr:@deco/dev@1.107.0",
+    "@deco/deno-ast-wasm": "jsr:@deco/deno-ast-wasm@^0.5.4",
+    "@deco/deco": "../deco//mod.ts",
+    "@deco/deco/web": "../deco//mod.web.ts",
+    "@deco/deco/htmx": "../deco//runtime/htmx/mod.ts",
+    "@deco/deco/o11y": "../deco//observability/mod.ts",
+    "@deco/deco/utils": "../deco//utils/mod.ts",
+    "@deco/deco/blocks": "../deco//blocks/mod.ts",
+    "@deco/deco/hooks": "../deco//hooks/mod.ts",
+    "@deco/deco/scripts/run": "../deco//daemon/main.ts",
+    "@deco/deco/daemon": "../deco//daemon/mod.ts",
+    "@deco/deco/jwt": "../deco//commons/jwt/mod.ts",
+    "@deco/deco/scripts/bundle": "../deco//scripts/apps/bundle.ts",
+    "@deco/deco/scripts/dev": "../deco//scripts/dev.ts",
+    "@deco/deco/engine": "../deco//engine/mod.ts"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
@@ -70,13 +83,8 @@
   ],
   "lint": {
     "rules": {
-      "exclude": [
-        "no-window"
-      ],
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
+      "exclude": ["no-window"],
+      "tags": ["fresh", "recommended"]
     }
   },
   "nodeModulesDir": false,

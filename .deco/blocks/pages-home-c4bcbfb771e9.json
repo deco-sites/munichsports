@@ -8,90 +8,401 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
+              "__resolveType": "Topbar"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
               "__resolveType": "Header"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Alerts"
             }
           },
           {
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/5b022a01-ba88-46fe-86ae-93ae644605b7",
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/88b2ad41-be6d-4640-b9fe-c58942362f0f",
-                "alt": "Shoes",
-                "action": {
-                  "title": "Skate into Adventure",
-                  "subTitle": "Top-quality roller skate shoes for all levels. ",
-                  "href": "/s?q=shoes&page=0",
-                  "label": "Grab Yours Now!"
-                }
-              },
-              {
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d26304f4-355b-48d0-b649-e24b9cbf0ded",
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/47a4d85a-1150-4e5d-abc2-5c642445ff12",
-                "alt": "Men",
-                "action": {
-                  "title": "Discover Fresh Looks",
-                  "subTitle": "Modern men's clothing and accessories.",
-                  "href": "/men",
-                  "label": "Shop the Collection"
-                }
-              },
-              {
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/1226ef79-c7e0-403c-b716-b6b9af3f2936",
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f7ea4cbe-7498-4e64-9205-c741753edfcc",
-                "action": {
-                  "label": "Shop Now!",
-                  "href": "/women",
-                  "title": "Embrace New Trends",
-                  "subTitle": "Stylish clothes and accessories."
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-XMAS-DESKTOP.jpg",
+                  "width": 928,
+                  "height": 341
                 },
-                "alt": "Woman"
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-XMAS-MOBILE.jpg",
+                  "width": 374,
+                  "height": 285
+                },
+                "alt": "Bon Nadal",
+                "action": {
+                  "title": "BON NADAL"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MANV3.jpg",
+                  "width": 928,
+                  "height": 341
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MANV3-MOBILE.jpg",
+                  "width": 374,
+                  "height": 467
+                },
+                "alt": "MUNICH HOME",
+                "action": {
+                  "title": "MUNICH HOME",
+                  "href": "/munich-home",
+                  "label": "VEURE TOTS"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMANV2.jpg",
+                  "width": 928,
+                  "height": 341
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMANV2-MOBILE.jpg",
+                  "width": 374,
+                  "height": 467
+                },
+                "alt": "MUNICH DONA",
+                "action": {
+                  "title": "MUNICH DONA",
+                  "href": "/munich-dona",
+                  "label": "VEURE TOTS"
+                }
               }
             ],
-            "preload": true
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Product/ProductShelf.tsx",
-              "title": "Featured Products",
-              "cta": "/mono",
-              "products": {
-                "__resolveType": "Product List Loader"
-              }
+            "preload": true,
+            "interval": 5,
+            "buttons": {
+              "prev": false,
+              "next": false,
+              "dots": false
             }
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "site/sections/Category/CategoryGrid.tsx",
-              "title": "Departments",
-              "cta": "/all",
-              "items": [
+              "__resolveType": "site/sections/Content/RichText.tsx",
+              "content": "<h1 style=\"text-align: center\"><span style=\"font-size: 18pt\">Compra Segura de Totes les Col-leccions de Calçat, Bosses, Tèxtil i Complements per a Home, Dona i Infantil de la Marca MUNICH®</span></h1>",
+              "backgroundColor": "#f6f6f6"
+            }
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMAN.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMAN.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "VAMBAS MODA DONA",
+                "action": {
+                  "href": "/sabates-esportives-dona?template=2",
+                  "title": "VAMBAS MODA DONA",
+                  "label": "COMPRAR ARA",
+                  "subtitle": "Talles 36 a la 42",
+                  "colors": "light",
+                  "alignment": "center",
+                  "position": "middle"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MAN.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MAN.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "VAMBAS MODA HOME ",
+                "action": {
+                  "href": "/sabates-esportives-home?template=2",
+                  "title": "VAMBAS MODA HOME",
+                  "label": "COMPRAR ARA",
+                  "subtitle": "Talles de la 38 a la 47",
+                  "colors": "light",
+                  "alignment": "center",
+                  "position": "middle"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-WOMANV2.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-WOMANV2.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "CASUAL SPORTWEAR DONA",
+                "action": {
+                  "href": "/categories/1267",
+                  "title": "CASUAL SPORTWEAR DONA",
+                  "label": "COMPRAR ARA",
+                  "colors": "dark",
+                  "alignment": "left",
+                  "position": "top"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-MANV2.jpg",
+                  "height": 630,
+                  "width": 500
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-MANV2.jpg",
+                  "height": 470,
+                  "width": 374
+                },
+                "alt": "CASUAL SPORTWEAR HOME",
+                "action": {
+                  "href": "/sportswear-munich",
+                  "title": "CASUAL SPORTWEAR HOME",
+                  "label": "COMPRAR ARA",
+                  "colors": "dark",
+                  "alignment": "right",
+                  "position": "top"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/BANNERS-PADEL_Web.jpg",
+                  "width": 1037,
+                  "height": 378
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/BANNERS-PADEL_Mobile.jpg",
+                  "width": 374,
+                  "height": 285
+                },
+                "alt": "FINS 66% PADEL",
+                "action": {
+                  "href": "/palas-de-padel-munich?template=2",
+                  "title": "FINS 66% PADEL",
+                  "subtitle": "A PALES DE PÀDEL",
+                  "label": "VEURE TOTS",
+                  "position": "bottom",
+                  "alignment": "left",
+                  "colors": "dark"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-MUJERV2.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-MUJERV2.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "STB DONA",
+                "action": {
+                  "href": "/categories/941?template=2",
+                  "title": "STB DONA",
+                  "subtitle": "Tallas 36 a la 42",
+                  "label": "COMPRAR ARA",
+                  "colors": "light"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-HOMBREV2.jpg",
+                  "height": 630,
+                  "width": 500
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-HOMBREV2.jpg",
+                  "height": 470,
+                  "width": 374
+                },
+                "alt": "STB HOME",
+                "action": {
+                  "href": "/categories/940?template=2",
+                  "title": "STB HOME",
+                  "subtitle": "Tallas 36 a la 47",
+                  "label": "COMPRAR ARA",
+                  "colors": "light"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-DXTV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-DXTV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "alt": "EPORTES",
+                "action": {
+                  "href": "/deportes?template=2",
+                  "title": "EPORTES",
+                  "label": "VEURE TOTS",
+                  "position": "top",
+                  "colors": "light"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-BAGSV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-BAGSV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "alt": "BOSSES DE MÀ",
+                "action": {
+                  "href": "/munich-bolsos-moda?template=2",
+                  "title": "BOSSES DE MÀ",
+                  "label": "VEURE TOTS",
+                  "colors": "light",
+                  "position": "top"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-KIDSV2.jpg",
+                  "height": 326,
+                  "width": 326
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-KIDSV2.jpg",
+                  "height": 326,
+                  "width": 326
+                },
+                "alt": "CALÇAT INFANTIL",
+                "action": {
+                  "href": "/zapatillas-ninos?template=2",
+                  "title": "CALÇAT INFANTIL",
+                  "label": "Ver todos",
+                  "colors": "light",
+                  "position": "top"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Images/Grid.tsx",
+              "images": [
                 {
-                  "label": "Men",
-                  "href": "/men",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/38c33c9f-14a1-4048-973b-dc2a75caf1fa"
+                  "desktop": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STORESV4.jpg",
+                    "width": 563,
+                    "height": 970
+                  },
+                  "mobile": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STORESV4.jpg",
+                    "width": 390,
+                    "height": 561
+                  },
+                  "alt": "BOTIGUES MUNICH",
+                  "action": {
+                    "href": "/tiendas-munich",
+                    "title": "BOTIGUES MUNICH",
+                    "label": "VEURE TOTES",
+                    "subtitle": "FULL PRICE OUTLETS EL CORTE INGLES",
+                    "columnSpan": 1,
+                    "rowSpan": 2,
+                    "colors": "light",
+                    "alignment": "center",
+                    "position": "top"
+                  }
                 },
                 {
-                  "href": "/women",
-                  "label": "Women",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f6bea2b8-b248-4b42-9246-6e924a0acc8b"
+                  "desktop": {
+                    "src": "https://www.munichsports.com/cdnassets/PLAY-BY-MUNICH.jpg",
+                    "width": 563,
+                    "height": 406
+                  },
+                  "mobile": {
+                    "src": "https://www.munichsports.com/cdnassets/PLAY-BY-MUNICH.jpg",
+                    "width": 390,
+                    "height": 281
+                  },
+                  "action": {
+                    "href": "/play-by-munich",
+                    "title": "COTXETS I ACCESSORIS",
+                    "label": "VEURE TOTS",
+                    "subtitle": "",
+                    "position": "top"
+                  },
+                  "alt": "COTXETS I ACCESSORIS"
                 },
                 {
-                  "href": "/kids",
-                  "label": "Kids",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/1b0ecaa2-9a13-4de2-bf17-5196948ed128"
-                },
-                {
-                  "href": "/accessories",
-                  "label": "Accessories",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/92129655-fe40-4b29-8fdb-e7f71e67a5d1"
-                },
-                {
-                  "href": "/home-and-living",
-                  "label": "Home & Living",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d0433c00-cd26-4638-b519-0cb64b9f82e8"
+                  "desktop": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STUPA.jpg",
+                    "width": 563,
+                    "height": 563
+                  },
+                  "mobile": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STUPA.jpg",
+                    "width": 390,
+                    "height": 390
+                  },
+                  "alt": "PADEL BY MUNICH",
+                  "action": {
+                    "href": "/zapatillas-padel-tenis",
+                    "title": "PADEL BY MUNICH",
+                    "label": "TARDOR-HIVERN 2024-25",
+                    "subtitle": "CALÇAT PALES TEXTIL BOSSES",
+                    "alignment": "right",
+                    "position": "bottom",
+                    "colors": "light"
+                  }
                 }
               ]
             }
@@ -99,75 +410,168 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "site/sections/Images/Banner.tsx",
-              "title": "Register and Save Big!",
-              "cta": {
-                "label": "Sign Up",
-                "href": "#"
-              },
-              "description": "<p><span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">Sign up now to get up to 50% off on your first order. Limited time offer!</span></p>",
-              "images": {
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/cf96d47f-564f-40da-ad94-7acac5f39327",
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/4d5c3212-3f75-4d50-89f3-970815748b43"
-              }
-            }
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
-              "title": "Hottest Deals",
-              "tabs": [
+              "__resolveType": "site/sections/Product/ProductSizes.tsx",
+              "title": "FILTRE PER LA SEVA TALLA DE SABATILLES MUNICH DISPONIBLES PER COMPRAR",
+              "groups": [
                 {
-                  "products": {
-                    "__resolveType": "shopify/loaders/ProductList.ts",
-                    "props": {
-                      "sort": "",
-                      "query": "hat and bag",
-                      "count": 10
+                  "sizes": [
+                    {
+                      "size": "35",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=35"
                     },
-                    "filters": {
-                      "tags": [],
-                      "productTypes": [],
-                      "productVendors": [],
-                      "variantOptions": []
+                    {
+                      "size": "36",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=36"
+                    },
+                    {
+                      "size": "37",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=37"
+                    },
+                    {
+                      "size": "38",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=38"
+                    },
+                    {
+                      "size": "39",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=39"
+                    },
+                    {
+                      "size": "40",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=40"
+                    },
+                    {
+                      "size": "41",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=41"
                     }
-                  },
-                  "title": "Accessories"
+                  ]
                 },
                 {
-                  "products": {
-                    "__resolveType": "shopify/loaders/ProductList.ts",
-                    "props": {
-                      "sort": "",
-                      "query": "Shirts",
-                      "count": 10
+                  "sizes": [
+                    {
+                      "size": "42",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=42"
                     },
-                    "filters": {
-                      "tags": [],
-                      "productTypes": [],
-                      "productVendors": [],
-                      "variantOptions": []
+                    {
+                      "size": "43",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=43"
+                    },
+                    {
+                      "size": "44",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=44"
+                    },
+                    {
+                      "size": "45",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=45"
+                    },
+                    {
+                      "size": "46",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=46"
+                    },
+                    {
+                      "size": "47",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=47"
+                    },
+                    {
+                      "size": "48",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=48"
+                    },
+                    {
+                      "size": "49",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=49"
+                    },
+                    {
+                      "size": "50",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=50"
                     }
-                  },
-                  "title": "Fashion"
+                  ]
                 },
                 {
-                  "products": {
-                    "__resolveType": "shopify/loaders/ProductList.ts",
-                    "props": {
-                      "sort": "",
-                      "query": "stickers",
-                      "count": 10
+                  "sizes": [
+                    {
+                      "size": "16",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=16"
                     },
-                    "filters": {
-                      "tags": [],
-                      "productTypes": [],
-                      "productVendors": [],
-                      "variantOptions": []
+                    {
+                      "size": "17",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=17"
+                    },
+                    {
+                      "size": "18",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=18"
+                    },
+                    {
+                      "size": "19",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=19"
+                    },
+                    {
+                      "size": "20",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=20"
+                    },
+                    {
+                      "size": "21",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=21"
+                    },
+                    {
+                      "size": "22",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=22"
+                    },
+                    {
+                      "size": "23",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=23"
                     }
-                  },
-                  "title": "Stickers"
+                  ]
+                },
+                {
+                  "sizes": [
+                    {
+                      "size": "24",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=24"
+                    },
+                    {
+                      "size": "25",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=25"
+                    },
+                    {
+                      "size": "26",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=26"
+                    },
+                    {
+                      "size": "27",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=27"
+                    },
+                    {
+                      "size": "28",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=28"
+                    },
+                    {
+                      "size": "29",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=29"
+                    }
+                  ]
+                },
+                {
+                  "sizes": [
+                    {
+                      "size": "30",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=30"
+                    },
+                    {
+                      "size": "31",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=31"
+                    },
+                    {
+                      "size": "32",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=32"
+                    },
+                    {
+                      "size": "33",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=33"
+                    },
+                    {
+                      "size": "34",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=34"
+                    }
+                  ]
                 }
               ]
             }
@@ -189,7 +593,96 @@
               "failed": {
                 "title": "Oops!. Something went wrong!",
                 "description": "Something went wrong. Please try again. If the problem persists, please contact us."
+              },
+              "image": {
+                "src": "https://www.munichsports.com/cdnassets/V4/PAGES/NEWSLETTER-MOBILE.jpg",
+                "alt": "Newsletter",
+                "width": 366,
+                "height": 202
+              },
+              "content": {
+                "__resolveType": "site/flags/richText.ts",
+                "variants": [
+                  {
+                    "value": "<p><span style=\"font-size: 35pt\">UNEIX-TE A </span><strong><span style=\"font-size: 35pt\">MUNICH</span></strong></p><p><span style=\"font-size: 15pt\">Subscriu-te i assabenta't de totes les ofertes, promocions i les últimes novetats de MUNICH</span></p>",
+                    "rule": {
+                      "__resolveType": "website/matchers/device.ts",
+                      "desktop": true
+                    }
+                  },
+                  {
+                    "value": "<p style=\"text-align: center\"><span style=\"font-size: 20pt\">UNEIX-TE A </span><strong><span style=\"font-size: 20pt\">MUNICH</span></strong></p><p style=\"text-align: center\"><span style=\"font-size: 15pt\">Subscriu-te i assabenta't de totes les ofertes,</span></p><p style=\"text-align: center\"><span style=\"font-size: 15pt\">promocions i les últimes novetats de MUNICH</span></p>",
+                    "rule": {
+                      "__resolveType": "website/matchers/always.ts"
+                    }
+                  }
+                ]
               }
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "website/flags/multivariate/section.ts",
+              "variants": [
+                {
+                  "value": {
+                    "__resolveType": "site/sections/Content/RichText.tsx",
+                    "content": "<h2 style=\"text-align: center\"><strong><span style=\"font-size: 24pt\">Descobreix les sabatilles MUNICH home, dona i nen</span></strong></h2><h2 style=\"text-align: center\"><strong><span style=\"font-size: 24pt\">Tots els models de sabatilles MUNICH a la Botiga Oficial</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Hi ha qui encara es sorprèn quan descobreix les</span></p><p style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">sabatilles MUNICH nens</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">perquè pensa que parlem d'una marca només per a adults. Però no! És cert que, durant molt de temps tant les </span><strong><span style=\"font-size: 14pt\">sabatilles MUNICH</span></strong><span style=\"font-size: 14pt\"> com totes les col·leccions de moda de la marca s'han vist més sobre penjadors grans que petits. Però volem cuidar dels teus petits i oferir-los la mateixa qualitat que t'oferim a tu, perquè també s'ho mereixen! És per això que, dins de la nostra </span><strong><span style=\"font-size: 14pt\">botiga MUNICH</span></strong><span style=\"font-size: 14pt\">, tant online com física, tens accés a tot un univers infantil ple de col·leccions de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">MUNICH nen</span></strong></a></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Fins i tot, els més petits de la casa podran lluir aquesta característica «X» que tant representa la nostra marca en les seves </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">Sabatilles MUNICH</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">infantils de la mateixa manera que els seus majors. Troba per fi amb nosaltres les </span><strong><span style=\"font-size: 14pt\">sabates MUNICH</span></strong><span style=\"font-size: 14pt\"> que mereixen els teus peus, aquelles que et queden com un guant i que et permeten caminar, córrer o saltar si volguessis, sense limitacions. Perquè sí, així són les nostres </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-mujer\"><strong><span style=\"font-size: 14pt\">sabatilles MUNICH dona,</span></strong></a><span style=\"font-size: 14pt\"> les nostres </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hombre\"><strong><span style=\"font-size: 14pt\">sabatilles MUNICH home,</span></strong></a><span style=\"font-size: 14pt\"> les nostres </span><strong><span style=\"font-size: 14pt\">sabatilles MUNICH unisex</span></strong><span style=\"font-size: 14pt\">, i, per descomptat, les nostres </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">esportives MUNICH per a nens.</span></strong></a></p><p style=\"text-align: center\"></p><h2 style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/deportes\"><strong><span style=\"font-size: 24pt\">Sabatilles MUNICH d'esport</span></strong></a><strong><span style=\"font-size: 24pt\">, els nostres orígens</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">A la nostra botiga també trobaràs </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">sabatilles MUNICH futbol sala</span></strong></a><span style=\"font-size: 14pt\">. No només ens dediquem a dissenyar models de </span><strong><span style=\"font-size: 14pt\">sabatilles MUNICH</span></strong><span style=\"font-size: 14pt\"> que marquen tendència per a looks urbans, sinó que també comptem amb col·leccions específiques com aquesta col·lecció de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">calçat MUNICH de futbol Sala</span></strong></a><span style=\"font-size: 14pt\">. A més, volem parlar de la versatilitat de la </span><strong><span style=\"font-size: 14pt\">marca MUNICH</span></strong><span style=\"font-size: 14pt\">, ja que no només beneficia a futbolers i futboleres, sinó que també presenta col·leccions específiques per a altres disciplines com tennis, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-padel-tenis\"><span style=\"font-size: 14pt\">pàdel</span></a><span style=\"font-size: 14pt\">, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hockey-hierba\"><span style=\"font-size: 14pt\">hoquei herba</span></a><span style=\"font-size: 14pt\"> o </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-balonmano\"><span style=\"font-size: 14pt\">handbol.</span></a></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Però una de les coses més interessants de la nostra botiga online és trobar models de temporades anteriors amb un descompte al·lucinant a la secció </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">MUNICH outlet</span></a><span style=\"font-size: 14pt\">. Descobreix avui mateix com pots estalviar comprant al nostre </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">outlet MUNICH</span></a><span style=\"font-size: 14pt\">, </span><strong><span style=\"font-size: 14pt\">sabatilles</span></strong><span style=\"font-size: 14pt\"> que encaixin amb tu i amb la finalitat que tens en ment. Caminar? Córrer? Anar a la moda? O busques unes </span><strong><span style=\"font-size: 14pt\">sabatilles MUNICH</span></strong><span style=\"font-size: 14pt\"> per a nens? Tot el que necessitis ho trobes sense sortir de la nostra web. Promès!</span></p>"
+                  },
+                  "rule": {
+                    "__resolveType": "website/matchers/device.ts",
+                    "desktop": true
+                  }
+                },
+                {
+                  "value": {
+                    "__resolveType": "site/sections/Content/RichText.tsx",
+                    "content": "<h2 style=\"text-align: center\"><strong><span style=\"font-size: 20pt\">Descobreix les sabatilles MUNICH home, dona i nen</span></strong></h2><h2 style=\"text-align: center\"><strong><span style=\"font-size: 20pt\">Tots els models de sabatilles MUNICH a la Botiga Oficial</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Hi ha qui encara es sorprèn quan descobreix les</span></p><p style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">sabatilles MUNICH nens</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">perquè pensa que parlem d'una marca només per a adults. Però no! Sí que és cert que, durant molt de temps tant les </span><strong><span style=\"font-size: 14pt\">sabatilles MUNICH</span></strong><span style=\"font-size: 14pt\"> com totes les col·leccions de moda de la marca s'han vist més sobre penjadors grans que petits. Però volem cuidar dels teus petits i oferir-los la mateixa qualitat que t'oferim a tu, perquè també s'ho mereixen! És per això que, dins de la nostra </span><strong><span style=\"font-size: 14pt\">botiga MUNICH</span></strong><span style=\"font-size: 14pt\">, tant online com física, tens accés a tot un univers infantil ple de col·leccions de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">MUNICH nen</span></strong></a></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Fins i tot, els més petits de la casa podran lluir aquesta característica «X» que tant representa la nostra marca en les seves </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">Sabatilles MUNICH</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">infantils de la mateixa manera que els seus majors. Troba per fi amb nosaltres les </span><strong><span style=\"font-size: 14pt\">sabates MUNICH</span></strong><span style=\"font-size: 14pt\"> que mereixen els teus peus, aquelles que et queden com un guant i que et permeten caminar, córrer o saltar si volguessis, sense limitacions. Perquè sí, així són les nostres </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-mujer\"><strong><span style=\"font-size: 14pt\">sabatilles MUNICH dona,</span></strong></a><span style=\"font-size: 14pt\"> les nostres </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hombre\"><strong><span style=\"font-size: 14pt\">sabatilles MUNICH home,</span></strong></a><span style=\"font-size: 14pt\"> les nostres </span><strong><span style=\"font-size: 14pt\">sabatilles MUNICH unisex</span></strong><span style=\"font-size: 14pt\">, i, per descomptat, les nostres </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">esportives MUNICH per a nens.</span></strong></a></p><p style=\"text-align: center\"></p><h2 style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/deportes\"><strong><span style=\"font-size: 20pt\">Sabatilles MUNICH d'esport</span></strong></a><strong><span style=\"font-size: 20pt\">, els nostres orígens</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">A la nostra botiga també trobaràs </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">sabatilles MUNICH futbol sala</span></strong></a><span style=\"font-size: 14pt\">. No només ens dediquem a dissenyar models de </span><strong><span style=\"font-size: 14pt\">sabatilles MUNICH</span></strong><span style=\"font-size: 14pt\"> que marquen tendència per a looks urbans, sinó que també comptem amb col·leccions específiques com aquesta col·lecció de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">calçat MUNICH de futbol Sala</span></strong></a><span style=\"font-size: 14pt\">. A més, volem parlar de la versatilitat de la </span><strong><span style=\"font-size: 14pt\">marca MUNICH</span></strong><span style=\"font-size: 14pt\">, ja que no només beneficia a futbolers i futboleres, sinó que també presenta col·leccions específiques per a altres disciplines com tennis, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-padel-tenis\"><span style=\"font-size: 14pt\">pàdel</span></a><span style=\"font-size: 14pt\">, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hockey-hierba\"><span style=\"font-size: 14pt\">hoquei herba</span></a><span style=\"font-size: 14pt\"> o </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-balonmano\"><span style=\"font-size: 14pt\">handbol.</span></a></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Però una de les coses més interessants de la nostra botiga online és trobar models de temporades anteriors amb un descompte al·lucinant a la secció </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">MUNICH outlet</span></a><span style=\"font-size: 14pt\">. Descobreix avui mateix com pots estalviar comprant al nostre </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">outlet MUNICH</span></a><span style=\"font-size: 14pt\">, </span><strong><span style=\"font-size: 14pt\">sabatilles</span></strong><span style=\"font-size: 14pt\"> que encaixin amb tu i amb la finalitat que tens en ment. Caminar? Córrer? Anar a la moda? O busques unes </span><strong><span style=\"font-size: 14pt\">sabatilles MUNICH</span></strong><span style=\"font-size: 14pt\"> per a nens? Tot el que necessitis ho trobes sense sortir de la nostra web. Promès!</span></p>"
+                  },
+                  "rule": {
+                    "__resolveType": "website/matchers/always.ts"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Content/Benefits.tsx",
+              "benefits": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/3e8d3f33-641f-4d65-af2b-9319b5b12edf/truck.svg",
+                    "alt": "Camió",
+                    "width": 70,
+                    "height": 40
+                  },
+                  "name": "Enviament",
+                  "content": "<h3 style=\"text-align: center\"><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">DESPESES D'ENVIAMENT</span></strong></h3><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">ENVIAMENTS GRATUÏTS</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">A ESPANYA I PORTUGAL PENINSULAR,</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">en comandes superiors a 50</span><span style=\"color: rgb(232, 232, 232); font-size: 14pt\">€</span></p>"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/7cb84df5-4d1f-438f-8e9e-5381fc48a906/phone.svg",
+                    "alt": "Telèfon",
+                    "width": 40,
+                    "height": 40
+                  },
+                  "name": "Contactar",
+                  "content": "<h3 style=\"text-align: center\"><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">CONTACTA AMB NOSALTRES</span></strong></h3><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Telèfon </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">+34 935 953 265</span></strong></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Whatsapp </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">+35 658 972 505</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Dilluns a dijous de 9 a 17h</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Divendres de 9 a 14h</span></p>"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/bb52b206-b022-48d4-ae77-dd8cb32f02df/card.svg",
+                    "alt": "targeta",
+                    "width": 57,
+                    "height": 40
+                  },
+                  "name": "Pagament segur",
+                  "content": "<h3 style=\"text-align: center\"><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">100% PAGAMENT SEGUR</span></strong></h3><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Pagament segur amb targeta</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">de crèdit i Bizum</span></p>"
+                }
+              ]
             }
           },
           {
@@ -200,11 +693,8 @@
           }
         ],
         "rule": {
-          "__resolveType": "website/matchers/pathname.ts",
-          "case": {
-            "type": "Equals",
-            "pathname": "/en"
-          }
+          "__resolveType": "site/matchers/language.ts",
+          "language": "ca"
         }
       },
       {
@@ -212,91 +702,638 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
+              "__resolveType": "Topbar"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
               "__resolveType": "Header"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Alerts"
             }
           },
           {
             "__resolveType": "site/sections/Images/Carousel.tsx",
             "images": [
               {
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/5b022a01-ba88-46fe-86ae-93ae644605b7",
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/88b2ad41-be6d-4640-b9fe-c58942362f0f",
-                "alt": "Zapatos",
-                "action": {
-                  "title": "Patina hacia la Aventura",
-                  "subTitle": "Zapatos de patinaje de alta calidad para todos los niveles.",
-                  "href": "/s?q=shoes&page=0",
-                  "label": "¡Consigue los Tuyos Ahora!"
-                }
-              },
-              {
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d26304f4-355b-48d0-b649-e24b9cbf0ded",
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/47a4d85a-1150-4e5d-abc2-5c642445ff12",
-                "alt": "Hombres",
-                "action": {
-                  "title": "Descubre Nuevos Estilos",
-                  "subTitle": "Ropa y accesorios modernos para hombres.",
-                  "href": "/men",
-                  "label": "Compra la Colección"
-                }
-              },
-              {
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/1226ef79-c7e0-403c-b716-b6b9af3f2936",
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f7ea4cbe-7498-4e64-9205-c741753edfcc",
-                "action": {
-                  "label": "¡Compra Ahora!",
-                  "href": "/women",
-                  "title": "Abraza las Nuevas Tendencias",
-                  "subTitle": "Ropa y accesorios con estilo."
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-XMAS-DESKTOP.jpg",
+                  "width": 928,
+                  "height": 341
                 },
-                "alt": "Mujer"
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-XMAS-MOBILE.jpg",
+                  "width": 374,
+                  "height": 285
+                },
+                "alt": "Merry Christmas",
+                "action": {
+                  "title": "MERRY CHRISTMAS"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MANV3.jpg",
+                  "width": 928,
+                  "height": 341
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MANV3-MOBILE.jpg",
+                  "width": 374,
+                  "height": 467
+                },
+                "alt": "MUNICH MEN",
+                "action": {
+                  "title": "MUNICH MEN",
+                  "href": "/munich-men",
+                  "label": "VIEW ALL"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMANV2.jpg",
+                  "width": 928,
+                  "height": 341
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMANV2-MOBILE.jpg",
+                  "width": 374,
+                  "height": 467
+                },
+                "alt": "MUNICH WOMEN",
+                "action": {
+                  "title": "MUNICH WOMEN",
+                  "href": "/munich-women",
+                  "label": "VIEW ALL"
+                }
               }
             ],
             "preload": true,
-            "interval": 5
+            "interval": 5,
+            "buttons": {
+              "prev": false,
+              "next": false,
+              "dots": false
+            }
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "site/sections/Product/ProductShelf.tsx",
-              "title": "Featured Products",
-              "cta": "/mono",
-              "products": {
-                "__resolveType": "Product List Loader"
+              "__resolveType": "site/sections/Content/RichText.tsx",
+              "content": "<h1 style=\"text-align: center\"><span style=\"font-size: 18pt\">Buy Online All Collections of Footwear, Bags, Apparel and Accessories for Men, Women and Children by MUNICH®</span></h1>",
+              "backgroundColor": "#f6f6f6"
+            }
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMAN.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMAN.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "WOMEN'S FASHION SNEAKERS",
+                "action": {
+                  "href": "/women-sneakers?template=2",
+                  "title": "WOMEN'S FASHION SNEAKERS",
+                  "label": "SHOP NOW",
+                  "subtitle": "Sizes 36 to 42",
+                  "colors": "light",
+                  "alignment": "center",
+                  "position": "middle"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MAN.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MAN.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "MEN'S FASHION SNEAKERS",
+                "action": {
+                  "href": "/mens-sneakers?template=2",
+                  "title": "MEN'S FASHION SNEAKERS",
+                  "label": "SHOP NOW",
+                  "subtitle": "Sizes 38 to 47",
+                  "colors": "light",
+                  "alignment": "center",
+                  "position": "middle"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-WOMANV2.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-WOMANV2.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "WOMEN'S CASUAL SPORTSWEAR",
+                "action": {
+                  "href": "/categories/1267",
+                  "title": "WOMEN'S CASUAL SPORTSWEAR",
+                  "label": "SHOP NOW",
+                  "colors": "dark",
+                  "alignment": "left",
+                  "position": "top"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-MANV2.jpg",
+                  "height": 630,
+                  "width": 500
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-MANV2.jpg",
+                  "height": 470,
+                  "width": 374
+                },
+                "alt": "MEN'S CASUAL SPORTSWEAR",
+                "action": {
+                  "href": "/sportswear-munich",
+                  "title": "MEN'S CASUAL SPORTSWEAR",
+                  "label": "SHOP NOW",
+                  "colors": "dark",
+                  "alignment": "right",
+                  "position": "top"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/BANNERS-PADEL_Web.jpg",
+                  "width": 1037,
+                  "height": 378
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/BANNERS-PADEL_Mobile.jpg",
+                  "width": 374,
+                  "height": 285
+                },
+                "alt": "UP TO 66% OFF PADEL",
+                "action": {
+                  "href": "/padel-rackets-munich?template=2",
+                  "title": "UP TO 66% OFF PADEL",
+                  "subtitle": "ON PADEL RACKETS",
+                  "label": "View all",
+                  "position": "bottom",
+                  "alignment": "left",
+                  "colors": "dark"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-MUJERV2.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-MUJERV2.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "STB WOMEN",
+                "action": {
+                  "href": "/categories/941?template=2",
+                  "title": "STB WOMEN",
+                  "subtitle": "Sizes 36 to 42",
+                  "label": "BUY NOW",
+                  "colors": "light"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-HOMBREV2.jpg",
+                  "height": 630,
+                  "width": 500
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-HOMBREV2.jpg",
+                  "height": 470,
+                  "width": 374
+                },
+                "alt": "STB MEN",
+                "action": {
+                  "href": "/categories/940?template=2",
+                  "title": "STB MEN",
+                  "subtitle": "Sizes 36 to 47",
+                  "label": "BUY NOW",
+                  "colors": "light"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-DXTV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-DXTV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "alt": "SPORTS",
+                "action": {
+                  "href": "/sports?template=2",
+                  "title": "SPORTS",
+                  "label": "View all",
+                  "position": "top",
+                  "colors": "light"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-BAGSV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-BAGSV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "alt": "BAGS AND PURSES",
+                "action": {
+                  "href": "/munich-fashion-bags?template=2",
+                  "title": "BAGS AND PURSES",
+                  "label": "View all",
+                  "colors": "light",
+                  "position": "top"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-KIDSV2.jpg",
+                  "height": 326,
+                  "width": 326
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-KIDSV2.jpg",
+                  "height": 326,
+                  "width": 326
+                },
+                "alt": "CHILDREN'S FOOTWEAR",
+                "action": {
+                  "href": "/kids-shoes?template=2",
+                  "title": "CHILDREN'S FOOTWEAR",
+                  "label": "View all",
+                  "colors": "light",
+                  "position": "top"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Images/Grid.tsx",
+              "images": [
+                {
+                  "desktop": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STORESV4.jpg",
+                    "width": 563,
+                    "height": 970
+                  },
+                  "mobile": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STORESV4.jpg",
+                    "width": 390,
+                    "height": 561
+                  },
+                  "alt": "MUNICH STORES",
+                  "action": {
+                    "href": "/munich-stores",
+                    "title": "MUNICH STORES",
+                    "label": "VIEW ALL",
+                    "subtitle": "FULL PRICE\nOUTLETS\nEL CORTE INGLES",
+                    "columnSpan": 1,
+                    "rowSpan": 2,
+                    "colors": "light",
+                    "alignment": "center",
+                    "position": "top"
+                  }
+                },
+                {
+                  "desktop": {
+                    "src": "https://www.munichsports.com/cdnassets/PLAY-BY-MUNICH.jpg",
+                    "width": 563,
+                    "height": 406
+                  },
+                  "mobile": {
+                    "src": "https://www.munichsports.com/cdnassets/PLAY-BY-MUNICH.jpg",
+                    "width": 390,
+                    "height": 281
+                  },
+                  "alt": "STROLLERS AND ACCESSORIES",
+                  "action": {
+                    "href": "/play-by-munich",
+                    "title": "STROLLERS AND ACCESSORIES",
+                    "label": "View all",
+                    "subtitle": "",
+                    "position": "top"
+                  }
+                },
+                {
+                  "desktop": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STUPA.jpg",
+                    "width": 563,
+                    "height": 563
+                  },
+                  "mobile": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STUPA.jpg",
+                    "width": 390,
+                    "height": 390
+                  },
+                  "alt": "PADEL BY MUNICH",
+                  "action": {
+                    "href": "/padel-tennis-shoes",
+                    "title": "PADEL BY MUNICH",
+                    "label": "FALL-WINTER 2024-25",
+                    "subtitle": "FOOTWEAR PADDLES TEXTILE BAGS",
+                    "alignment": "right",
+                    "position": "bottom",
+                    "colors": "light"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "__resolveType": "site/sections/Product/ProductSizes.tsx",
+            "title": "FILTER BY AVAILABLE MUNICH SNEAKER SIZES FOR PURCHASE",
+            "groups": [
+              {
+                "sizes": [
+                  {
+                    "size": "35",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=35"
+                  },
+                  {
+                    "size": "36",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=36"
+                  },
+                  {
+                    "size": "37",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=37"
+                  },
+                  {
+                    "size": "38",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=38"
+                  },
+                  {
+                    "size": "39",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=39"
+                  },
+                  {
+                    "size": "40",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=40"
+                  },
+                  {
+                    "size": "41",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=41"
+                  }
+                ]
+              },
+              {
+                "sizes": [
+                  {
+                    "size": "42",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=42"
+                  },
+                  {
+                    "size": "43",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=43"
+                  },
+                  {
+                    "size": "44",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=44"
+                  },
+                  {
+                    "size": "45",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=45"
+                  },
+                  {
+                    "size": "46",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=46"
+                  },
+                  {
+                    "size": "47",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=47"
+                  },
+                  {
+                    "size": "48",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=48"
+                  },
+                  {
+                    "size": "49",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=49"
+                  },
+                  {
+                    "size": "50",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=50"
+                  }
+                ]
+              },
+              {
+                "sizes": [
+                  {
+                    "size": "16",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=16"
+                  },
+                  {
+                    "size": "17",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=17"
+                  },
+                  {
+                    "size": "18",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=18"
+                  },
+                  {
+                    "size": "19",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=19"
+                  },
+                  {
+                    "size": "20",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=20"
+                  },
+                  {
+                    "size": "21",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=21"
+                  },
+                  {
+                    "size": "22",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=22"
+                  },
+                  {
+                    "size": "23",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=23"
+                  }
+                ]
+              },
+              {
+                "sizes": [
+                  {
+                    "size": "24",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=24"
+                  },
+                  {
+                    "size": "25",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=25"
+                  },
+                  {
+                    "size": "26",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=26"
+                  },
+                  {
+                    "size": "27",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=27"
+                  },
+                  {
+                    "size": "28",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=28"
+                  },
+                  {
+                    "size": "29",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=29"
+                  }
+                ]
+              },
+              {
+                "sizes": [
+                  {
+                    "size": "30",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=30"
+                  },
+                  {
+                    "size": "31",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=31"
+                  },
+                  {
+                    "size": "32",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=32"
+                  },
+                  {
+                    "size": "33",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=33"
+                  },
+                  {
+                    "size": "34",
+                    "url": "/en/munich-available-size?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Size=34"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
+              "label": "Sign up",
+              "placeholder": "Email address",
+              "empty": {
+                "title": "Get top deals, latest trends, and more.",
+                "description": "Receive our news and promotions in advance. Enjoy and get 10% off your first purchase. For more information click here."
+              },
+              "success": {
+                "title": "Thank you for subscribing!",
+                "description": "You’re now signed up to receive the latest news, trends, and exclusive promotions directly to your inbox. Stay tuned!"
+              },
+              "failed": {
+                "title": "Oops!. Something went wrong!",
+                "description": "Something went wrong. Please try again. If the problem persists, please contact us."
+              },
+              "image": {
+                "src": "https://www.munichsports.com/cdnassets/V4/PAGES/NEWSLETTER-MOBILE.jpg",
+                "alt": "Newsletter",
+                "width": 366,
+                "height": 202
+              },
+              "content": {
+                "__resolveType": "site/flags/richText.ts",
+                "variants": [
+                  {
+                    "value": "<p><span style=\"font-size: 35pt\">JOIN </span><strong><span style=\"font-size: 35pt\">MUNICH</span></strong></p><p><span style=\"font-size: 15pt\">Subscribe and stay informed about all offers, promotions, and the latest from MUNICH</span></p>",
+                    "rule": {
+                      "__resolveType": "website/matchers/device.ts",
+                      "desktop": true
+                    }
+                  },
+                  {
+                    "value": "<p style=\"text-align: center\"><span style=\"font-size: 20pt\">JOIN </span><strong><span style=\"font-size: 20pt\">MUNICH</span></strong></p><p style=\"text-align: center\"><span style=\"font-size: 15pt\">Subscribe and find out about all offers,</span></p><p style=\"text-align: center\"><span style=\"font-size: 15pt\">promotions and the latest from MUNICH</span></p>",
+                    "rule": {
+                      "__resolveType": "website/matchers/always.ts"
+                    }
+                  }
+                ]
               }
             }
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "site/sections/Category/CategoryGrid.tsx",
-              "title": "Departments",
-              "cta": "/all",
-              "items": [
+              "__resolveType": "website/flags/multivariate/section.ts",
+              "variants": [
                 {
-                  "label": "Men",
-                  "href": "/men",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/38c33c9f-14a1-4048-973b-dc2a75caf1fa"
+                  "value": {
+                    "__resolveType": "site/sections/Content/RichText.tsx",
+                    "content": "<h2 style=\"text-align: center\"><strong><span style=\"font-size: 24pt\">Discover MUNICH shoes for men, women, and children</span></strong></h2><h2 style=\"text-align: center\"><strong><span style=\"font-size: 24pt\">All MUNICH shoe models in the Official Store</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Some people are still surprised when they discover</span></p><p style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">MUNICH children's shoes</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">because they think we're talking about a brand only for adults. But no! It's true that for a long time, both </span><strong><span style=\"font-size: 14pt\">MUNICH shoes</span></strong><span style=\"font-size: 14pt\"> and all the brand's fashion collections have been seen more on large hangers than small ones. But we want to take care of your little ones and offer them the same quality we offer you, because they deserve it too! That's why, within our </span><strong><span style=\"font-size: 14pt\">MUNICH store</span></strong><span style=\"font-size: 14pt\">, both online and physical, you have access to a whole children's universe full of </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">MUNICH kids</span></strong></a><span style=\"font-size: 14pt\"> collections</span></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Even the youngest in the house can wear that characteristic \"X\" that so represents our brand on their </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">MUNICH children's shoes</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">just like their elders. Finally find with us the </span><strong><span style=\"font-size: 14pt\">MUNICH shoes</span></strong><span style=\"font-size: 14pt\"> that your feet deserve, those that fit you like a glove and allow you to walk, run or jump if you wanted, without limitations. Because yes, that's how our </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-mujer\"><strong><span style=\"font-size: 14pt\">MUNICH women's shoes,</span></strong></a><span style=\"font-size: 14pt\"> our </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hombre\"><strong><span style=\"font-size: 14pt\">MUNICH men's shoes,</span></strong></a><span style=\"font-size: 14pt\"> our </span><strong><span style=\"font-size: 14pt\">MUNICH unisex shoes</span></strong><span style=\"font-size: 14pt\">, and, of course, our </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">MUNICH sports shoes for kids</span></strong></a><span style=\"font-size: 14pt\"> are.</span></p><p style=\"text-align: center\"></p><h2 style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/deportes\"><strong><span style=\"font-size: 24pt\">MUNICH sports shoes</span></strong></a><strong><span style=\"font-size: 24pt\">, our origins</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">In our store, you'll also find </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">MUNICH indoor soccer shoes</span></strong></a><span style=\"font-size: 14pt\">. We not only dedicate ourselves to designing trendsetting </span><strong><span style=\"font-size: 14pt\">MUNICH shoe</span></strong><span style=\"font-size: 14pt\"> models for urban looks, but we also have specific collections like this </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">MUNICH indoor soccer footwear</span></strong></a><span style=\"font-size: 14pt\"> collection. Moreover, we want to talk about the versatility of the </span><strong><span style=\"font-size: 14pt\">MUNICH brand</span></strong><span style=\"font-size: 14pt\">, as it not only benefits soccer players, but also presents specific collections for other disciplines such as tennis, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-padel-tenis\"><span style=\"font-size: 14pt\">paddle tennis</span></a><span style=\"font-size: 14pt\">, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hockey-hierba\"><span style=\"font-size: 14pt\">field hockey</span></a><span style=\"font-size: 14pt\"> or </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-balonmano\"><span style=\"font-size: 14pt\">handball.</span></a></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">But one of the most interesting things about our online store is finding models from previous seasons with an amazing discount in the </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">MUNICH outlet</span></a><span style=\"font-size: 14pt\"> section. Discover today how you can save by shopping in our </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">MUNICH outlet</span></a><span style=\"font-size: 14pt\">, </span><strong><span style=\"font-size: 14pt\">shoes</span></strong><span style=\"font-size: 14pt\"> that fit you and the purpose you have in mind. Walking? Running? Being fashionable? Or are you looking for </span><strong><span style=\"font-size: 14pt\">MUNICH shoes</span></strong><span style=\"font-size: 14pt\"> for kids? Everything you need, you'll find without leaving our website. Promise!</span></p>"
+                  },
+                  "rule": {
+                    "__resolveType": "website/matchers/device.ts",
+                    "desktop": true
+                  }
                 },
                 {
-                  "href": "/women",
-                  "label": "Women",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f6bea2b8-b248-4b42-9246-6e924a0acc8b"
-                },
-                {
-                  "href": "/kids",
-                  "label": "Kids",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/1b0ecaa2-9a13-4de2-bf17-5196948ed128"
-                },
-                {
-                  "href": "/accessories",
-                  "label": "Accessories",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/92129655-fe40-4b29-8fdb-e7f71e67a5d1"
-                },
-                {
-                  "href": "/home-and-living",
-                  "label": "Home & Living",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d0433c00-cd26-4638-b519-0cb64b9f82e8"
+                  "value": {
+                    "__resolveType": "site/sections/Content/RichText.tsx",
+                    "content": "<h2 style=\"text-align: center\"><strong><span style=\"font-size: 20pt\">Descubre las zapatillas MUNICH hombre, mujer y niño</span></strong></h2><h2 style=\"text-align: center\"><strong><span style=\"font-size: 20pt\">Todos los modelos de zapatillas MUNICH en la Tienda Oficial</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Hay quién se sigue sorprendiendo cuando descubre las</span></p><p style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH niños</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">porque piensa que hablamos de una marca solo para adultos. Pero ¡no! Sí que es cierto que, durante mucho tiempo tanto las </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH</span></strong><span style=\"font-size: 14pt\"> como todas las colecciones de moda de la marca se han visto más sobre perchas grandes que pequeñas. Pero queremos cuidar de tus pequeños y ofrecerles la misma calidad que te ofrecemos a ti, porque ¡también lo merecen! Es por eso que, dentro de nuestra </span><strong><span style=\"font-size: 14pt\">tienda MUNICH</span></strong><span style=\"font-size: 14pt\">, tanto online como física, tienes acceso a todo un universo infantil lleno de colecciones de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">MUNICH niño</span></strong></a></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Incluso, los más pequeños de la casa podrán lucir esa característica «X» que tanto representa a nuestra marca en sus </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">Zapatillas MUNICH</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">infantiles de igual manera que sus mayores. Encuentra por fin con nosotros los </span><strong><span style=\"font-size: 14pt\">zapatos MUNICH</span></strong><span style=\"font-size: 14pt\"> que merecen tus pies, esos que te sientan como un guante y que te permiten caminar, correr o saltar si quisieras, sin limitaciones. Porque sí, así son nuestras </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-mujer\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH mujer,</span></strong></a><span style=\"font-size: 14pt\"> nuestras </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hombre\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH hombre,</span></strong></a><span style=\"font-size: 14pt\"> nuestras </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH unisex</span></strong><span style=\"font-size: 14pt\">, y, por supuesto, nuestras </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">deportivas MUNICH para niños.</span></strong></a></p><p style=\"text-align: center\"></p><h2 style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/deportes\"><strong><span style=\"font-size: 20pt\">Zapatillas MUNICH de deporte</span></strong></a><strong><span style=\"font-size: 20pt\">, nuestros orígenes</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">En nuestra tienda también encontrarás </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH futbol sala</span></strong></a><span style=\"font-size: 14pt\">. No solo nos dedicamos a diseñar modelos de </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH</span></strong><span style=\"font-size: 14pt\"> que marcan tendencia para looks urbanos, sino que también contamos con colecciones específicas como esta colección de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">calzado MUNICH de fútbol Sala</span></strong></a><span style=\"font-size: 14pt\">. Además, queremos hablar de la versatilidad de la </span><strong><span style=\"font-size: 14pt\">marca MUNICH</span></strong><span style=\"font-size: 14pt\">, ya que no solo beneficia a futboleros y futboleras, sino que también presenta colecciones específicas para otras disciplinas como tenis, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-padel-tenis\"><span style=\"font-size: 14pt\">pádel</span></a><span style=\"font-size: 14pt\">, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hockey-hierba\"><span style=\"font-size: 14pt\">hockey hierba</span></a><span style=\"font-size: 14pt\"> o </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-balonmano\"><span style=\"font-size: 14pt\">balonmano.</span></a></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Pero una de las cosas más interesantes de nuestra tienda online es encontrar modelos de temporadas anteriores con un descuento alucinante en la sección </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">MUNICH outlet</span></a><span style=\"font-size: 14pt\">. Descubre hoy mismo cómo puedes ahorrar comprando en nuestro </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">outlet MUNICH</span></a><span style=\"font-size: 14pt\">, </span><strong><span style=\"font-size: 14pt\">zapatillas</span></strong><span style=\"font-size: 14pt\"> que encajen contigo y con el fin que tienes en mente. ¿Caminar? ¿Correr? ¿Ir a la moda? O ¿buscas unas </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH</span></strong><span style=\"font-size: 14pt\"> para niños? Todo lo que necesites lo encuentras sin salir de nuestra web. ¡Prometido!</span></p>"
+                  },
+                  "rule": {
+                    "__resolveType": "website/matchers/always.ts"
+                  }
                 }
               ]
             }
@@ -304,75 +1341,622 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "site/sections/Images/Banner.tsx",
-              "title": "Register and Save Big!",
-              "cta": {
-                "label": "Sign Up",
-                "href": "#"
-              },
-              "description": "<p><span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">Sign up now to get up to 50% off on your first order. Limited time offer!</span></p>",
-              "images": {
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/cf96d47f-564f-40da-ad94-7acac5f39327",
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/4d5c3212-3f75-4d50-89f3-970815748b43"
-              }
+              "__resolveType": "site/sections/Content/Benefits.tsx",
+              "benefits": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/3e8d3f33-641f-4d65-af2b-9319b5b12edf/truck.svg",
+                    "alt": "Truck",
+                    "width": 70,
+                    "height": 40
+                  },
+                  "name": "Shipping",
+                  "content": "<h3 style=\"text-align: center\"><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">SHIPPING COSTS</span></strong></h3><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">FREE SHIPPING</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">TO MAINLAND SPAIN AND PORTUGAL,</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">on orders over 50</span><span style=\"color: rgb(232, 232, 232); font-size: 14pt\">€</span></p>"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/7cb84df5-4d1f-438f-8e9e-5381fc48a906/phone.svg",
+                    "alt": "Phone",
+                    "width": 40,
+                    "height": 40
+                  },
+                  "name": "Contact",
+                  "content": "<h3 style=\"text-align: center\"><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">CONTACT US</span></strong></h3><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Phone </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">+34 935 953 265</span></strong></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">WhatsApp </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">+35 658 972 505</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Monday to Thursday from 9 AM to 5 PM</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Friday from 9 AM to 2 PM</span></p>"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/bb52b206-b022-48d4-ae77-dd8cb32f02df/card.svg",
+                    "alt": "credit card",
+                    "width": 57,
+                    "height": 40
+                  },
+                  "name": "Secure Payment",
+                  "content": "<h3 style=\"text-align: center\"><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">100% SECURE PAYMENT</span></strong></h3><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Secure payment with credit</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">card and Bizum</span></p>"
+                }
+              ]
             }
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
-              "title": "Hottest Deals",
-              "tabs": [
+              "__resolveType": "Footer"
+            }
+          }
+        ],
+        "rule": {
+          "__resolveType": "site/matchers/language.ts",
+          "language": "en"
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Topbar"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Header"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Alerts"
+            }
+          },
+          {
+            "__resolveType": "site/sections/Images/Carousel.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-XMAS-DESKTOP.jpg",
+                  "width": 928,
+                  "height": 341
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-XMAS-MOBILE.jpg",
+                  "width": 374,
+                  "height": 285
+                },
+                "alt": "Feliz Navidad",
+                "action": {
+                  "title": "FELIZ NAVIDAD"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MANV3.jpg",
+                  "width": 928,
+                  "height": 341
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MANV3-MOBILE.jpg",
+                  "width": 374,
+                  "height": 467
+                },
+                "alt": "MUNICH HOMBRE",
+                "action": {
+                  "title": "MUNICH HOMBRE",
+                  "href": "/munich-hombre",
+                  "label": "VER TODOS"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMANV2.jpg",
+                  "width": 928,
+                  "height": 341
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMANV2-MOBILE.jpg",
+                  "width": 374,
+                  "height": 467
+                },
+                "alt": "MUNICH MUJER",
+                "action": {
+                  "title": "MUNICH MUJER",
+                  "href": "/munich-mujer",
+                  "label": "VER TODOS"
+                }
+              }
+            ],
+            "preload": true,
+            "interval": 5,
+            "buttons": {
+              "prev": false,
+              "next": false,
+              "dots": false
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Content/RichText.tsx",
+              "content": "<h1 style=\"text-align: center\"><span style=\"font-size: 18pt\">Compra Segura de Todas las Colecciones de Calzado, Bolsos, Textil y Complementos para Hombre, Mujer y Infantil de la Marca MUNICH®</span></h1>",
+              "backgroundColor": "#f6f6f6"
+            }
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMAN.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-WOMAN.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "ZAPATILLAS MODA MUJER",
+                "action": {
+                  "href": "/zapatillas-mujer?template=2",
+                  "title": "ZAPATILLAS MODA MUJER",
+                  "label": "COMPRAR AHORA",
+                  "subtitle": "Tallas 36 a la 42",
+                  "colors": "light",
+                  "alignment": "center",
+                  "position": "middle"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MAN.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-MODA-MAN.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "ZAPATILLAS MODA HOMBRE",
+                "action": {
+                  "href": "/zapatillas-hombre?template=2",
+                  "title": "ZAPATILLAS MODA HOMBRE",
+                  "label": "COMPRAR AHORA",
+                  "subtitle": "Tallas 38 a la 47",
+                  "colors": "light",
+                  "alignment": "center",
+                  "position": "middle"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-WOMANV2.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-WOMANV2.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "CASUAL SPORTWEAR MUJER",
+                "action": {
+                  "href": "/categories/1267",
+                  "title": "CASUAL SPORTWEAR MUJER",
+                  "label": "COMPRAR AHORA",
+                  "colors": "dark",
+                  "alignment": "left",
+                  "position": "top"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-MANV2.jpg",
+                  "height": 630,
+                  "width": 500
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-TEXTIL-MANV2.jpg",
+                  "height": 470,
+                  "width": 374
+                },
+                "alt": "CASUAL SPORTWEAR HOMBRE",
+                "action": {
+                  "href": "/sportswear-munich",
+                  "title": "CASUAL SPORTWEAR HOMBRE",
+                  "label": "COMPRAR AHORA",
+                  "colors": "dark",
+                  "alignment": "right",
+                  "position": "top"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/BANNERS-PADEL_Web.jpg",
+                  "width": 1037,
+                  "height": 378
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/BANNERS-PADEL_Mobile.jpg",
+                  "width": 374,
+                  "height": 285
+                },
+                "alt": "HASTA 66% PADEL",
+                "action": {
+                  "href": "/palas-de-padel-munich?template=2",
+                  "title": "HASTA 66% PADEL",
+                  "subtitle": "EN PALAS DE PADEL",
+                  "label": "Ver todos",
+                  "position": "bottom",
+                  "alignment": "left",
+                  "colors": "dark"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-MUJERV2.jpg",
+                  "width": 500,
+                  "height": 630
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-MUJERV2.jpg",
+                  "width": 374,
+                  "height": 470
+                },
+                "alt": "STB MUJER",
+                "action": {
+                  "href": "/categories/941?template=2",
+                  "title": "STB MUJER",
+                  "subtitle": "Tallas 36 a la 42",
+                  "label": "COMPRAR AHORA",
+                  "colors": "light"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-HOMBREV2.jpg",
+                  "height": 630,
+                  "width": 500
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/STB-HOMBREV2.jpg",
+                  "height": 470,
+                  "width": 374
+                },
+                "alt": "STB HOMBRE",
+                "action": {
+                  "href": "/categories/940?template=2",
+                  "title": "STB HOMBRE",
+                  "subtitle": "Tallas 36 a la 47",
+                  "label": "COMPRAR AHORA",
+                  "colors": "light"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "site/sections/Images/Banner.tsx",
+            "images": [
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-DXTV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-DXTV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "alt": "DEPORTES",
+                "action": {
+                  "href": "/deportes?template=2",
+                  "title": "DEPORTES",
+                  "label": "Ver todos",
+                  "position": "top",
+                  "colors": "light"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-BAGSV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-BAGSV2.jpg",
+                  "width": 326,
+                  "height": 326
+                },
+                "alt": "BOLSOS Y BOLSAS",
+                "action": {
+                  "href": "/munich-bolsos-moda?template=2",
+                  "title": "BOLSOS Y BOLSAS",
+                  "label": "Ver todos",
+                  "colors": "light",
+                  "position": "top"
+                }
+              },
+              {
+                "desktop": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-KIDSV2.jpg",
+                  "height": 326,
+                  "width": 326
+                },
+                "mobile": {
+                  "src": "https://www.munichsports.com/cdnassets/FW24-HOME-KIDSV2.jpg",
+                  "height": 326,
+                  "width": 326
+                },
+                "alt": "CALZADO INFANTIL",
+                "action": {
+                  "href": "/zapatillas-ninos?template=2",
+                  "title": "CALZADO INFANTIL",
+                  "label": "Ver todos",
+                  "colors": "light",
+                  "position": "top"
+                }
+              }
+            ],
+            "preload": false
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Images/Grid.tsx",
+              "images": [
                 {
-                  "products": {
-                    "__resolveType": "shopify/loaders/ProductList.ts",
-                    "props": {
-                      "sort": "",
-                      "query": "hat and bag",
-                      "count": 10
-                    },
-                    "filters": {
-                      "tags": [],
-                      "productTypes": [],
-                      "productVendors": [],
-                      "variantOptions": []
-                    }
+                  "desktop": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STORESV4.jpg",
+                    "width": 563,
+                    "height": 970
                   },
-                  "title": "Accessories"
+                  "mobile": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STORESV4.jpg",
+                    "width": 390,
+                    "height": 561
+                  },
+                  "alt": "TIENDAS MUNICH",
+                  "action": {
+                    "href": "/tiendas-munich",
+                    "title": "TIENDAS MUNICH",
+                    "label": "VER TODAS",
+                    "subtitle": "FULL PRICE\nOUTLETS\nEL CORTE INGLES",
+                    "columnSpan": 1,
+                    "rowSpan": 2,
+                    "colors": "light",
+                    "alignment": "center",
+                    "position": "top"
+                  }
                 },
                 {
-                  "products": {
-                    "__resolveType": "shopify/loaders/ProductList.ts",
-                    "props": {
-                      "sort": "",
-                      "query": "Shirts",
-                      "count": 10
-                    },
-                    "filters": {
-                      "tags": [],
-                      "productTypes": [],
-                      "productVendors": [],
-                      "variantOptions": []
-                    }
+                  "desktop": {
+                    "src": "https://www.munichsports.com/cdnassets/PLAY-BY-MUNICH.jpg",
+                    "width": 563,
+                    "height": 406
                   },
-                  "title": "Fashion"
+                  "mobile": {
+                    "src": "https://www.munichsports.com/cdnassets/PLAY-BY-MUNICH.jpg",
+                    "width": 390,
+                    "height": 281
+                  },
+                  "alt": "COCHECITOS Y ACCESORIOS",
+                  "action": {
+                    "href": "/play-by-munich",
+                    "title": "COCHECITOS Y ACCESORIOS",
+                    "label": "Ver todos",
+                    "subtitle": "",
+                    "position": "top"
+                  }
                 },
                 {
-                  "products": {
-                    "__resolveType": "shopify/loaders/ProductList.ts",
-                    "props": {
-                      "sort": "",
-                      "query": "stickers",
-                      "count": 10
-                    },
-                    "filters": {
-                      "tags": [],
-                      "productTypes": [],
-                      "productVendors": [],
-                      "variantOptions": []
-                    }
+                  "desktop": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STUPA.jpg",
+                    "width": 563,
+                    "height": 563
                   },
-                  "title": "Stickers"
+                  "mobile": {
+                    "src": "https://www.munichsports.com/cdnassets/HOME-STUPA.jpg",
+                    "width": 390,
+                    "height": 390
+                  },
+                  "alt": "PADEL BY MUNICH",
+                  "action": {
+                    "href": "/zapatillas-padel-tenis",
+                    "title": "PADEL BY MUNICH",
+                    "label": "OTOÑO-INVIERNO 2024-25",
+                    "subtitle": "CALZADO PALAS TEXTIL BOLSAS",
+                    "alignment": "right",
+                    "position": "bottom",
+                    "colors": "light"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Product/ProductSizes.tsx",
+              "title": "FILTRE POR SU TALLA DE ZAPATILLAS MUNICH DISPONIBLES PARA COMPRAR",
+              "groups": [
+                {
+                  "sizes": [
+                    {
+                      "size": "35",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=35"
+                    },
+                    {
+                      "size": "36",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=36"
+                    },
+                    {
+                      "size": "37",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=37"
+                    },
+                    {
+                      "size": "38",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=38"
+                    },
+                    {
+                      "size": "39",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=39"
+                    },
+                    {
+                      "size": "40",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=40"
+                    },
+                    {
+                      "size": "41",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=41"
+                    }
+                  ]
+                },
+                {
+                  "sizes": [
+                    {
+                      "size": "42",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=42"
+                    },
+                    {
+                      "size": "43",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=43"
+                    },
+                    {
+                      "size": "44",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=44"
+                    },
+                    {
+                      "size": "45",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=45"
+                    },
+                    {
+                      "size": "46",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=46"
+                    },
+                    {
+                      "size": "47",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=47"
+                    },
+                    {
+                      "size": "48",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=48"
+                    },
+                    {
+                      "size": "49",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=49"
+                    },
+                    {
+                      "size": "50",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=50"
+                    }
+                  ]
+                },
+                {
+                  "sizes": [
+                    {
+                      "size": "16",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=16"
+                    },
+                    {
+                      "size": "17",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=17"
+                    },
+                    {
+                      "size": "18",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=18"
+                    },
+                    {
+                      "size": "19",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=19"
+                    },
+                    {
+                      "size": "20",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=20"
+                    },
+                    {
+                      "size": "21",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=21"
+                    },
+                    {
+                      "size": "22",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=22"
+                    },
+                    {
+                      "size": "23",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=23"
+                    }
+                  ]
+                },
+                {
+                  "sizes": [
+                    {
+                      "size": "24",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=24"
+                    },
+                    {
+                      "size": "25",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=25"
+                    },
+                    {
+                      "size": "26",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=26"
+                    },
+                    {
+                      "size": "27",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=27"
+                    },
+                    {
+                      "size": "28",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=28"
+                    },
+                    {
+                      "size": "29",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=29"
+                    }
+                  ]
+                },
+                {
+                  "sizes": [
+                    {
+                      "size": "30",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=30"
+                    },
+                    {
+                      "size": "31",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=31"
+                    },
+                    {
+                      "size": "32",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=32"
+                    },
+                    {
+                      "size": "33",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=33"
+                    },
+                    {
+                      "size": "34",
+                      "url": "/es/munich-disponibles-talla?template=1&perPage=100&sort=PRIORITY.ASC%2CNAME.ASC&filterOption_Talla=34"
+                    }
+                  ]
                 }
               ]
             }
@@ -394,7 +1978,96 @@
               "failed": {
                 "title": "Oops!. Something went wrong!",
                 "description": "Something went wrong. Please try again. If the problem persists, please contact us."
+              },
+              "image": {
+                "src": "https://www.munichsports.com/cdnassets/V4/PAGES/NEWSLETTER-MOBILE.jpg",
+                "alt": "Newsletter",
+                "width": 366,
+                "height": 202
+              },
+              "content": {
+                "__resolveType": "site/flags/richText.ts",
+                "variants": [
+                  {
+                    "value": "<p><span style=\"font-size: 35pt\">ÚNETE A </span><strong><span style=\"font-size: 35pt\">MUNICH</span></strong></p><p><span style=\"font-size: 15pt\">Suscríbete y entérate de todas las ofertas, promociones y lo último en MUNICH</span></p>",
+                    "rule": {
+                      "__resolveType": "website/matchers/device.ts",
+                      "desktop": true
+                    }
+                  },
+                  {
+                    "value": "<p style=\"text-align: center\"><span style=\"font-size: 20pt\">ÚNETE A </span><strong><span style=\"font-size: 20pt\">MUNICH</span></strong></p><p style=\"text-align: center\"><span style=\"font-size: 15pt\">Suscríbete y entérate de todas las ofertas,</span></p><p style=\"text-align: center\"><span style=\"font-size: 15pt\">promociones y lo último en MUNICH</span></p>",
+                    "rule": {
+                      "__resolveType": "website/matchers/always.ts"
+                    }
+                  }
+                ]
               }
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "website/flags/multivariate/section.ts",
+              "variants": [
+                {
+                  "value": {
+                    "__resolveType": "site/sections/Content/RichText.tsx",
+                    "content": "<h2 style=\"text-align: center\"><strong><span style=\"font-size: 24pt\">Descubre las zapatillas MUNICH hombre, mujer y niño</span></strong></h2><h2 style=\"text-align: center\"><strong><span style=\"font-size: 24pt\">Todos los modelos de zapatillas MUNICH en la Tienda Oficial</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Hay quién se sigue sorprendiendo cuando descubre las</span></p><p style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH niños</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">porque piensa que hablamos de una marca solo para adultos. Pero ¡no! Sí que es cierto que, durante mucho tiempo tanto las </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH</span></strong><span style=\"font-size: 14pt\"> como todas las colecciones de moda de la marca se han visto más sobre perchas grandes que pequeñas. Pero queremos cuidar de tus pequeños y ofrecerles la misma calidad que te ofrecemos a ti, porque ¡también lo merecen! Es por eso que, dentro de nuestra </span><strong><span style=\"font-size: 14pt\">tienda MUNICH</span></strong><span style=\"font-size: 14pt\">, tanto online como física, tienes acceso a todo un universo infantil lleno de colecciones de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">MUNICH niño</span></strong></a></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Incluso, los más pequeños de la casa podrán lucir esa característica «X» que tanto representa a nuestra marca en sus </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">Zapatillas MUNICH</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">infantiles de igual manera que sus mayores. Encuentra por fin con nosotros los </span><strong><span style=\"font-size: 14pt\">zapatos MUNICH</span></strong><span style=\"font-size: 14pt\"> que merecen tus pies, esos que te sientan como un guante y que te permiten caminar, correr o saltar si quisieras, sin limitaciones. Porque sí, así son nuestras </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-mujer\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH mujer,</span></strong></a><span style=\"font-size: 14pt\"> nuestras </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hombre\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH hombre,</span></strong></a><span style=\"font-size: 14pt\"> nuestras </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH unisex</span></strong><span style=\"font-size: 14pt\">, y, por supuesto, nuestras </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">deportivas MUNICH para niños.</span></strong></a></p><p style=\"text-align: center\"></p><h2 style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/deportes\"><strong><span style=\"font-size: 24pt\">Zapatillas MUNICH de deporte</span></strong></a><strong><span style=\"font-size: 24pt\">, nuestros orígenes</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">En nuestra tienda también encontrarás </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH futbol sala</span></strong></a><span style=\"font-size: 14pt\">. No solo nos dedicamos a diseñar modelos de </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH</span></strong><span style=\"font-size: 14pt\"> que marcan tendencia para looks urbanos, sino que también contamos con colecciones específicas como esta colección de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">calzado MUNICH de fútbol Sala</span></strong></a><span style=\"font-size: 14pt\">. Además, queremos hablar de la versatilidad de la </span><strong><span style=\"font-size: 14pt\">marca MUNICH</span></strong><span style=\"font-size: 14pt\">, ya que no solo beneficia a futboleros y futboleras, sino que también presenta colecciones específicas para otras disciplinas como tenis, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-padel-tenis\"><span style=\"font-size: 14pt\">pádel</span></a><span style=\"font-size: 14pt\">, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hockey-hierba\"><span style=\"font-size: 14pt\">hockey hierba</span></a><span style=\"font-size: 14pt\"> o </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-balonmano\"><span style=\"font-size: 14pt\">balonmano.</span></a></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Pero una de las cosas más interesantes de nuestra tienda online es encontrar modelos de temporadas anteriores con un descuento alucinante en la sección </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">MUNICH outlet</span></a><span style=\"font-size: 14pt\">. Descubre hoy mismo cómo puedes ahorrar comprando en nuestro </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">outlet MUNICH</span></a><span style=\"font-size: 14pt\">, </span><strong><span style=\"font-size: 14pt\">zapatillas</span></strong><span style=\"font-size: 14pt\"> que encajen contigo y con el fin que tienes en mente. ¿Caminar? ¿Correr? ¿Ir a la moda? O ¿buscas unas </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH</span></strong><span style=\"font-size: 14pt\"> para niños? Todo lo que necesites lo encuentras sin salir de nuestra web. ¡Prometido!</span></p>"
+                  },
+                  "rule": {
+                    "__resolveType": "website/matchers/device.ts",
+                    "desktop": true
+                  }
+                },
+                {
+                  "value": {
+                    "__resolveType": "site/sections/Content/RichText.tsx",
+                    "content": "<h2 style=\"text-align: center\"><strong><span style=\"font-size: 20pt\">Descubre las zapatillas MUNICH hombre, mujer y niño</span></strong></h2><h2 style=\"text-align: center\"><strong><span style=\"font-size: 20pt\">Todos los modelos de zapatillas MUNICH en la Tienda Oficial</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Hay quién se sigue sorprendiendo cuando descubre las</span></p><p style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH niños</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">porque piensa que hablamos de una marca solo para adultos. Pero ¡no! Sí que es cierto que, durante mucho tiempo tanto las </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH</span></strong><span style=\"font-size: 14pt\"> como todas las colecciones de moda de la marca se han visto más sobre perchas grandes que pequeñas. Pero queremos cuidar de tus pequeños y ofrecerles la misma calidad que te ofrecemos a ti, porque ¡también lo merecen! Es por eso que, dentro de nuestra </span><strong><span style=\"font-size: 14pt\">tienda MUNICH</span></strong><span style=\"font-size: 14pt\">, tanto online como física, tienes acceso a todo un universo infantil lleno de colecciones de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">MUNICH niño</span></strong></a></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Incluso, los más pequeños de la casa podrán lucir esa característica «X» que tanto representa a nuestra marca en sus </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">Zapatillas MUNICH</span></strong></a><strong><span style=\"font-size: 14pt\"> </span></strong><span style=\"font-size: 14pt\">infantiles de igual manera que sus mayores. Encuentra por fin con nosotros los </span><strong><span style=\"font-size: 14pt\">zapatos MUNICH</span></strong><span style=\"font-size: 14pt\"> que merecen tus pies, esos que te sientan como un guante y que te permiten caminar, correr o saltar si quisieras, sin limitaciones. Porque sí, así son nuestras </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-mujer\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH mujer,</span></strong></a><span style=\"font-size: 14pt\"> nuestras </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hombre\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH hombre,</span></strong></a><span style=\"font-size: 14pt\"> nuestras </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH unisex</span></strong><span style=\"font-size: 14pt\">, y, por supuesto, nuestras </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-ninos\"><strong><span style=\"font-size: 14pt\">deportivas MUNICH para niños.</span></strong></a></p><p style=\"text-align: center\"></p><h2 style=\"text-align: center\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/deportes\"><strong><span style=\"font-size: 20pt\">Zapatillas MUNICH de deporte</span></strong></a><strong><span style=\"font-size: 20pt\">, nuestros orígenes</span></strong></h2><p style=\"text-align: center\"><span style=\"font-size: 14pt\">En nuestra tienda también encontrarás </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">zapatillas MUNICH futbol sala</span></strong></a><span style=\"font-size: 14pt\">. No solo nos dedicamos a diseñar modelos de </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH</span></strong><span style=\"font-size: 14pt\"> que marcan tendencia para looks urbanos, sino que también contamos con colecciones específicas como esta colección de </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-futbol-sala\"><strong><span style=\"font-size: 14pt\">calzado MUNICH de fútbol Sala</span></strong></a><span style=\"font-size: 14pt\">. Además, queremos hablar de la versatilidad de la </span><strong><span style=\"font-size: 14pt\">marca MUNICH</span></strong><span style=\"font-size: 14pt\">, ya que no solo beneficia a futboleros y futboleras, sino que también presenta colecciones específicas para otras disciplinas como tenis, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-padel-tenis\"><span style=\"font-size: 14pt\">pádel</span></a><span style=\"font-size: 14pt\">, </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-hockey-hierba\"><span style=\"font-size: 14pt\">hockey hierba</span></a><span style=\"font-size: 14pt\"> o </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/zapatillas-balonmano\"><span style=\"font-size: 14pt\">balonmano.</span></a></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"font-size: 14pt\">Pero una de las cosas más interesantes de nuestra tienda online es encontrar modelos de temporadas anteriores con un descuento alucinante en la sección </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">MUNICH outlet</span></a><span style=\"font-size: 14pt\">. Descubre hoy mismo cómo puedes ahorrar comprando en nuestro </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.munichsports.com/es/outlet-munich\"><span style=\"font-size: 14pt\">outlet MUNICH</span></a><span style=\"font-size: 14pt\">, </span><strong><span style=\"font-size: 14pt\">zapatillas</span></strong><span style=\"font-size: 14pt\"> que encajen contigo y con el fin que tienes en mente. ¿Caminar? ¿Correr? ¿Ir a la moda? O ¿buscas unas </span><strong><span style=\"font-size: 14pt\">zapatillas MUNICH</span></strong><span style=\"font-size: 14pt\"> para niños? Todo lo que necesites lo encuentras sin salir de nuestra web. ¡Prometido!</span></p>"
+                  },
+                  "rule": {
+                    "__resolveType": "website/matchers/always.ts"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Content/Benefits.tsx",
+              "benefits": [
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/3e8d3f33-641f-4d65-af2b-9319b5b12edf/truck.svg",
+                    "alt": "Truck",
+                    "width": 70,
+                    "height": 40
+                  },
+                  "name": "Envío",
+                  "content": "<h3 style=\"text-align: center\"><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">GASTOS DE ENVÍO</span></strong></h3><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">ENVÍOS GRATIS</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">A ESPAÑA Y PORTUGAL PENINSULAR,</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">en pedidos superiores a 50</span><span style=\"color: rgb(232, 232, 232); font-size: 14pt\">€</span></p>"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/7cb84df5-4d1f-438f-8e9e-5381fc48a906/phone.svg",
+                    "alt": "Phone",
+                    "width": 40,
+                    "height": 40
+                  },
+                  "name": "Contactar",
+                  "content": "<h3 style=\"text-align: center\"><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">CONTACTA CON NOSOTROS</span></strong></h3><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Teléfono </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">+34 935 953 265</span></strong></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Whatsapp </span><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">+35 658 972 505</span></strong></p><p style=\"text-align: center\"></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Lunes a jueves de 9 a 17h</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Viernes de 9 a 14h</span></p>"
+                },
+                {
+                  "icon": {
+                    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/munichsports/bb52b206-b022-48d4-ae77-dd8cb32f02df/card.svg",
+                    "alt": "tarjeta",
+                    "width": 57,
+                    "height": 40
+                  },
+                  "name": "Pago seguro",
+                  "content": "<h3 style=\"text-align: center\"><strong><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">100% PAGO SEGURO</span></strong></h3><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">Pago seguro con tarjeta</span></p><p style=\"text-align: center\"><span style=\"color: rgb(255, 255, 255); font-size: 14pt\">de crédito y Bizum</span></p>"
+                }
+              ]
             }
           },
           {
@@ -411,7 +2084,7 @@
     ]
   },
   "__resolveType": "website/pages/Page.tsx",
-  "path": "/:lang",
+  "path": "/",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
