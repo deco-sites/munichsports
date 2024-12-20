@@ -1,4 +1,4 @@
-import { LoadingFallbackProps } from "../../../deco/types.ts";
+import { LoadingFallbackProps } from "@deco/deco";
 import Item, { Props as Banner } from "../../components/images/banner/Item.tsx";
 
 export interface Props {
