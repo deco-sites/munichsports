@@ -100,7 +100,10 @@
         ],
         "copyright": "© 2024 MUNICHShop.net"
       },
-      "rule": null
+      "rule": {
+        "__resolveType": "site/matchers/language.ts",
+        "language": "it"
+      }
     },
     {
       "value": {
@@ -319,35 +322,35 @@
         "links": [
           {
             "href": "https://customer.dawa.io/munich",
-            "label": "Restituire un prodotto"
+            "label": "Devolver un producto"
           },
           {
-            "href": "/negozi-munich",
-            "label": "Negozi"
+            "href": "/tiendas-munich",
+            "label": "Tiendas"
           },
           {
-            "href": "/sostenibilita",
-            "label": "Sostenibilità"
+            "href": "/sostenibilidad",
+            "label": "Sostenibilidad"
           },
           {
-            "href": "/lavora-con-noi",
-            "label": "Lavora con Noi"
+            "href": "/trabaja-con-nosotros",
+            "label": "Trabaja con Nosotros"
           },
           {
-            "label": "Pagamento Sicuro",
-            "href": "/sistemi-di-pagamento"
+            "label": "Pago Seguro",
+            "href": "/sistemas-de-pago"
           },
           {
-            "label": "Spedizioni e resi",
-            "href": "/spedizioni-cambi"
+            "label": "Envíos y devoluciones",
+            "href": "/envios-y-devoluciones"
           },
           {
-            "label": "Esportazione e B2B",
-            "href": "/export-b2b"
+            "label": "Exportación y B2B",
+            "href": "/exportacion-b2b"
           },
           {
-            "label": "Contattare",
-            "href": "/contattare"
+            "label": "Contactar",
+            "href": "/contactar"
           }
         ],
         "social": [
@@ -372,19 +375,19 @@
         ],
         "policies": [
           {
-            "label": "Avviso Legale",
+            "label": "Aviso Legal",
             "href": "#"
           },
           {
-            "label": "Politica sulla privacy e sui cookie",
+            "label": "Política de privacidad y cookies",
             "href": "#"
           },
           {
-            "label": "Condizioni di acquisto",
+            "label": "Condiciones de compra",
             "href": "#"
           },
           {
-            "label": "Configura",
+            "label": "Configurar",
             "href": "#"
           }
         ],
@@ -396,8 +399,8 @@
               "width": 200,
               "height": 59
             },
-            "label": "MUNICH Shop su Google Play",
-            "href": "https://play.google.com/store/apps/details?id=com.lluraferi.munichshop&hl=it&utm_source=munichshop&utm_campaign=home"
+            "label": "MUNICH Shop en Google Play",
+            "href": "https://play.google.com/store/apps/details?id=com.lluraferi.munichshop&hl=es&utm_source=munichshop&utm_campaign=home"
           },
           {
             "image": {
@@ -406,8 +409,8 @@
               "width": 200,
               "height": 59
             },
-            "label": "MUNICH Shop su Apple App Store",
-            "href": "https://apps.apple.com/it/app/munich-shop/id1514352168?l=it&ls=1"
+            "label": "MUNICH Shop en la App Store de Apple",
+            "href": "https://apps.apple.com/es/app/munich-shop/id1514352168?l=es&ls=1"
           }
         ],
         "copyright": "© 2024 MUNICHShop.net"

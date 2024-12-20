@@ -14,7 +14,10 @@
           "interval": 3
         }
       },
-      "rule": null
+      "rule": {
+        "__resolveType": "site/matchers/language.ts",
+        "language": "it"
+      }
     },
     {
       "value": {
@@ -59,9 +62,9 @@
       "value": {
         "__resolveType": "site/sections/Header/Alerts.tsx",
         "alerts": [
-          "SPEDIZIONI GRATUITE",
-          "IN SPAGNA E PORTOGALLO PENINSULARE",
-          "PER ORDINI SUPERIORI A 50€"
+          "ENVÍOS GRATUITOS",
+          "EN ESPAÑA Y PORTUGAL PENINSULAR",
+          "PARA PEDIDOS SUPERIORES A 50€"
         ],
         "autoPlay": {
           "active": true,

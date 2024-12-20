@@ -2116,9 +2116,9 @@
                   "width": 374,
                   "height": 285
                 },
-                "alt": "Buon Natale",
+                "alt": "Feliz Navidad",
                 "action": {
-                  "title": "BUON NATALE"
+                  "title": "FELIZ NAVIDAD"
                 }
               },
               {
@@ -2132,11 +2132,11 @@
                   "width": 374,
                   "height": 467
                 },
-                "alt": "MUNICH UOMO",
+                "alt": "MUNICH HOMBRE",
                 "action": {
-                  "title": "MUNICH UOMO",
-                  "href": "/munich-uomo",
-                  "label": "VEDI TUTTI"
+                  "title": "MUNICH HOMBRE",
+                  "href": "/munich-hombre",
+                  "label": "VER TODOS"
                 }
               },
               {
@@ -2150,11 +2150,11 @@
                   "width": 374,
                   "height": 467
                 },
-                "alt": "MUNICH DONNA",
+                "alt": "MUNICH MUJER",
                 "action": {
-                  "title": "MUNICH DONNA",
-                  "href": "/munich-donna",
-                  "label": "VEDI TUTTI"
+                  "title": "MUNICH MUJER",
+                  "href": "/munich-mujer",
+                  "label": "VER TODOS"
                 }
               }
             ],
@@ -2167,12 +2167,9 @@
             }
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Content/RichText.tsx",
-              "content": "<h1 style=\"text-align: center\"><span style=\"font-size: 18pt\">Acquisto sicuro di tutte le collezione di calzature, borse, abbigliamento e accessori per uomo, donna e bambino del marchio MUNICH</span></h1>",
-              "backgroundColor": "#f6f6f6"
-            }
+            "__resolveType": "site/sections/Content/RichText.tsx",
+            "content": "<h1 style=\"text-align: center\"><span style=\"font-size: 18pt\">Compra segura de todas las colecciones de calzado, bolsos, ropa y accesorios para hombre, mujer y niño de la marca MUNICH</span></h1>",
+            "backgroundColor": "#f6f6f6"
           },
           {
             "__resolveType": "site/sections/Images/Banner.tsx",
@@ -2291,7 +2288,7 @@
                   "href": "/palas-de-padel-munich?template=2",
                   "title": "HASTA 66% PADEL",
                   "subtitle": "EN PALAS DE PADEL",
-                  "label": "Ver todos",
+                  "label": "VER TODOS",
                   "position": "bottom",
                   "alignment": "left",
                   "colors": "dark"
@@ -2364,7 +2361,7 @@
                 "action": {
                   "href": "/deportes?template=2",
                   "title": "DEPORTES",
-                  "label": "Ver todos",
+                  "label": "VER TODOS",
                   "position": "top",
                   "colors": "light"
                 }
@@ -2384,7 +2381,7 @@
                 "action": {
                   "href": "/munich-bolsos-moda?template=2",
                   "title": "BOLSOS Y BOLSAS",
-                  "label": "Ver todos",
+                  "label": "VER TODOS",
                   "colors": "light",
                   "position": "top"
                 }
@@ -2404,7 +2401,7 @@
                 "action": {
                   "href": "/zapatillas-ninos?template=2",
                   "title": "CALZADO INFANTIL",
-                  "label": "Ver todos",
+                  "label": "VER TODOS",
                   "colors": "light",
                   "position": "top"
                 }
@@ -2456,7 +2453,7 @@
                   "action": {
                     "href": "/play-by-munich",
                     "title": "COCHECITOS Y ACCESORIOS",
-                    "label": "Ver todos",
+                    "label": "VER TODOS",
                     "subtitle": "",
                     "position": "top"
                   }
