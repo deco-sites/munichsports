@@ -21,6 +21,43 @@
     overflow: hidden;
     height: 100vh;
   }
+
+  [data-manifest-key="website/sections/Rendering/Lazy.tsx"]:has(> * > header),
+  [data-manifest-key="site/sections/Header/Header.tsx"] {
+    display: contents;
+  }
+}
+
+@layer components {
+  .container-fluid {
+    @apply max-w-[2540px] mx-auto;
+  }
+  .container-module {
+    @apply max-w-[calc(100%-40px)];
+  }
+
+  .container-md,
+  .container-fluid {
+    @apply w-full px-3 mx-auto;
+  }
+
+  @media (min-width: 768px) {
+    .container-md {
+      @apply max-w-[720px];
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container-md {
+      @apply max-w-[960px];
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container-md {
+      @apply max-w-[1140px];
+    }
+  }
 }
 
 .group:disabled .group-disabled\:animate-progress {

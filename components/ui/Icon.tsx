@@ -2,12 +2,18 @@ import { asset } from "$fresh/runtime.ts";
 import type { JSX } from "preact";
 
 export type AvailableIcons =
+  | "heart"
+  | "angle-right"
+  | "angle-left"
+  | "country"
+  | "language"
   | "search"
-  | "shopping_bag"
+  | "basket"
+  | "user"
+  | "to-top-arrow"
   | "menu"
   | "account_circle"
   | "close"
-  | "chevron-right"
   | "favorite"
   | "home_pin"
   | "call"

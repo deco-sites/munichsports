@@ -1,127 +1,133 @@
-import { type ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
-import Section from "../../components/ui/Section.tsx";
+import BackToTop from "../../components/footer/BackToTop.tsx";
+import LanguageSelector from "../../components/footer/LanguageSelector.tsx";
+import { extractLanguagesProps } from "../../sdk/i18n.ts";
+import type { ImageProps } from "../../sdk/widgets.ts";
+import { useDevice } from "@deco/deco/hooks";
+import { clx } from "../../sdk/clx.ts";
 
-/** @titleBy title */
+/** @titleBy label */
 interface Item {
-  title: string;
+  label: string;
   href: string;
-}
-
-/** @titleBy title */
-interface Link extends Item {
-  children: Item[];
 }
 
 /** @titleBy alt */
 interface Social {
   alt?: string;
   href?: string;
-  image: ImageWidget;
+  image: Omit<ImageProps, "alt">;
+}
+
+/** @titleBy label */
+interface App extends Item {
+  image: ImageProps;
 }
 
 interface Props {
-  links?: Link[];
   social?: Social[];
-  paymentMethods?: Social[];
+  links?: Item[];
+  apps?: App[];
+  copyright?: string;
   policies?: Item[];
-  logo?: ImageWidget;
-  trademark?: string;
 }
 
-function Footer({
-  links = [],
-  social = [],
-  policies = [],
-  paymentMethods = [],
-  logo,
-  trademark,
-}: Props) {
+export default function Footer(props: Props) {
+  const {
+    links = [],
+    social = [],
+    apps = [],
+    policies = [],
+    copyright,
+  } = props;
+
+  const { translations, language, supportedLanguages, currentUrl } =
+    extractLanguagesProps(props);
+
+  const isMobile = useDevice() !== "desktop";
+
   return (
-    <footer
-      class="px-5 sm:px-0 mt-5 sm:mt-10"
-      style={{ backgroundColor: "#EFF0F0" }}
-    >
-      <div class="container flex flex-col gap-5 sm:gap-10 py-10">
-        <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
-          {links.map(({ title, href, children }) => (
-            <li class="flex flex-col gap-4">
-              <a class="text-base font-semibold" href={href}>{title}</a>
-              <ul class="flex flex-col gap-2">
-                {children.map(({ title, href }) => (
-                  <li>
-                    <a class="text-sm font-medium text-base-400" href={href}>
-                      {title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+    <>
+      {isMobile && <BackToTop label={translations?.backToTop || ""} />}
+      <footer
+        class="px-5 flex flex-col py-6"
+        style={{ backgroundColor: "#ffffff" }}
+      >
+        <ul class="flex justify-center w-full items-center gap-2">
+          {social.map(({ image, alt, href }) => (
+            <li>
+              <a href={href}>
+                <Image
+                  src={image.src}
+                  alt={alt || "Social icon"}
+                  width={image.width || 0}
+                  height={image.height}
+                  loading="lazy"
+                />
+              </a>
             </li>
           ))}
         </ul>
-
-        <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
-          <ul class="flex gap-4">
-            {social.map(({ image, href, alt }) => (
-              <li>
-                <a href={href}>
-                  <Image
-                    src={image}
-                    alt={alt}
-                    loading="lazy"
-                    width={24}
-                    height={24}
-                  />
-                </a>
-              </li>
-            ))}
-          </ul>
-          <ul class="flex flex-wrap gap-2">
-            {paymentMethods.map(({ image, alt }) => (
-              <li class="h-8 w-10 border border-base-100 rounded flex justify-center items-center">
-                <Image
-                  src={image}
-                  alt={alt}
-                  width={20}
-                  height={20}
-                  loading="lazy"
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <hr class="w-full text-base-400" />
-
-        <div class="grid grid-flow-row sm:grid-flow-col gap-8">
-          <ul class="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center">
-            {policies.map(({ title, href }) => (
-              <li>
-                <a class="text-xs font-medium" href={href}>
-                  {title}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          <div class="flex flex-nowrap items-center justify-between sm:justify-center gap-4">
-            <div>
-              <img loading="lazy" src={logo} />
-            </div>
-            <span class="text-xs font-normal text-base-400">{trademark}</span>
-          </div>
-
-          <div class="flex flex-nowrap items-center justify-center gap-4">
-            <span class="text-sm font-normal text-base-400">Powered by</span>
-            <PoweredByDeco />
-          </div>
-        </div>
+        <ul class="flex flex-co md:flex-wrap md:flex-row py-6 items-center justify-center text-[13px] font-bold text-[#454545] leading-[13px]">
+          {links.map(({ href, label }) => (
+            <li>
+              <a
+                href={href}
+                class="px-4 py-2 inline-block w-full"
+              >
+                <span
+                  class={clx(
+                    "relative",
+                    "hover:text-[#9a9a9a] transition-colors duration-300 ease-in-out",
+                    "after:h-0.5 after:left-1/2 after:bg-black/10 after:absolute after:top-full after:right-1/2",
+                    "before:h-0.5 before:right-1/2 before:bg-black/10 before:absolute before:top-full before:left-1/2",
+                    "hover:after:left-0 hover:before:right-0",
+                    "after:transition-all after:duration-300 after:ease-in-out",
+                    "before:transition-all before:duration-300 before:ease-in-out",
+                  )}
+                >
+                  {label}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <ul class="flex flex-col md:flex-row justify-center items-center gap-4">
+          {apps.map(({ image, label }) => (
+            <li class="flex flex-col items-center justify-center gap-4">
+              <Image
+                src={image.src}
+                alt={image.alt || "App icon"}
+                width={image.width || 0}
+                height={image.height}
+                loading="lazy"
+              />
+              <span class="text-sm/[14px] font-bold text-[#9a9a9a]">
+                {label}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </footer>
+      <LanguageSelector
+        language={language}
+        supportedLanguages={supportedLanguages}
+        currentUrl={currentUrl}
+      />
+      <div class="h-11 bg-[#ececec] text-[#9a9a9a] text-[13px] px-3 flex items-center font-bold">
+        {copyright}
       </div>
-    </footer>
+      <ul class="flex flex-col md:flex-row md:justify-center md:gap-3 gap-1 items-center py-2">
+        {policies.map(({ label, href }) => (
+          <li>
+            <a class="text-xs font-semibold h-[26px] inline-block" href={href}>
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
 
-export const LoadingFallback = () => <Section.Placeholder height="1145px" />;
-
-export default Footer;
+export const LoadingFallback = (props: Props) => <Footer {...props} />;

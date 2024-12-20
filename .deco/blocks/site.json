@@ -28,7 +28,7 @@
   ],
   "routes": [
     {
-      "__resolveType": "website/loaders/pages.ts"
+      "__resolveType": "site/loaders/pages.ts"
     },
     {
       "__resolveType": "website/loaders/redirects.ts"
@@ -54,5 +54,12 @@
   },
   "flavor": {
     "framework": "htmx"
-  }
+  },
+  "supportedLanguages": [
+    "es",
+    "en",
+    "ca",
+    "it"
+  ],
+  "defaultLanguage": "es"
 }

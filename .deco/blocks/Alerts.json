@@ -1,0 +1,73 @@
+{
+  "__resolveType": "website/flags/multivariate/section.ts",
+  "variants": [
+    {
+      "value": {
+        "__resolveType": "site/sections/Header/Alerts.tsx",
+        "alerts": [
+          "SPEDIZIONI GRATUITE",
+          "IN SPAGNA E PORTOGALLO PENINSULARE",
+          "PER ORDINI SUPERIORI A 50€"
+        ],
+        "autoPlay": {
+          "active": true,
+          "interval": 3
+        }
+      },
+      "rule": null
+    },
+    {
+      "value": {
+        "__resolveType": "site/sections/Header/Alerts.tsx",
+        "alerts": [
+          "ENVIAMENTS GRATUÏTS",
+          "A ESPANYA I PORTUGAL PENINSULAR",
+          "EN LES COMANDES SUPERIORS A 50€"
+        ],
+        "autoPlay": {
+          "active": true,
+          "interval": 3
+        }
+      },
+      "rule": {
+        "__resolveType": "site/matchers/language.ts",
+        "language": "ca"
+      }
+    },
+    {
+      "rule": {
+        "__resolveType": "site/matchers/language.ts",
+        "language": "en"
+      },
+      "value": {
+        "__resolveType": "site/sections/Header/Alerts.tsx",
+        "alerts": [
+          "FREE SHIPPING",
+          "TO PENINSULAR SPAIN AND PORTUGAL",
+          "FOR ORDERS OVER €50"
+        ],
+        "autoPlay": {
+          "active": true,
+          "interval": 3
+        }
+      }
+    },
+    {
+      "rule": {
+        "__resolveType": "website/matchers/always.ts"
+      },
+      "value": {
+        "__resolveType": "site/sections/Header/Alerts.tsx",
+        "alerts": [
+          "SPEDIZIONI GRATUITE",
+          "IN SPAGNA E PORTOGALLO PENINSULARE",
+          "PER ORDINI SUPERIORI A 50€"
+        ],
+        "autoPlay": {
+          "active": true,
+          "interval": 3
+        }
+      }
+    }
+  ]
+}

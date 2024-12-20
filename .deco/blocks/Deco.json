@@ -15,16 +15,24 @@
             "weight": "400"
           },
           {
-            "weight": "500"
+            "weight": "700"
           },
           {
             "weight": "600"
+          }
+        ],
+        "family": "Nunito"
+      },
+      {
+        "variations": [
+          {
+            "weight": "400"
           },
           {
             "weight": "700"
           }
         ],
-        "family": "Inter"
+        "family": "Montserrat"
       }
     ]
   },
