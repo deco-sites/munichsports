@@ -12,14 +12,24 @@ const getUrl = (href: string, value: string) => {
   return url.href;
 };
 const labels: Record<string, string> = {
-  "relevance:desc": "Relevância",
-  "price:desc": "Maior Preço",
-  "price:asc": "Menor Preço",
-  "orders:desc": "Mais vendidos",
-  "name:desc": "Nome - de Z a A",
-  "name:asc": "Nome - de A a Z",
-  "release:desc": "Lançamento",
-  "discount:desc": "Maior desconto",
+  "id:asc": "ID in ascending order",
+  "id:desc": "ID in descending order",
+  "pId:asc": "Parent ID in ascending order",
+  "pId:desc": "Parent ID in descending order",
+  "sku:asc": "SKU in ascending order",
+  "sku:desc": "SKU in descending order",
+  "name:asc": "Name in ascending order",
+  "name:desc": "Name in descending order",
+  "priority:asc": "Priority in ascending order",
+  "priority:desc": "Priority in descending order",
+  "price:asc": "Price in ascending order",
+  "price:desc": "Price in descending order",
+  "offer:asc": "Offer in ascending order",
+  "offer:desc": "Offer in descending order",
+  "featured:asc": "Featured in ascending order",
+  "featured:desc": "Featured in descending order",
+  "publicationDate:asc": "Publication Date in ascending order",
+  "publicationDate:desc": "Publication Date in descending order",
 };
 function Sort({ sortOptions, url }: Props) {
   const current = getUrl(
@@ -32,7 +42,9 @@ function Sort({ sortOptions, url }: Props) {
   }));
   return (
     <>
-      <label for="sort" class="sr-only">Sort by</label>
+      <label for="sort" class="sr-only">
+        Sort by
+      </label>
       <select
         name="sort"
         class="select w-full max-w-sm rounded-lg"

@@ -4,7 +4,6 @@ import ProductInfo from "../../components/product/ProductInfo.tsx";
 import Breadcrumb from "../../components/ui/Breadcrumb.tsx";
 import Section from "../../components/ui/Section.tsx";
 import { clx } from "../../sdk/clx.ts";
-
 export interface Props {
   /** @title Integration */
   page: ProductDetailsPage | null;

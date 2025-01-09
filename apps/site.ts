@@ -102,12 +102,17 @@ export default function Site(
   return {
     state,
     manifest,
-    dependencies: [
-      commerce(state),
-    ],
+    dependencies: [commerce(state)],
     middleware: (_props: unknown, req: Request, ctx: AppMiddlewareContext) => {
       const supportedLanguages = ctx.supportedLanguages || [];
       const defaultLanguage = ctx.defaultLanguage || "es";
+
+      // Accessible from useSectionWithHref
+      req.headers.set(
+        "__supported_languages",
+        JSON.stringify(supportedLanguages),
+      );
+      req.headers.set("__default_language", defaultLanguage);
 
       const url = new URL(req.url);
 

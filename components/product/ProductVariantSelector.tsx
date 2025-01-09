@@ -2,24 +2,24 @@ import type { Product } from "apps/commerce/types.ts";
 import { clx } from "../../sdk/clx.ts";
 import { relative } from "../../sdk/url.ts";
 import { useId } from "../../sdk/useId.ts";
+import useSectionWithHref from "../../sdk/useSectionWithHref.ts";
 import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
-import { useSection } from "@deco/deco/hooks";
 interface Props {
   product: Product;
 }
 const colors: Record<string, string | undefined> = {
-  "White": "white",
-  "Black": "black",
-  "Gray": "gray",
-  "Blue": "#99CCFF",
-  "Green": "#aad1b5",
-  "Yellow": "#F1E8B0",
-  "DarkBlue": "#4E6E95",
-  "LightBlue": "#bedae4",
-  "DarkGreen": "#446746",
-  "LightGreen": "#aad1b5",
-  "DarkYellow": "#c6b343",
-  "LightYellow": "#F1E8B0",
+  White: "white",
+  Black: "black",
+  Gray: "gray",
+  Blue: "#99CCFF",
+  Green: "#aad1b5",
+  Yellow: "#F1E8B0",
+  DarkBlue: "#4E6E95",
+  LightBlue: "#bedae4",
+  DarkGreen: "#446746",
+  LightGreen: "#aad1b5",
+  DarkYellow: "#c6b343",
+  LightYellow: "#F1E8B0",
 };
 const useStyles = (value: string, checked: boolean) => {
   if (colors[value]) {
@@ -37,7 +37,11 @@ const useStyles = (value: string, checked: boolean) => {
     checked ? "ring-primary" : "ring-transparent border-[#C9CFCF]",
   );
 };
-export const Ring = ({ value, checked = false, class: _class }: {
+export const Ring = ({
+  value,
+  checked = false,
+  class: _class,
+}: {
   value: string;
   checked?: boolean;
   class?: string;
@@ -53,15 +57,22 @@ export const Ring = ({ value, checked = false, class: _class }: {
 function VariantSelector({ product }: Props) {
   const { url, isVariantOf } = product;
   const hasVariant = isVariantOf?.hasVariant ?? [];
-  const possibilities = useVariantPossibilities(hasVariant, product);
+  const possibilities = Object.fromEntries(
+    Object.entries(useVariantPossibilities(hasVariant, product)).filter((
+      [name],
+    ) => name !== "optionType"),
+  );
+
   const relativeUrl = relative(url);
   const id = useId();
-  const filteredNames = Object.keys(possibilities).filter((name) =>
-    name.toLowerCase() !== "title" && name.toLowerCase() !== "default title"
+  const filteredNames = Object.keys(possibilities).filter(
+    (name) =>
+      name.toLowerCase() !== "title" && name.toLowerCase() !== "default title",
   );
   if (filteredNames.length === 0) {
     return null;
   }
+
   return (
     <ul
       class="flex flex-col gap-4"
@@ -78,11 +89,14 @@ function VariantSelector({ product }: Props) {
               .map(([value, link]) => {
                 const relativeLink = relative(link);
                 const checked = relativeLink === relativeUrl;
+
                 return (
                   <li>
                     <label
                       class="cursor-pointer grid grid-cols-1 grid-rows-1 place-items-center"
-                      hx-get={useSection({ href: relativeLink })}
+                      hx-get={useSectionWithHref({
+                        href: relativeLink,
+                      })}
                     >
                       {/* Checkbox for radio button on the frontend */}
                       <input

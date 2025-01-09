@@ -1,7 +1,8 @@
 {
   "data": {
-    "__resolveType": "shopify/loaders/ProductListingPage.ts",
-    "count": 12
+    "__resolveType": "logicommerce/loaders/productListingPage.ts",
+    "sort": "id.asc",
+    "pathnameOffset": 1
   },
   "extensions": [],
   "__resolveType": "commerce/loaders/product/extensions/listingPage.ts"

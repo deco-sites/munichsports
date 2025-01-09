@@ -4,9 +4,7 @@ import Page from "apps/website/pages/Page.tsx";
 import type { AppContext } from "../apps/site.ts";
 
 async function getAllPages(ctx: AppContext): Promise<Route[]> {
-  const allPages = await ctx.get<
-    Record<string, Parameters<typeof Page>[0]>
-  >({
+  const allPages = await ctx.get<Record<string, Parameters<typeof Page>[0]>>({
     type: "pages",
     __resolveType: "blockSelector",
   });
@@ -57,14 +55,10 @@ export default async function Pages(
   _req: Request,
   ctx: AppContext,
 ): Promise<Route[]> {
-  const allPages = await ctx.get<
-    Route[]
-  >({
+  const allPages = await ctx.get<Route[]>({
     func: () => getAllPages(ctx),
     __resolveType: "once",
   });
-
-  // console.log(allPages);
 
   return allPages;
 }

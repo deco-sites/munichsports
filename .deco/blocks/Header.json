@@ -1682,7 +1682,7 @@
         "menu": {
           "items": [
             {
-              "url": "/deportes",
+              "url": "/main",
               "children": [
                 {
                   "label": "OLYMPIX",
@@ -1806,7 +1806,7 @@
               }
             },
             {
-              "url": "/munich-mujer",
+              "url": "/main",
               "children": [
                 {
                   "label": "BOLSOS Y MOCHILAS",
@@ -1904,7 +1904,7 @@
             },
             {
               "label": "HOMBRE",
-              "url": "/munich-hombre",
+              "url": "/main",
               "children": [
                 {
                   "label": "MOCHILAS Y BANDOLERAS",
@@ -2000,7 +2000,7 @@
               }
             },
             {
-              "url": "/zapatillas-ninos",
+              "url": "/main",
               "children": [
                 {
                   "label": "MOCHILAS ESCOLARES",
@@ -2091,7 +2091,7 @@
               }
             },
             {
-              "url": "/munich-bolsos-moda",
+              "url": "/main/inner-category",
               "children": [
                 {
                   "label": "MUJER",
@@ -2196,7 +2196,7 @@
             {
               "children": [],
               "label": "OUTLET",
-              "url": "/outlet-rebajas-munich"
+              "url": "/main/inner-category"
             }
           ],
           "links": [
