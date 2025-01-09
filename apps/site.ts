@@ -4,7 +4,7 @@ import {
   type AppMiddlewareContext as AMC,
 } from "@deco/deco";
 import { type Section } from "@deco/deco/blocks";
-import { setCookie } from "@std/http/cookie";
+import { getCookies, setCookie } from "@std/http/cookie";
 import commerce from "apps/commerce/mod.ts";
 import { color as linx } from "apps/linx/mod.ts";
 import { color as nuvemshop } from "apps/nuvemshop/mod.ts";
@@ -144,7 +144,9 @@ export default function Site(
         ctx.response.status = 302;
         ctx.response.headers.set(
           "Location",
-          `/${defaultLanguage}${path}${search}`,
+          `/${
+            getCookies(req.headers).language || defaultLanguage
+          }${path}${search}`,
         );
       }
 

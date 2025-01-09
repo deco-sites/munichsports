@@ -2,6 +2,10 @@
   "__resolveType": "website/flags/multivariate/section.ts",
   "variants": [
     {
+      "rule": {
+        "__resolveType": "site/matchers/language.ts",
+        "language": "it"
+      },
       "value": {
         "__resolveType": "site/sections/Header/Header.tsx",
         "searchbar": {
@@ -20,117 +24,117 @@
         "menu": {
           "items": [
             {
-              "url": "/sport",
+              "url": "/main",
               "children": [
                 {
                   "label": "OLYMPIX",
-                  "url": "/olympix",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "PADDLE E TENNIS",
-                  "url": "/scarpe-paddle-tennis",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALZATURE",
-                      "url": "/scarpe-paddle"
+                      "url": "/main"
                     },
                     {
                       "label": "RACCHETTE",
-                      "url": "/racchette-paddle-munich"
+                      "url": "/main"
                     },
                     {
                       "label": "BORSE E PORTA RACCHETTE",
-                      "url": "/it/categories/1403"
+                      "url": "/main"
                     },
                     {
                       "label": "ABBIGLIAMENTO",
-                      "url": "/abbigliamento-paddle-munich"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "CALCETTO",
-                  "url": "/scarpe-calcetto",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CONTINENTAL - GRESCA - G3",
-                      "url": "/it/categories/1415"
+                      "url": "/main"
                     },
                     {
                       "label": "RONDO - RONDITO",
-                      "url": "/it/categories/1416"
+                      "url": "/main"
                     },
                     {
                       "label": "PRISMA - ONE",
-                      "url": "/it/categories/1417"
+                      "url": "/main"
                     },
                     {
                       "label": "PALLONI",
-                      "url": "/munich-palloni"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "PALLAMANO",
-                  "url": "/scarpe-pallamano",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALZATURE",
-                      "url": "/it/categories/1414"
+                      "url": "/main"
                     },
                     {
                       "label": "PORTIERE",
-                      "url": "/munich-portiere"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "HOCKEY SU PRATO",
-                  "url": "/scarpe-hockey-prato",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALZATURE",
-                      "url": "/it/categories/1414"
+                      "url": "/main"
                     },
                     {
                       "label": "PORTIERE",
-                      "url": "/munich-portiere"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "CALCIO",
-                  "url": "/scarpe-calcio",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALZATURE",
-                      "url": "/it/categories/1412"
+                      "url": "/main"
                     },
                     {
                       "label": "PARASTINCHI",
-                      "url": "/munich-parastinchi"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "BORSE SPORT",
-                  "url": "/munich-borse-zaini-sport",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALZATURE SPORT",
-                  "url": "/outlet-sport",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET PADDLE E TENNIS",
-                  "url": "/saldi-outlet-paddle",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET BORSE SPORT",
-                  "url": "/saldi-outlet-borse",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -140,101 +144,101 @@
                 "alt": "Sport",
                 "width": 261,
                 "height": 261,
-                "href": "/scarpe-paddle-tennis"
+                "href": "/main"
               }
             },
             {
-              "url": "/munich-donna",
+              "url": "/main",
               "children": [
                 {
                   "label": "BORSE E ZAINI",
-                  "url": "/munich-borse-donna",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/it/categories/1267",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "GIACCHE",
-                      "url": "/it/categories/1302"
+                      "url": "/main"
                     },
                     {
                       "label": "PADEL",
-                      "url": "/it/categories/1268"
+                      "url": "/main"
                     },
                     {
                       "label": "PIGIAMI",
-                      "url": "/it/categories/1269"
+                      "url": "/main"
                     }
                   ],
                   "label": "ABBIGLIAMENTO"
                 },
                 {
-                  "url": "/it/categories/1364",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "SNEAKERS",
-                      "url": "/it/categories/1371"
+                      "url": "/main"
                     },
                     {
                       "label": "PIATTAFORME",
-                      "url": "/it/categories/1368"
+                      "url": "/main"
                     },
                     {
                       "label": "STIVALI E SCARPE ALTE",
-                      "url": "/it/categories/1367"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/it/categories/1369"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS",
-                      "url": "/it/categories/1370"
+                      "url": "/main"
                     },
                     {
                       "label": "SCARPE BASSE",
-                      "url": "/it/categories/1372"
+                      "url": "/main"
                     },
                     {
                       "label": "INFRADITO, SANDALI E PANTOFOLE",
-                      "url": "/it/categories/1365"
+                      "url": "/main"
                     },
                     {
                       "label": "SCARPE DA PADEL",
-                      "url": "/scarpe-padel"
+                      "url": "/main"
                     },
                     {
                       "label": "SCARPE MODA DONNA",
-                      "url": "/scarpe-donna"
+                      "url": "/main"
                     },
                     {
                       "label": "SCARPE STB DONNA",
-                      "url": "/it/categories/941"
+                      "url": "/main"
                     }
                   ],
                   "label": "CALZATURE"
                 },
                 {
                   "label": "ACCESSORI",
-                  "url": "/it/categories/1258",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALZATURE DONNA",
-                  "url": "/saldi-outlet-donna",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET BORSE",
-                  "url": "/saldi-outlet-borse",
+                  "url": "/main",
                   "children": []
                 }
               ],
               "label": "DONNA",
               "image": {
                 "src": "https://www.munichsports.com/cdnassets/FW24-WOMAN.jpg",
-                "href": "/scarpe-donna",
+                "href": "/main",
                 "alt": "scarpe donna",
                 "width": 261,
                 "height": 261
@@ -242,90 +246,90 @@
             },
             {
               "label": "UOMO",
-              "url": "/munich-uomo",
+              "url": "/main",
               "children": [
                 {
                   "label": "ZAINI E BORSE A TRACOLLA",
-                  "url": "/it/categories/1386",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/sportswear-munich",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "PARTI SUPERIORI",
-                      "url": "/parti-superiori"
+                      "url": "/main"
                     },
                     {
                       "label": "PARTI INFERIORI",
-                      "url": "/parti-inferiori"
+                      "url": "/main"
                     },
                     {
                       "label": "PIGIAMI",
-                      "url": "/it/categories/1362"
+                      "url": "/main"
                     }
                   ],
                   "label": "ABBIGLIAMENTO"
                 },
                 {
-                  "url": "/it/categories/1376",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "SNEAKERS",
-                      "url": "/it/categories/1382"
+                      "url": "/main"
                     },
                     {
                       "label": "SCARPE CLASSICHE & BASSE",
-                      "url": "/it/categories/1383"
+                      "url": "/main"
                     },
                     {
                       "label": "STIVALI E SCARPE ALTE",
-                      "url": "/it/categories/1378"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/it/categories/1379"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS & SKATE",
-                      "url": "/it/categories/1380"
+                      "url": "/main"
                     },
                     {
                       "label": "CIABATTE E PANTOFOLE",
-                      "url": "/it/categories/1377"
+                      "url": "/main"
                     },
                     {
                       "label": "SCARPE DA CALCETTO",
-                      "url": "/scarpe-calcetto"
+                      "url": "/main"
                     },
                     {
                       "label": "SCARPE DA PADEL E TENNIS",
-                      "url": "/scarpe-padel"
+                      "url": "/main"
                     },
                     {
                       "label": "SCARPE MODA UOMO",
-                      "url": "/scarpe-uomo"
+                      "url": "/main"
                     },
                     {
                       "label": "SCARPE STB UOMO",
-                      "url": "/it/categories/940"
+                      "url": "/main"
                     }
                   ],
                   "label": "CALZATURE"
                 },
                 {
                   "label": "ACCESSORI",
-                  "url": "/munich-accessori",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALZATURE UOMO",
-                  "url": "/saldi-outlet-uomo",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET ABBIGLIAMENTO",
-                  "url": "/saldi-outlet-tessile",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -334,88 +338,88 @@
                 "alt": "scarpe uomo",
                 "width": 261,
                 "height": 261,
-                "href": "/scarpe-uomo"
+                "href": "/main"
               }
             },
             {
-              "url": "/scarpe-bambini",
+              "url": "/main",
               "children": [
                 {
                   "label": "ZAINI SCOLASTICI",
-                  "url": "/it/categories/1138",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/it/categories/1389",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "NEONATI 0-1 ANNO",
-                      "url": "/it/categories/934"
+                      "url": "/main"
                     },
                     {
                       "label": "BAMBINI VELCRO®",
-                      "url": "/calzature-bambini-velcro"
+                      "url": "/main"
                     },
                     {
                       "label": "BAMBINI LACCI",
-                      "url": "/calzature-bambini-lacci"
+                      "url": "/main"
                     },
                     {
                       "label": "SNEAKERS",
-                      "url": "/it/categories/1411"
+                      "url": "/main"
                     },
                     {
                       "label": "BAREFOOT & SCARPE PIATTE",
-                      "url": "/it/categories/1394"
+                      "url": "/main"
                     },
                     {
                       "label": "STIVALI E SCARPE ALTE",
-                      "url": "/it/categories/1390"
+                      "url": "/main"
                     },
                     {
                       "label": "FUTSAL E SPORT INDOOR",
-                      "url": "/it/categories/1397"
+                      "url": "/main"
                     },
                     {
                       "label": "CALCIO E ERBA ARTIFICIALE",
-                      "url": "/it/categories/1396"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/it/categories/1392"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS & SKATE",
-                      "url": "/it/categories/1393"
+                      "url": "/main"
                     },
                     {
                       "label": "INFRADITO & SANDALI",
-                      "url": "/it/categories/1391"
+                      "url": "/main"
                     },
                     {
                       "label": "SCARPE SPORTIVE BAMBINO",
-                      "url": "/scarpe-sportive-bambino"
+                      "url": "/main"
                     },
                     {
                       "label": "SCARPE MODA BAMBINO",
-                      "url": "/scarpe-bambino"
+                      "url": "/main"
                     }
                   ],
                   "label": "CALZATURE"
                 },
                 {
                   "label": "PASSEGGINI E ACCESSORI",
-                  "url": "/play-by-munich",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "ACCESSORI",
-                  "url": "/it/categories/1398",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALZATURE BAMBINO",
-                  "url": "/saldi-outlet-bambino",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -425,100 +429,100 @@
                 "alt": "sport bambino",
                 "width": 261,
                 "height": 261,
-                "href": "/sport-bambino"
+                "href": "/main"
               }
             },
             {
-              "url": "/munich-borse-moda",
+              "url": "/main",
               "children": [
                 {
                   "label": "DONNA",
-                  "url": "/munich-borse-donna",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "ZAINI",
-                      "url": "/it/categories/700"
+                      "url": "/main"
                     },
                     {
                       "label": "BORSE A SPALLA",
-                      "url": "/it/categories/704"
+                      "url": "/main"
                     },
                     {
                       "label": "BORSE A MANO",
-                      "url": "/it/categories/703"
+                      "url": "/main"
                     },
                     {
                       "label": "BORSE PICCOLE",
-                      "url": "/it/categories/702"
+                      "url": "/main"
                     },
                     {
                       "label": "MARSUPI",
-                      "url": "/it/categories/701"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "VIAGGI",
-                  "url": "/borse-viaggio",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "BEAUTY CASE",
-                      "url": "/it/categories/708"
+                      "url": "/main"
                     },
                     {
                       "label": "TROLLEY",
-                      "url": "/it/categories/1227"
+                      "url": "/main"
                     },
                     {
                       "label": "ZAINI DA VIAGGIO",
-                      "url": "/it/categories/705"
+                      "url": "/main"
                     },
                     {
                       "label": "BORSE WEEKEND",
-                      "url": "/munich-borse-viaggio"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "UOMO E UNISEX",
-                  "url": "/it/categories/1400",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "ZAINI",
-                      "url": "/it/categories/1401"
+                      "url": "/main"
                     },
                     {
                       "label": "MARSUPI",
-                      "url": "/it/categories/1399"
+                      "url": "/main"
                     },
                     {
                       "label": "BORSE A TRACOLLA",
-                      "url": "/munich-borse-tracolla"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "COLLEZIONI",
-                  "url": "/collezioni-borse-munich",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "MODA E VIAGGIO",
-                      "url": "/it/categories/1402"
+                      "url": "/main"
                     },
                     {
                       "label": "SPORT E SCUOLA",
-                      "url": "/munich-borse-zaini-sport"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "OUTLET BORSE",
-                  "url": "/saldi-outlet-borse",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET BORSE SPORTIVE",
-                  "url": "/saldi-outlet-borse-sportive",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -528,33 +532,33 @@
                 "alt": "borse donna",
                 "width": 261,
                 "height": 261,
-                "href": "/borse-donna"
+                "href": "/main"
               }
             },
             {
               "children": [],
               "label": "OUTLET",
-              "url": "/outlet-sconti-munich"
+              "url": "/main/inner-category"
             }
           ],
           "links": [
             {
               "label": "Identificati",
-              "url": "/it/user"
+              "url": "/main"
             },
             {
               "label": "Aiuto",
-              "url": "/contattare"
+              "url": "/main"
             }
           ]
         }
-      },
-      "rule": {
-        "__resolveType": "site/matchers/language.ts",
-        "language": "it"
       }
     },
     {
+      "rule": {
+        "__resolveType": "site/matchers/language.ts",
+        "language": "ca"
+      },
       "value": {
         "__resolveType": "site/sections/Header/Header.tsx",
         "searchbar": {
@@ -573,117 +577,117 @@
         "menu": {
           "items": [
             {
-              "url": "/esports",
+              "url": "/main",
               "children": [
                 {
                   "label": "OLYMPIX",
-                  "url": "/olympix",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "PÀDEL I TENNIS",
-                  "url": "/sabatilles-padel-tennis",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALÇAT",
-                      "url": "/sabatilles-padel"
+                      "url": "/main"
                     },
                     {
                       "label": "PALES",
-                      "url": "/pales-de-padel-munich"
+                      "url": "/main"
                     },
                     {
                       "label": "BOSSES I PALETEROS",
-                      "url": "/ca/categories/1403"
+                      "url": "/main"
                     },
                     {
                       "label": "ROBA",
-                      "url": "/textil-de-padel-munich"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "FUTBOL SALA",
-                  "url": "/sabatilles-futbol-sala",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CONTINENTAL - GRESCA - G3",
-                      "url": "/ca/categories/1415"
+                      "url": "/main"
                     },
                     {
                       "label": "RONDO - RONDITO",
-                      "url": "/ca/categories/1416"
+                      "url": "/main"
                     },
                     {
                       "label": "PRISMA - ONE",
-                      "url": "/ca/categories/1417"
+                      "url": "/main"
                     },
                     {
                       "label": "PILOTES",
-                      "url": "/munich-pilotes"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "HANDBOL",
-                  "url": "/sabatilles-handbol",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALÇAT",
-                      "url": "/ca/categories/1414"
+                      "url": "/main"
                     },
                     {
                       "label": "PORTER",
-                      "url": "/munich-porter"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "HOQUEI HERBA",
-                  "url": "/sabatilles-hoquei-herba",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALÇAT",
-                      "url": "/ca/categories/1414"
+                      "url": "/main"
                     },
                     {
                       "label": "PORTER",
-                      "url": "/munich-porter"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "FUTBOL",
-                  "url": "/botes-futbol",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALÇAT",
-                      "url": "/ca/categories/1412"
+                      "url": "/main"
                     },
                     {
                       "label": "CANYELLERES",
-                      "url": "/munich-canyelleres"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "BOSSES ESPORT",
-                  "url": "/munich-bosses-motxilles-sport",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALÇAT ESPORT",
-                  "url": "/outlet-esports",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET PÀDEL I TENNIS",
-                  "url": "/rebaixes-outlet-padel",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET BOSSES ESPORT",
-                  "url": "/rebaixes-outlet-bosses",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -693,101 +697,101 @@
                 "alt": "Esports",
                 "width": 261,
                 "height": 261,
-                "href": "/sabatilles-padel-tennis"
+                "href": "/main"
               }
             },
             {
-              "url": "/munich-dona",
+              "url": "/main",
               "children": [
                 {
                   "label": "BOSSES I MOTXILLES",
-                  "url": "/munich-bosses-dona",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/ca/categories/1267",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "JAQUETES",
-                      "url": "/ca/categories/1302"
+                      "url": "/main"
                     },
                     {
                       "label": "PÀDEL",
-                      "url": "/ca/categories/1268"
+                      "url": "/main"
                     },
                     {
                       "label": "PIJAMES",
-                      "url": "/ca/categories/1269"
+                      "url": "/main"
                     }
                   ],
                   "label": "ROBA"
                 },
                 {
-                  "url": "/ca/categories/1364",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "SNEAKERS",
-                      "url": "/ca/categories/1371"
+                      "url": "/main"
                     },
                     {
                       "label": "PLATAFORMES",
-                      "url": "/ca/categories/1368"
+                      "url": "/main"
                     },
                     {
                       "label": "BOTES I SABATILLES ALTES",
-                      "url": "/ca/categories/1367"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/ca/categories/1369"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS",
-                      "url": "/ca/categories/1370"
+                      "url": "/main"
                     },
                     {
                       "label": "PLANES",
-                      "url": "/ca/categories/1372"
+                      "url": "/main"
                     },
                     {
                       "label": "XANCLETES, SANDÀLIES I SABATILLES",
-                      "url": "/ca/categories/1365"
+                      "url": "/main"
                     },
                     {
                       "label": "SABATILLES PÀDEL",
-                      "url": "/sabatilles-padel"
+                      "url": "/main"
                     },
                     {
                       "label": "SABATILLES MODA DONA",
-                      "url": "/sabatilles-dona"
+                      "url": "/main"
                     },
                     {
                       "label": "SABATILLES STB DONA",
-                      "url": "/ca/categories/941"
+                      "url": "/main"
                     }
                   ],
                   "label": "CALÇAT"
                 },
                 {
                   "label": "COMPLEMENTS",
-                  "url": "/ca/categories/1258",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALÇAT DONA",
-                  "url": "/rebaixes-outlet-dona",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET BOSSES",
-                  "url": "/rebaixes-outlet-bosses",
+                  "url": "/main",
                   "children": []
                 }
               ],
               "label": "DONA",
               "image": {
                 "src": "https://www.munichsports.com/cdnassets/FW24-WOMAN.jpg",
-                "href": "/sabatilles-dona",
+                "href": "/main",
                 "alt": "sabatilles dona",
                 "width": 261,
                 "height": 261
@@ -795,90 +799,90 @@
             },
             {
               "label": "HOME",
-              "url": "/munich-home",
+              "url": "/main",
               "children": [
                 {
                   "label": "MOTXILLES I BANDOLERES",
-                  "url": "/ca/categories/1386",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/sportswear-munich",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "PARTS DE DALT",
-                      "url": "/parts-de-dalt"
+                      "url": "/main"
                     },
                     {
                       "label": "PARTS DE BAIX",
-                      "url": "/parts-de-baix"
+                      "url": "/main"
                     },
                     {
                       "label": "PIJAMES",
-                      "url": "/ca/categories/1362"
+                      "url": "/main"
                     }
                   ],
                   "label": "ROBA"
                 },
                 {
-                  "url": "/ca/categories/1376",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "SNEAKERS",
-                      "url": "/ca/categories/1382"
+                      "url": "/main"
                     },
                     {
                       "label": "SABATILLES CLÀSSIQUES I PLANES",
-                      "url": "/ca/categories/1383"
+                      "url": "/main"
                     },
                     {
                       "label": "BOTES I SABATILLES ALTES",
-                      "url": "/ca/categories/1378"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/ca/categories/1379"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS I SKATE",
-                      "url": "/ca/categories/1380"
+                      "url": "/main"
                     },
                     {
                       "label": "XANCLETES I SABATILLES",
-                      "url": "/ca/categories/1377"
+                      "url": "/main"
                     },
                     {
                       "label": "SABATILLES FUTBOL SALA",
-                      "url": "/sabatilles-futbol-sala"
+                      "url": "/main"
                     },
                     {
                       "label": "SABATILLES PÀDEL I TENNIS",
-                      "url": "/sabatilles-padel"
+                      "url": "/main"
                     },
                     {
                       "label": "SABATILLES MODA HOME",
-                      "url": "/sabatilles-home"
+                      "url": "/main"
                     },
                     {
                       "label": "SABATILLES STB HOME",
-                      "url": "/ca/categories/940"
+                      "url": "/main"
                     }
                   ],
                   "label": "CALÇAT"
                 },
                 {
                   "label": "COMPLEMENTS",
-                  "url": "/munich-complements",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALÇAT HOME",
-                  "url": "/rebaixes-outlet-home",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET ROBA",
-                  "url": "/rebaixes-outlet-textil",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -887,88 +891,88 @@
                 "alt": "sabatilles home",
                 "width": 261,
                 "height": 261,
-                "href": "/sabatilles-home"
+                "href": "/main"
               }
             },
             {
-              "url": "/sabatilles-nens",
+              "url": "/main",
               "children": [
                 {
                   "label": "MOTXILLES ESCOLARS",
-                  "url": "/ca/categories/1138",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/ca/categories/1389",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "NADONS 0-1 ANY",
-                      "url": "/ca/categories/934"
+                      "url": "/main"
                     },
                     {
                       "label": "INFANTIL VELCRO®",
-                      "url": "/calcat-infantil-velcro"
+                      "url": "/main"
                     },
                     {
                       "label": "INFANTIL CORDONS",
-                      "url": "/calcat-infantil-cordons"
+                      "url": "/main"
                     },
                     {
                       "label": "SNEAKERS",
-                      "url": "/ca/categories/1411"
+                      "url": "/main"
                     },
                     {
                       "label": "BAREFOOT & SABATILLES PLANES",
-                      "url": "/ca/categories/1394"
+                      "url": "/main"
                     },
                     {
                       "label": "BOTES I SABATILLES ALTES",
-                      "url": "/ca/categories/1390"
+                      "url": "/main"
                     },
                     {
                       "label": "FUTSAL I ESPORTS INDOOR",
-                      "url": "/ca/categories/1397"
+                      "url": "/main"
                     },
                     {
                       "label": "FUTBOL I HERBA ARTIFICIAL",
-                      "url": "/ca/categories/1396"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/ca/categories/1392"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS & SKATE",
-                      "url": "/ca/categories/1393"
+                      "url": "/main"
                     },
                     {
                       "label": "XANCLETES & SANDÀLIES",
-                      "url": "/ca/categories/1391"
+                      "url": "/main"
                     },
                     {
                       "label": "SABATILLES ESPORT KID",
-                      "url": "/sabatilles-esportives-nen"
+                      "url": "/main"
                     },
                     {
                       "label": "SABATILLES MODA KID",
-                      "url": "/sabatilles-infantil"
+                      "url": "/main"
                     }
                   ],
                   "label": "CALÇAT"
                 },
                 {
                   "label": "COTXETS I ACCESSORIS",
-                  "url": "/play-by-munich",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "COMPLEMENTS",
-                  "url": "/ca/categories/1398",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALÇAT INFANTIL",
-                  "url": "/rebaixes-outlet-infantil",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -978,100 +982,100 @@
                 "alt": "esports infantil",
                 "width": 261,
                 "height": 261,
-                "href": "/esports-infantil"
+                "href": "/main"
               }
             },
             {
-              "url": "/munich-bosses-moda",
+              "url": "/main",
               "children": [
                 {
                   "label": "DONA",
-                  "url": "/munich-bosses-dona",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "MOTXILLES",
-                      "url": "/ca/categories/700"
+                      "url": "/main"
                     },
                     {
                       "label": "BOSSES D'ESPATLLA",
-                      "url": "/ca/categories/704"
+                      "url": "/main"
                     },
                     {
                       "label": "BOSSES DE MÀ",
-                      "url": "/ca/categories/703"
+                      "url": "/main"
                     },
                     {
                       "label": "BOSSES PETITES",
-                      "url": "/ca/categories/702"
+                      "url": "/main"
                     },
                     {
                       "label": "RONYONERES",
-                      "url": "/ca/categories/701"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "VIATGES",
-                  "url": "/bosses-viatge",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "NECESSER",
-                      "url": "/ca/categories/708"
+                      "url": "/main"
                     },
                     {
                       "label": "TROLLEYS",
-                      "url": "/ca/categories/1227"
+                      "url": "/main"
                     },
                     {
                       "label": "MOTXILLES DE VIATGE",
-                      "url": "/ca/categories/705"
+                      "url": "/main"
                     },
                     {
                       "label": "WEEKENDER",
-                      "url": "/munich-bosses-viatge"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "HOME I UNISEX",
-                  "url": "/ca/categories/1400",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "MOTXILLES",
-                      "url": "/ca/categories/1401"
+                      "url": "/main"
                     },
                     {
                       "label": "RONYONERES",
-                      "url": "/ca/categories/1399"
+                      "url": "/main"
                     },
                     {
                       "label": "BANDOLERES",
-                      "url": "/munich-bandoleres"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "COL·LECCIONS",
-                  "url": "/col·leccions-bosses-munich",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "MODA I VIATGE",
-                      "url": "/ca/categories/1402"
+                      "url": "/main"
                     },
                     {
                       "label": "ESPORTS I ESCOLAR",
-                      "url": "/munich-bosses-motxilles-esport"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "OUTLET BOSSES",
-                  "url": "/rebaixes-outlet-bosses",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET BOSSES ESPORT",
-                  "url": "/rebaixes-outlet-bosses-esport",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -1081,30 +1085,26 @@
                 "alt": "bosses dona",
                 "width": 261,
                 "height": 261,
-                "href": "/bosses-dona"
+                "href": "/main"
               }
             },
             {
               "children": [],
               "label": "OUTLET",
-              "url": "/outlet-rebaixes-munic"
+              "url": "/main/inner-category"
             }
           ],
           "links": [
             {
               "label": "Identifica't",
-              "url": "/ca/user"
+              "url": "/main"
             },
             {
               "label": "Ajuda",
-              "url": "/contactar"
+              "url": "/main"
             }
           ]
         }
-      },
-      "rule": {
-        "__resolveType": "site/matchers/language.ts",
-        "language": "ca"
       }
     },
     {
@@ -1130,117 +1130,117 @@
         "menu": {
           "items": [
             {
-              "url": "/sports",
+              "url": "/main",
               "children": [
                 {
                   "label": "OLYMPIX",
-                  "url": "/olympix",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "PADEL AND TENNIS",
-                  "url": "/padel-tennis-shoes",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "FOOTWEAR",
-                      "url": "/padel-shoes"
+                      "url": "/main"
                     },
                     {
                       "label": "PADDLES",
-                      "url": "/munich-padel-paddles"
+                      "url": "/main"
                     },
                     {
                       "label": "BAGS & PADDLE CASES",
-                      "url": "/en/categories/1403"
+                      "url": "/main"
                     },
                     {
                       "label": "CLOTHING",
-                      "url": "/munich-padel-clothing"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "FUTSAL",
-                  "url": "/futsal-shoes",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CONTINENTAL - GRESCA - G3",
-                      "url": "/en/categories/1415"
+                      "url": "/main"
                     },
                     {
                       "label": "RONDO - RONDITO",
-                      "url": "/en/categories/1416"
+                      "url": "/main"
                     },
                     {
                       "label": "PRISMA - ONE",
-                      "url": "/en/categories/1417"
+                      "url": "/main"
                     },
                     {
                       "label": "BALLS",
-                      "url": "/munich-balls"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "HANDBALL",
-                  "url": "/handball-shoes",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "FOOTWEAR",
-                      "url": "/en/categories/1414"
+                      "url": "/main"
                     },
                     {
                       "label": "GOALKEEPER",
-                      "url": "/munich-goalkeeper"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "FIELD HOCKEY",
-                  "url": "/field-hockey-shoes",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "FOOTWEAR",
-                      "url": "/en/categories/1414"
+                      "url": "/main"
                     },
                     {
                       "label": "GOALKEEPER",
-                      "url": "/munich-goalkeeper"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "FOOTBALL",
-                  "url": "/football-boots",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "FOOTWEAR",
-                      "url": "/en/categories/1412"
+                      "url": "/main"
                     },
                     {
                       "label": "SHIN GUARDS",
-                      "url": "/munich-shin-guards"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "SPORTS BAGS",
-                  "url": "/munich-sports-bags-backpacks",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "SPORTS FOOTWEAR OUTLET",
-                  "url": "/sports-outlet",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "PADEL AND TENNIS OUTLET",
-                  "url": "/padel-sale-outlet",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "SPORTS BAGS OUTLET",
-                  "url": "/bags-sale-outlet",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -1250,101 +1250,101 @@
                 "alt": "Sports",
                 "width": 261,
                 "height": 261,
-                "href": "/padel-tennis-shoes"
+                "href": "/main"
               }
             },
             {
-              "url": "/women",
+              "url": "/main",
               "children": [
                 {
                   "label": "BAGS AND BACKPACKS",
-                  "url": "/munich-women-bags",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/en/categories/1267",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "JACKETS",
-                      "url": "/en/categories/1302"
+                      "url": "/main"
                     },
                     {
                       "label": "PADEL",
-                      "url": "/en/categories/1268"
+                      "url": "/main"
                     },
                     {
                       "label": "PAJAMAS",
-                      "url": "/en/categories/1269"
+                      "url": "/main"
                     }
                   ],
                   "label": "CLOTHING"
                 },
                 {
-                  "url": "/en/categories/1364",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "SNEAKERS",
-                      "url": "/en/categories/1371"
+                      "url": "/main"
                     },
                     {
                       "label": "PLATFORMS",
-                      "url": "/en/categories/1368"
+                      "url": "/main"
                     },
                     {
                       "label": "BOOTS AND HIGH-TOP SNEAKERS",
-                      "url": "/en/categories/1367"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/en/categories/1369"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS",
-                      "url": "/en/categories/1370"
+                      "url": "/main"
                     },
                     {
                       "label": "FLATS",
-                      "url": "/en/categories/1372"
+                      "url": "/main"
                     },
                     {
                       "label": "FLIP-FLOPS, SANDALS & SLIPPERS",
-                      "url": "/en/categories/1365"
+                      "url": "/main"
                     },
                     {
                       "label": "PADEL SHOES",
-                      "url": "/padel-shoes"
+                      "url": "/main"
                     },
                     {
                       "label": "WOMEN'S FASHION SNEAKERS",
-                      "url": "/women-sneakers"
+                      "url": "/main"
                     },
                     {
                       "label": "WOMEN'S STB SNEAKERS",
-                      "url": "/en/categories/941"
+                      "url": "/main"
                     }
                   ],
                   "label": "FOOTWEAR"
                 },
                 {
                   "label": "ACCESSORIES",
-                  "url": "/en/categories/1258",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "WOMEN'S FOOTWEAR OUTLET",
-                  "url": "/sales-outlet-women",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "BAGS OUTLET",
-                  "url": "/sales-outlet-bags",
+                  "url": "/main",
                   "children": []
                 }
               ],
               "label": "WOMEN",
               "image": {
                 "src": "https://www.munichsports.com/cdnassets/FW24-WOMAN.jpg",
-                "href": "/women-sneakers",
+                "href": "/main",
                 "alt": "women sneakers",
                 "width": 261,
                 "height": 261
@@ -1352,90 +1352,90 @@
             },
             {
               "label": "MEN",
-              "url": "/munich-men",
+              "url": "/main",
               "children": [
                 {
                   "label": "BACKPACKS AND SHOULDER BAGS",
-                  "url": "/en/categories/1386",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/sportswear-munich",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "TOPS",
-                      "url": "/tops"
+                      "url": "/main"
                     },
                     {
                       "label": "BOTTOMS",
-                      "url": "/bottoms"
+                      "url": "/main"
                     },
                     {
                       "label": "PAJAMAS",
-                      "url": "/en/categories/1362"
+                      "url": "/main"
                     }
                   ],
                   "label": "CLOTHING"
                 },
                 {
-                  "url": "/en/categories/1376",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "SNEAKERS",
-                      "url": "/en/categories/1382"
+                      "url": "/main"
                     },
                     {
                       "label": "CLASSIC & FLAT SHOES",
-                      "url": "/en/categories/1383"
+                      "url": "/main"
                     },
                     {
                       "label": "BOOTS AND HIGH-TOP SNEAKERS",
-                      "url": "/en/categories/1378"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/en/categories/1379"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS & SKATE",
-                      "url": "/en/categories/1380"
+                      "url": "/main"
                     },
                     {
                       "label": "FLIP FLOPS AND SLIPPERS",
-                      "url": "/en/categories/1377"
+                      "url": "/main"
                     },
                     {
                       "label": "INDOOR SOCCER SHOES",
-                      "url": "/indoor-soccer-shoes"
+                      "url": "/main"
                     },
                     {
                       "label": "PADEL AND TENNIS SHOES",
-                      "url": "/padel-shoes"
+                      "url": "/main"
                     },
                     {
                       "label": "MEN'S FASHION SNEAKERS",
-                      "url": "/men-sneakers"
+                      "url": "/main"
                     },
                     {
                       "label": "MEN'S STB SNEAKERS",
-                      "url": "/en/categories/940"
+                      "url": "/main"
                     }
                   ],
                   "label": "FOOTWEAR"
                 },
                 {
                   "label": "ACCESSORIES",
-                  "url": "/munich-accessories",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "MEN'S FOOTWEAR OUTLET",
-                  "url": "/sale-outlet-men",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "CLOTHING OUTLET",
-                  "url": "/sale-outlet-clothing",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -1444,88 +1444,88 @@
                 "alt": "men's sneakers",
                 "width": 261,
                 "height": 261,
-                "href": "/men-sneakers"
+                "href": "/main"
               }
             },
             {
-              "url": "/kids-sneakers",
+              "url": "/main",
               "children": [
                 {
                   "label": "SCHOOL BACKPACKS",
-                  "url": "/en/categories/1138",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/en/categories/1389",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "BABIES 0-1 YEAR",
-                      "url": "/en/categories/934"
+                      "url": "/main"
                     },
                     {
                       "label": "KIDS VELCRO®",
-                      "url": "/kids-velcro-footwear"
+                      "url": "/main"
                     },
                     {
                       "label": "KIDS LACES",
-                      "url": "/kids-lace-up-footwear"
+                      "url": "/main"
                     },
                     {
                       "label": "SNEAKERS",
-                      "url": "/en/categories/1411"
+                      "url": "/main"
                     },
                     {
                       "label": "BAREFOOT & FLAT SHOES",
-                      "url": "/en/categories/1394"
+                      "url": "/main"
                     },
                     {
                       "label": "BOOTS AND HIGH-TOP SNEAKERS",
-                      "url": "/en/categories/1390"
+                      "url": "/main"
                     },
                     {
                       "label": "FUTSAL AND INDOOR SPORTS",
-                      "url": "/en/categories/1397"
+                      "url": "/main"
                     },
                     {
                       "label": "FOOTBALL AND ARTIFICIAL GRASS",
-                      "url": "/en/categories/1396"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/en/categories/1392"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS & SKATE",
-                      "url": "/en/categories/1393"
+                      "url": "/main"
                     },
                     {
                       "label": "FLIP FLOPS & SANDALS",
-                      "url": "/en/categories/1391"
+                      "url": "/main"
                     },
                     {
                       "label": "KIDS SPORT SHOES",
-                      "url": "/kids-sports-shoes"
+                      "url": "/main"
                     },
                     {
                       "label": "KIDS FASHION SNEAKERS",
-                      "url": "/kids-fashion-sneakers"
+                      "url": "/main"
                     }
                   ],
                   "label": "FOOTWEAR"
                 },
                 {
                   "label": "STROLLERS AND ACCESSORIES",
-                  "url": "/play-by-munich",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "ACCESSORIES",
-                  "url": "/en/categories/1398",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "KIDS FOOTWEAR OUTLET",
-                  "url": "/kids-sale-outlet",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -1535,100 +1535,100 @@
                 "alt": "kids sports",
                 "width": 261,
                 "height": 261,
-                "href": "/kids-sports"
+                "href": "/main"
               }
             },
             {
-              "url": "/munich-bags-fashion",
+              "url": "/main",
               "children": [
                 {
                   "label": "WOMEN",
-                  "url": "/munich-bags-women",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "BACKPACKS",
-                      "url": "/en/categories/700"
+                      "url": "/main"
                     },
                     {
                       "label": "SHOULDER BAGS",
-                      "url": "/en/categories/704"
+                      "url": "/main"
                     },
                     {
                       "label": "HANDBAGS",
-                      "url": "/en/categories/703"
+                      "url": "/main"
                     },
                     {
                       "label": "SMALL BAGS",
-                      "url": "/en/categories/702"
+                      "url": "/main"
                     },
                     {
                       "label": "FANNY PACKS",
-                      "url": "/en/categories/701"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "TRAVEL",
-                  "url": "/travel-bags",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "TOILETRY BAG",
-                      "url": "/en/categories/708"
+                      "url": "/main"
                     },
                     {
                       "label": "TROLLEYS",
-                      "url": "/en/categories/1227"
+                      "url": "/main"
                     },
                     {
                       "label": "TRAVEL BACKPACKS",
-                      "url": "/en/categories/705"
+                      "url": "/main"
                     },
                     {
                       "label": "WEEKENDER",
-                      "url": "/munich-travel-bags"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "MEN AND UNISEX",
-                  "url": "/en/categories/1400",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "BACKPACKS",
-                      "url": "/en/categories/1401"
+                      "url": "/main"
                     },
                     {
                       "label": "FANNY PACKS",
-                      "url": "/en/categories/1399"
+                      "url": "/main"
                     },
                     {
                       "label": "CROSSBODY BAGS",
-                      "url": "/munich-crossbody-bags"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "COLLECTIONS",
-                  "url": "/munich-bag-collections",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "FASHION AND TRAVEL",
-                      "url": "/en/categories/1402"
+                      "url": "/main"
                     },
                     {
                       "label": "SPORTS AND SCHOOL",
-                      "url": "/munich-sports-school-bags"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "BAGS OUTLET",
-                  "url": "/sale-bags-outlet",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "SPORTS BAGS OUTLET",
-                  "url": "/sale-sports-bags-outlet",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -1638,23 +1638,23 @@
                 "alt": "women's bags",
                 "width": 261,
                 "height": 261,
-                "href": "/women-bags"
+                "href": "/main"
               }
             },
             {
               "children": [],
               "label": "OUTLET",
-              "url": "/outlet-sales-munich"
+              "url": "/main/inner-category"
             }
           ],
           "links": [
             {
               "label": "My account",
-              "url": "/en/user"
+              "url": "/main"
             },
             {
               "label": "Help",
-              "url": "/contact"
+              "url": "/main"
             }
           ]
         }
@@ -1686,113 +1686,113 @@
               "children": [
                 {
                   "label": "OLYMPIX",
-                  "url": "/olympix",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "PÁDEL Y TENIS",
-                  "url": "/zapatillas-padel-tenis",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALZADO",
-                      "url": "/zapatillas-padel"
+                      "url": "/main"
                     },
                     {
                       "label": "PALAS",
-                      "url": "/palas-de-padel-munich"
+                      "url": "/main"
                     },
                     {
                       "label": "BOLSAS & PALETEROS",
-                      "url": "/es/categories/1403"
+                      "url": "/main"
                     },
                     {
                       "label": "ROPA",
-                      "url": "/textil-de-padel-munich"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "FÚTBOL SALA",
-                  "url": "/zapatillas-futbol-sala",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CONTINENTAL - GRESCA - G3",
-                      "url": "/es/categories/1415"
+                      "url": "/main"
                     },
                     {
                       "label": "RONDO - RONDITO",
-                      "url": "/es/categories/1416"
+                      "url": "/main"
                     },
                     {
                       "label": "PRISMA - ONE",
-                      "url": "/es/categories/1417"
+                      "url": "/main"
                     },
                     {
                       "label": "BALONES",
-                      "url": "/munich-balones"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "BALONMANO",
-                  "url": "/zapatillas-balonmano",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALZADO",
-                      "url": "/es/categories/1414"
+                      "url": "/main"
                     },
                     {
                       "label": "GOALKEEPER",
-                      "url": "/munich-goalkeeper"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "HOCKEY HIERBA",
-                  "url": "/zapatillas-hockey-hierba",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALZADO",
-                      "url": "/es/categories/1414"
+                      "url": "/main"
                     },
                     {
                       "label": "GOALKEEPER",
-                      "url": "/munich-goalkeeper"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "FÚTBOL",
-                  "url": "/botas-futbol",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CALZADO",
-                      "url": "/es/categories/1412"
+                      "url": "/main"
                     },
                     {
                       "label": "ESPINILLERAS",
-                      "url": "/munich-espinilleras"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "BOLSAS DEPORTE",
-                  "url": "/munich-bolsas-mochilas-sport",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALZADO DEPORTE",
-                  "url": "/outlet-deportes",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET PADEL Y TENIS",
-                  "url": "/rebajas-outlet-padel",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET BOLSAS DEPORTE",
-                  "url": "/rebajas-outlet-bolsas",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -1802,7 +1802,7 @@
                 "alt": "Deportes",
                 "width": 261,
                 "height": 261,
-                "href": "/zapatillas-padel-tenis"
+                "href": "/main"
               }
             },
             {
@@ -1810,93 +1810,93 @@
               "children": [
                 {
                   "label": "BOLSOS Y MOCHILAS",
-                  "url": "/munich-bolsos-mujer",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/es/categories/1267",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "CHAQUETAS",
-                      "url": "/es/categories/1302"
+                      "url": "/main"
                     },
                     {
                       "label": "PADEL",
-                      "url": "/es/categories/1268"
+                      "url": "/main"
                     },
                     {
                       "label": "PIJAMAS",
-                      "url": "/es/categories/1269"
+                      "url": "/main"
                     }
                   ],
                   "label": "ROPA"
                 },
                 {
-                  "url": "/es/categories/1364",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "SNEAKERS",
-                      "url": "/es/categories/1371"
+                      "url": "/main"
                     },
                     {
                       "label": "PLATAFORMAS",
-                      "url": "/es/categories/1368"
+                      "url": "/main"
                     },
                     {
                       "label": "BOTAS Y ZAPATILLAS ALTAS",
-                      "url": "/es/categories/1367"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/es/categories/1369"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS",
-                      "url": "/es/categories/1370"
+                      "url": "/main"
                     },
                     {
                       "label": "PLANAS",
-                      "url": "/es/categories/1372"
+                      "url": "/main"
                     },
                     {
                       "label": "CHANCLAS, SANDALIAS & PANTUFLAS",
-                      "url": "/es/categories/1365"
+                      "url": "/main"
                     },
                     {
                       "label": "ZAPATILLAS PADEL",
-                      "url": "/zapatillas-padel"
+                      "url": "/main"
                     },
                     {
                       "label": "ZAPATILLAS MODA MUJER",
-                      "url": "/zapatillas-mujer"
+                      "url": "/main"
                     },
                     {
                       "label": "ZAPATILLAS STB MUJER",
-                      "url": "/es/categories/941"
+                      "url": "/main"
                     }
                   ],
                   "label": "CALZADO"
                 },
                 {
                   "label": "COMPLEMENTOS",
-                  "url": "/es/categories/1258",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALZADO MUJER",
-                  "url": "/rebajas-outler-mujer",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET BOLSOS",
-                  "url": "/rebajas-outlet-bolsos",
+                  "url": "/main",
                   "children": []
                 }
               ],
               "label": "MUJER",
               "image": {
                 "src": "https://www.munichsports.com/cdnassets/FW24-WOMAN.jpg",
-                "href": "/zapatillas-mujer",
+                "href": "/main",
                 "alt": "zapatillas mujer",
                 "width": 261,
                 "height": 261
@@ -1908,86 +1908,86 @@
               "children": [
                 {
                   "label": "MOCHILAS Y BANDOLERAS",
-                  "url": "/es/categories/1386",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/sportswear-munich",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "PARTES DE ARRIBA",
-                      "url": "/partes-de-arriba"
+                      "url": "/main"
                     },
                     {
                       "label": "PARTES DE ABAJO",
-                      "url": "/partes-de-abajo"
+                      "url": "/main"
                     },
                     {
                       "label": "PIJAMAS",
-                      "url": "/es/categories/1362"
+                      "url": "/main"
                     }
                   ],
                   "label": "ROPA"
                 },
                 {
-                  "url": "/es/categories/1376",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "SNEAKERS",
-                      "url": "/es/categories/1382"
+                      "url": "/main"
                     },
                     {
                       "label": "ZAPATILLAS CLASICAS & PLANAS",
-                      "url": "/es/categories/1383"
+                      "url": "/main"
                     },
                     {
                       "label": "BOTAS Y ZAPATILLAS ALTAS",
-                      "url": "/es/categories/1378"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/es/categories/1379"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS & SKATE",
-                      "url": "/es/categories/1380"
+                      "url": "/main"
                     },
                     {
                       "label": "CHANCLAS Y PANTUFLAS",
-                      "url": "/es/categories/1377"
+                      "url": "/main"
                     },
                     {
                       "label": "ZAPATILLAS FÚTBOL SALA",
-                      "url": "/zapatillas-futbol-sala"
+                      "url": "/main"
                     },
                     {
                       "label": "ZAPATILLAS PADEL Y TENIS",
-                      "url": "/zapatillas-padel"
+                      "url": "/main"
                     },
                     {
                       "label": "ZAPATILLAS MODA HOMBRE",
-                      "url": "/zapatillas-hombre"
+                      "url": "/main"
                     },
                     {
                       "label": "ZAPATILLAS STB HOMBRE",
-                      "url": "/es/categories/940"
+                      "url": "/main"
                     }
                   ],
                   "label": "CALZADO"
                 },
                 {
                   "label": "COMPLEMENTOS",
-                  "url": "/munich-complementos",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALZADO HOMBRE",
-                  "url": "/rebajas-outlet-hombre",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET ROPA",
-                  "url": "/rebajas-outlet-textil",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -1996,7 +1996,7 @@
                 "alt": "zapatillas hombre",
                 "width": 261,
                 "height": 261,
-                "href": "/zapatillas-hombre"
+                "href": "/main"
               }
             },
             {
@@ -2004,80 +2004,80 @@
               "children": [
                 {
                   "label": "MOCHILAS ESCOLARES",
-                  "url": "/es/categories/1138",
+                  "url": "/main",
                   "children": []
                 },
                 {
-                  "url": "/es/categories/1389",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "BEBÉS 0-1 AÑO",
-                      "url": "/es/categories/934"
+                      "url": "/main"
                     },
                     {
                       "label": "INFANTIL VELCRO®",
-                      "url": "/calzado-infantil-velcro"
+                      "url": "/main"
                     },
                     {
                       "label": "INFANTIL CORDONES",
-                      "url": "/calzado-infantil-cordones"
+                      "url": "/main"
                     },
                     {
                       "label": "SNEAKERS",
-                      "url": "/es/categories/1411"
+                      "url": "/main"
                     },
                     {
                       "label": "BAREFOOT & ZAPATILLAS PLANAS",
-                      "url": "/es/categories/1394"
+                      "url": "/main"
                     },
                     {
                       "label": "BOTAS Y ZAPATILLAS ALTAS",
-                      "url": "/es/categories/1390"
+                      "url": "/main"
                     },
                     {
                       "label": "FUTSAL Y DEPORTES INDOOR",
-                      "url": "/es/categories/1397"
+                      "url": "/main"
                     },
                     {
                       "label": "FÚTBOL Y HIERBA ARTIFICIAL",
-                      "url": "/es/categories/1396"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO RUNNING",
-                      "url": "/es/categories/1392"
+                      "url": "/main"
                     },
                     {
                       "label": "RETRO TENNIS & SKATE",
-                      "url": "/es/categories/1393"
+                      "url": "/main"
                     },
                     {
                       "label": "CHANCLAS & SANDALIAS",
-                      "url": "/es/categories/1391"
+                      "url": "/main"
                     },
                     {
                       "label": "ZAPATILLAS DEPORTE KID",
-                      "url": "/zapatillas-deportivas-nino"
+                      "url": "/main"
                     },
                     {
                       "label": "ZAPATILLAS MODA KID",
-                      "url": "/zapatillas-infantil"
+                      "url": "/main"
                     }
                   ],
                   "label": "CALZADO"
                 },
                 {
                   "label": "COCHECITOS Y ACCESORIOS",
-                  "url": "/play-by-munich",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "COMPLEMENTOS",
-                  "url": "/es/categories/1398",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET CALZADO INFANTIL",
-                  "url": "/rebajas-outlet-infantil",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -2087,100 +2087,100 @@
                 "alt": "deportes infantil",
                 "width": 261,
                 "height": 261,
-                "href": "/deportes-infantil"
+                "href": "/main"
               }
             },
             {
-              "url": "/main/inner-category",
+              "url": "/main",
               "children": [
                 {
                   "label": "MUJER",
-                  "url": "/munich-bolsos-mujer",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "MOCHILAS",
-                      "url": "/es/categories/700"
+                      "url": "/main"
                     },
                     {
                       "label": "BOLSOS DE HOMBRO",
-                      "url": "/es/categories/704"
+                      "url": "/main"
                     },
                     {
                       "label": "BOLSOS DE MANO",
-                      "url": "/es/categories/703"
+                      "url": "/main"
                     },
                     {
                       "label": "BOLSOS PEQUEÑOS",
-                      "url": "/es/categories/702"
+                      "url": "/main"
                     },
                     {
                       "label": "RIÑONERAS",
-                      "url": "/es/categories/701"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "VIAJES",
-                  "url": "/bolsas-viaje",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "NECESER",
-                      "url": "/es/categories/708"
+                      "url": "/main"
                     },
                     {
                       "label": "TROLLEYS",
-                      "url": "/es/categories/1227"
+                      "url": "/main"
                     },
                     {
                       "label": "MOCHILAS DE VAJE",
-                      "url": "/es/categories/705"
+                      "url": "/main"
                     },
                     {
                       "label": "WEEKENDER",
-                      "url": "/munich-bolsas-viaje"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "HOMBRE Y UNISEX",
-                  "url": "/es/categories/1400",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "MOCHILAS",
-                      "url": "/es/categories/1401"
+                      "url": "/main"
                     },
                     {
                       "label": "RIÑONERAS",
-                      "url": "/es/categories/1399"
+                      "url": "/main"
                     },
                     {
                       "label": "BANDOLERAS",
-                      "url": "/munich-bandoleras"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "COLECCIONES",
-                  "url": "/colecciones-bolsos-munich",
+                  "url": "/main",
                   "children": [
                     {
                       "label": "MODA Y VIAJE",
-                      "url": "/es/categories/1402"
+                      "url": "/main"
                     },
                     {
                       "label": "DEPORTES Y ESCOLAR",
-                      "url": "/munich-bolsas-mochilas-sport"
+                      "url": "/main"
                     }
                   ]
                 },
                 {
                   "label": "OUTLET BOLSOS",
-                  "url": "/rebajas-outlet-bolsos",
+                  "url": "/main",
                   "children": []
                 },
                 {
                   "label": "OUTLET BOLSAS DEPORTE",
-                  "url": "/rebajas-outlet-bolsas",
+                  "url": "/main",
                   "children": []
                 }
               ],
@@ -2190,7 +2190,7 @@
                 "alt": "bolsos mujer",
                 "width": 261,
                 "height": 261,
-                "href": "/bolsos-mujer"
+                "href": "/main"
               }
             },
             {
@@ -2202,11 +2202,11 @@
           "links": [
             {
               "label": "Mi cuenta",
-              "url": "/es/user"
+              "url": "/main"
             },
             {
               "label": "Ayuda",
-              "url": "/contactar"
+              "url": "/main"
             }
           ]
         }
